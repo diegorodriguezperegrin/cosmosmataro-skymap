@@ -13,3 +13,4 @@ app/src/gms/google-services.json
 app/src/gms/google-services.json*
 app/gen/
 *.keystore
+datamodel/bin/

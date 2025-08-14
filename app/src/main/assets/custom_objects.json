@@ -1,0 +1,19 @@
+
+[
+  {
+    "name": "Gemini Custom Object 1",
+    "ra": 90.0,
+    "dec": 30.0,
+    "color": "0xFFFFFF00",
+    "size": 0.05,
+    "icon": "gift_on"
+  },
+  {
+    "name": "Gemini Custom Object 2",
+    "ra": 180.0,
+    "dec": -45.0,
+    "color": "0xFFFF00FF",
+    "size": 0.08,
+    "icon": "gift_on"
+  }
+]

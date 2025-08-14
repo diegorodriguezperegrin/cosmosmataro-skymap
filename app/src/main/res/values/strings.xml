@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Please add  translation_description="" attributes to Strings to assist the translators. -->
 <resources>
-    <string name="app_name" translation_description="Application Title">Sky Map</string>
+    <string name="app_name" translation_description="Application Title">Cosmos Mataró Sky Map</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_search">Search</string>
     <string name="cancel">Cancel</string>
@@ -43,6 +43,7 @@
     <string name="show_satellite_layer_pref" translation_description="The layer for satellites">Satellites</string>
     <!-- Just in case we decide to have such a layer for the 4/24 launch -->
     <string name="show_hubble_layer_pref">Hubble Images</string>
+    <string name="show_custom_objects_pref">Custom Objects</string>
     <string name="sensor_prefs">Sensor Settings (experts)</string>
     <string name="sensor_speed" translation_description="Old, non gyro sensors only: How quickly the sensor should send us data">Sensor Speed</string>
     <string name="sensor_damping" translation_description="Old, non gyro sensors only: The amount of smoothing applied to the sensor outputs.">Damping</string>

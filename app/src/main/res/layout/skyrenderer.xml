@@ -148,6 +148,17 @@
                 stardroid:image_off="@drawable/b_meteor_off"
                 stardroid:image_on="@drawable/b_meteor_on"
                 stardroid:pref_key="source_provider.6" />
+
+            <com.google.android.stardroid.views.PreferencesButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:paddingLeft="5px"
+                android:paddingTop="7px"
+                android:paddingBottom="7px"
+                stardroid:image_off="@drawable/gift_off"
+                stardroid:image_on="@drawable/gift_on"
+                stardroid:pref_key="source_provider.7" />
             <!--com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

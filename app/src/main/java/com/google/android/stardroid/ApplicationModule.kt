@@ -101,6 +101,7 @@ class ApplicationModule(private val app: StardroidApplication) {
     layerManager.addLayer(ConstellationsLayer(assetManager, resources, preferences))
     layerManager.addLayer(SolarSystemLayer(model!!, resources, preferences))
     layerManager.addLayer(MeteorShowerLayer(model, resources, preferences))
+    layerManager.addLayer(CustomObjectLayer(model, resources, preferences))
     layerManager.addLayer(CometsLayer(model, resources, preferences))
     layerManager.addLayer(GridLayer(resources, 24, 9, preferences))
     layerManager.addLayer(HorizonLayer(model, resources, preferences))
