@@ -15,7 +15,7 @@ package com.google.android.stardroid.renderables.proto
 
 import android.content.res.Resources
 import android.util.Log
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.math.Vector3
 import com.google.android.stardroid.math.getGeocentricCoords
 import com.google.android.stardroid.renderables.AbstractAstronomicalRenderable
@@ -45,7 +45,7 @@ class ProtobufAstronomicalRenderable(
         // Ideally we'd get this from Context.getPackageName but for some reason passing it in as a
         // string via the contructor results in it always being null when I need it. Buggered if
         // I know why - it's certainly a concern. Hopefully this class won't be around for much longer.
-        const val PACKAGE = "com.google.android.stardroid"
+        const val PACKAGE = "org.cosmosmataro.skymap"
         private fun getCoords(proto: SourceProto.GeocentricCoordinatesProto): Vector3 {
             return getGeocentricCoords(proto.rightAscension, proto.declination)
         }

@@ -1,6 +1,6 @@
 package com.google.android.stardroid.space
 
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.ephemeris.SolarSystemBody
 import com.google.android.stardroid.math.*
 import com.google.android.stardroid.math.MathUtils.asin

@@ -1,0 +1,925 @@
+--------- beginning of main
+09-13 21:47:39.405  1721  1721 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 179000 / mChargingTime : 179000
+09-13 21:47:39.405  1721  1721 D SecPowerUI.Notification: There is no change about charging status, so return!
+09-13 21:47:39.721  1203  3220 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 413, isSameBssidAndFreq true
+09-13 21:47:39.721  1203  1616 I SemWifiLinkQualityMonitor: Link Qos Query: 0,015 ms / 543,085 Mbps (866 / 0,005 / 1,000)
+09-13 21:47:39.722  1721  1721 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+09-13 21:47:39.722  1721  1833 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+09-13 21:47:39.746   875   981 I VSyncReactor: Current= 60, TransitioningTo= 60, Distance= 60
+09-13 21:47:40.117 19798 19981 I MeariIotController: meariIot---------------------Response:
+09-13 21:47:40.933  1203  1614 I SemWifiServiceDetector: Traff. tracking started
+--------- beginning of system
+09-13 21:47:40.948  1782  1782 I wpa_supplicant: Heartbeat 2151
+09-13 21:47:41.343  4145  5152 I SDHMS:D : SIOP:: AP:318 BAT:284 USB:292 CHG:304 PA:-777 CP:307 WIFI:309 SKIN:303 SKINF:303 SKINB:296 LRP:303 LRF:303 LRB:296 BLRF:303 BLRB:296 
+09-13 21:47:41.424  1203  1571 W DeviceStorageMonitorService: updateBroadcasts(/data) oldLevel:0, newLevel:0, seq:1
+09-13 21:47:41.425  1203  1571 D DeviceStorageMonitorService: Available File Node Number is [13029191]
+09-13 21:47:41.425  1203  1571 W DeviceStorageMonitorService: updateBroadcasts_filenode(/data) fn_oldLevel:0, fn_newLevel:0, seq:1
+09-13 21:47:41.434  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04415229]
+09-13 21:47:41.434  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.10864212]
+09-13 21:47:41.434  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.915227]
+09-13 21:47:41.434  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.24 msecs
+09-13 21:47:41.434  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.317616 msecs
+09-13 21:47:41.435  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.198231 msecs
+09-13 21:47:41.936  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04415229]
+09-13 21:47:41.936  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.10864212]
+09-13 21:47:41.936  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.915227]
+09-13 21:47:41.936  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.248462 msecs
+09-13 21:47:41.936  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.315077 msecs
+09-13 21:47:41.936  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.204115 msecs
+09-13 21:47:42.437  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04415229]
+09-13 21:47:42.437  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.10864212]
+09-13 21:47:42.437  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.915227]
+09-13 21:47:42.437  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.237769 msecs
+09-13 21:47:42.438  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.352346 msecs
+09-13 21:47:42.438  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.233115 msecs
+09-13 21:47:42.803  1203  3220 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 414, isSameBssidAndFreq true
+09-13 21:47:42.804  1203  1616 I SemWifiLinkQualityMonitor: Link Qos Query: 0,018 ms / 435,238 Mbps (866 / 0,009 / 1,000)
+09-13 21:47:42.939  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04415229]
+09-13 21:47:42.939  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.10864212]
+09-13 21:47:42.939  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.915227]
+09-13 21:47:42.939  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.230231 msecs
+09-13 21:47:42.939  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.322692 msecs
+09-13 21:47:42.939  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.195154 msecs
+09-13 21:47:43.440  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.03088493]
+09-13 21:47:43.440  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.089442216]
+09-13 21:47:43.440  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.90073115]
+09-13 21:47:43.440  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.255231 msecs
+09-13 21:47:43.440  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.350538 msecs
+09-13 21:47:43.440  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.2025 msecs
+09-13 21:47:43.883  1203  1515 D InputReader: Btn_touch(2): value=1 when=21719.010211
+09-13 21:47:43.884  1203  1515 I InputReader: Touch event's action is 0x0 (id=6, t=0) [pCnt=1, s=0.216 ] when=21719.010211
+09-13 21:47:43.884  1203  1514 I InputDispatcher: Delivering touch to (1721): action: 0x4, f=0x0, d=0, '60c90e4', t=1 
+09-13 21:47:43.884  1203  1514 I InputDispatcher: Delivering touch to (3339): action: 0x0, f=0x0, d=0, '38fb6f6', t=1 *(0.75)
+09-13 21:47:43.884  1203  1514 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 21719010
+09-13 21:47:43.884  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: ViewPostIme pointer 0
+09-13 21:47:43.885  1203  1284 I GestureDetector: obtain mCurrentDownEvent. id: 736965555 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+09-13 21:47:43.885  1203  1284 I GestureDetector: obtain mCurrentDownEvent. id: 736965555 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+09-13 21:47:43.885  1203  1514 D PowerManagerService: UserActivityStateListenerState: 1
+09-13 21:47:43.908  1203  1284 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 118874375
+09-13 21:47:43.908  1203  1284 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 118874375
+09-13 21:47:43.914   875   981 I VSyncReactor: Current= 60, TransitioningTo= 60, Distance= 60
+09-13 21:47:43.937  1203  1614 I SemWifiServiceDetector: Traff. tracking stopped
+09-13 21:47:43.939   549   549 D io_stats: !@   8,0 r 3146037 46904992 w 539291 3982060 d 248719 2758440 f 0 0 iot 553236 0 th 0 0 0 pt 0 inp 0 0 21719.066
+09-13 21:47:43.949  1203  1515 D InputReader: Btn_touch(2): value=0 when=21719.076120
+09-13 21:47:43.949  1203  1515 I InputReader: Touch event's action is 0x1 (id=6, t=0) [pCnt=1, s=] when=21719.076120
+09-13 21:47:43.949  1203  1514 I InputDispatcher: Delivering touch to (3339): action: 0x1, f=0x0, d=0, '38fb6f6', t=1 *(0.75)
+09-13 21:47:43.951  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: ViewPostIme pointer 1
+09-13 21:47:43.966  1203  1754 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10492; state: DISABLED
+09-13 21:47:43.969  1203  3900 I InputMethodManagerService: isInputMethodShown: isShown=false
+09-13 21:47:43.970  1203  3900 D ActivityTaskManager: startActivityAsUser: callingPid=3339, callingUid=10079, caller=com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:1816 com.android.server.wm.ActivityTaskManagerService.startActivity:1767 android.app.IActivityTaskManager$Stub.onTransact:1244 com.android.server.wm.ActivityTaskManagerService.onTransact:6599 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> 
+09-13 21:47:43.970  1203  3900 D ActivityTaskManager: SafeActivityOptions created, mOriginalCallingPid=3339, mOriginalCallingUid=10079, options=ActivityOptions(262290893), mPackageName=null, mAnimationType=-1, mStartX=0, mStartY=0, mWidth=0, mHeight=0, caller=com.android.server.wm.SafeActivityOptions.fromBundle:82 com.android.server.wm.ActivityStarter.setActivityOptions:4708 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:1941 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:1816 com.android.server.wm.ActivityTaskManagerService.startActivity:1767 android.app.IActivityTaskManager$Stub.onTransact:1244 com.android.server.wm.ActivityTaskManagerService.onTransact:6599 
+09-13 21:47:43.970  1203  1286 I ChimeraSystemEventListener: appLaunchIntent package name is: org.cosmosmataro.skymap
+09-13 21:47:43.971  1203  3900 I Pageboost: onAppLaunch : org.cosmosmataro.skymap
+09-13 21:47:43.971  1203  1702 I Pageboost: Record App IO : org.cosmosmataro.skymap pid 0
+09-13 21:47:43.971  1203  3900 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=org.cosmosmataro.skymap/.activities.SplashScreenActivity (has extras)} from uid 10079
+09-13 21:47:43.972  1203  3900 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} display-area-from-source=DefaultTaskDisplayArea@73658436 display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@73658436
+09-13 21:47:43.972  1203  3900 D [secipm]: mSecIpmManager Preload org.cosmosmataro.skymap dex files
+09-13 21:47:43.972  1203  3900 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t-1} display-area-from-source=DefaultTaskDisplayArea@73658436 display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@73658436 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display display-area=DefaultTaskDisplayArea@73658436 maximized-bounds
+09-13 21:47:43.972  1203  2405 I SemDvfsHyPerManager: acquire hyper - AMS_APP_SWITCH/1203@22, type = -999
+09-13 21:47:43.972   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 750947  [1203 / 22]    HINT : AMS_APP_SWITCH    list : 
+09-13 21:47:43.972  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 0 Task ID = 3129
+09-13 21:47:43.973   875  1029 I SurfaceFlinger: id=1557 createSurf flag=24004, Task=3129#1557
+09-13 21:47:43.973   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 750947    Value : 2623359
+09-13 21:47:43.973  1203  2405 D ActivityManagerPerformance: AMP_acquire() APP_SWITCH
+09-13 21:47:43.974  4145  4145 I SemDvfsHyPerManager: acquire hyper - APP_START_SHORT/4145@12, type = -999
+09-13 21:47:43.974  1203  3900 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{73565d0 #3129 type=standard A=10492:org.cosmosmataro.skymap U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} activity=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t-1} display-area-from-source=DefaultTaskDisplayArea@73658436 display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@73658436 inherit-from-source=fullscreen activity-options-fullscreen=Rect(0, 0 - 0, 0) non-freeform-display display-area=DefaultTaskDisplayArea@73658436 maximized-bounds
+09-13 21:47:43.975   875  1030 I SurfaceFlinger: id=1558 createSurf flag=80004, ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558
+09-13 21:47:43.975  1203  3900 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=false r=ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117} caller=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2510 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:602 com.android.server.wm.TaskDisplayArea.positionChildAt:537 com.android.server.wm.Task.moveToFrontInner:6053 com.android.server.wm.Task.moveToFront:6019 com.android.server.wm.ActivityStarter.startActivityInner:2924 
+09-13 21:47:43.975   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 8642415  [4145 / 12]    HINT : APP_START    list : [TIMEOUT / 1500] 
+09-13 21:47:43.976   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMaxFreq] UpdateResource Request ID : 8642415    Value : 2730000
+09-13 21:47:43.976  1203  3900 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.Task.startActivityLocked:6595 com.android.server.wm.ActivityStarter.startActivityInner:2980 com.android.server.wm.ActivityStarter.startActivityUnchecked:2470 
+09-13 21:47:43.976  1203  3900 V WindowManager: Checking theme of starting window: 0x103006d
+09-13 21:47:43.976  1203  3900 V WindowManager: Translucent=false Floating=false ShowWallpaper=false Disable=false
+09-13 21:47:43.976  1203  3900 V WindowManager: Creating SplashScreenStartingData
+09-13 21:47:43.976  1203  3900 D ActivityTaskManager: Add starting com.android.server.wm.ActivityRecord$AddStartingWindow@5a1f8ce: typeParam=139
+09-13 21:47:43.976  1203  3900 V WindowManager: Add starting com.android.server.wm.ActivityRecord$AddStartingWindow@5a1f8ce: startingData=com.android.server.wm.SplashScreenStartingData@d19e3ef
+09-13 21:47:43.976  1203  3900 V WindowManager: Added starting ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}: startingWindow=null startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@1530efc
+09-13 21:47:43.978  1026  3461 I CameraService: onUidStateChanged: uid=10053, procState is changed. (0 -> 1)
+09-13 21:47:43.978  1203  1754 I AppOps  : updateUidProcState uid: 10053 procState: 1 capability:15
+09-13 21:47:43.979  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:43.979  1721  1798 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+09-13 21:47:43.979  1203  3900 D CompatibilityChangeReporter: Compat change id reported: 194833441; UID 10492; state: ENABLED
+09-13 21:47:43.979  1203  3900 I Pageboost: stop alp
+09-13 21:47:43.979  1203  3900 I SemDvfsHyPerManager: acquire hyper - AMS_APP_LAUNCH/1203@19, type = -999
+09-13 21:47:43.979   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 747272  [1203 / 19]    HINT : AMS_APP_LAUNCH    list : 
+09-13 21:47:43.980   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 747272    Value : 2623359
+09-13 21:47:43.980  4145  4145 I SemDvfsHyPerManager: acquire hyper - APP_START/4145@14, type = -999
+09-13 21:47:43.980  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 4 Task ID = 3129
+09-13 21:47:43.980  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 0 Task ID = 3129
+09-13 21:47:43.980   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 8650734  [4145 / 14]    HINT : APP_START    list : 
+09-13 21:47:43.981   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMaxFreq] UpdateResource Request ID : 8650734    Value : 2730000
+09-13 21:47:43.982  1203  1754 D InputTransport: Input channel constructed: '968d3da', fd=810
+09-13 21:47:43.982  1203  1754 D InputTransport: Input channel constructed: '968d3da', fd=863
+09-13 21:47:43.982  2236  2236 I TopTaskTracker: onTaskMovedToFront : taskId = 3129
+09-13 21:47:43.982  1203  1754 D InputTransport: Input channel constructed: '968d3da', fd=1105
+09-13 21:47:43.982   875  1030 I SurfaceFlinger: id=1559 createSurf flag=80004, 968d3da Splash Screen org.cosmosmataro.skymap#1559
+09-13 21:47:43.983  1203  1754 V WindowManager: addWindow: ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129} startingWindow=Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}
+09-13 21:47:43.983  1203  1754 D InputTransport: Input channel destroyed: '968d3da', fd=1105
+09-13 21:47:43.983  1203  1272 D MARsPolicyManager: onPackageResumedFG pkgName = org.cosmosmataro.skymap, userId = 0
+09-13 21:47:43.983  1203  1272 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_OPEN, TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.TaskFragment.resumeTopActivity:1573 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.resumeTopActivityInnerLocked:6451 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:6352 
+09-13 21:47:43.983  1721  1792 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 73 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(692, 0 - 748, 73), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={2.8125} cutoutSpec={M 0,0 H -9.866666666666667 V 25.86666666666667 H 9.866666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=68, center=Point(68, 68)}, RoundedCorner{position=TopRight, radius=68, center=Point(1012, 68)}, RoundedCorner{position=BottomRight, radius=68, center=Point(1012, 2332)}, RoundedCorner{position=BottomLeft, radius=68, center=Point(68, 2332)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 73) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,107], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false} } host=Splash Screen org.cosmosmataro.skymap from=android.view.ViewRootImpl.setView:1732
+09-13 21:47:43.983  1203  1272 D WindowManagerServiceExt: notifyOccludeChangeNotice: cn=ComponentInfo{org.cosmosmataro.skymap/org.cosmosmataro.skymap.activities.SplashScreenActivity} occludesParent=true inMultiWindow=false styleFloating=false caller=com.android.server.wm.WindowManagerServiceExt.updateOccludeTargetIfNeeded:1402 com.android.server.wm.DisplayContent.ensureActivitiesVisible:7532 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2248 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2229 com.android.server.wm.TaskFragment.completePause:2076 
+09-13 21:47:43.985  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 5 Task ID = 0
+09-13 21:47:43.986  1721  1792 I ViewRootImpl@df3132e[skymap]: setView = android.widget.FrameLayout@7e918eb TM=true
+09-13 21:47:43.986  1203  1286 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10492; state: DISABLED
+09-13 21:47:43.986  1203  1286 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10492; state: DISABLED
+09-13 21:47:43.986  1203  1286 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10492; state: DISABLED
+09-13 21:47:43.986  1203  1286 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10492; state: ENABLED
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   fl=81030118
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   pfl=16000010
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   bhv=DEFAULT
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   fitSides= naviIconColor=0}
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]: performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   fl=81030118
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   pfl=16000010
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   bhv=DEFAULT
+09-13 21:47:43.987  1721  1792 I ViewRootImpl@df3132e[skymap]:   fitSides= naviIconColor=0}
+09-13 21:47:43.987  1203  3900 V WindowManager: Relayout Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}: viewVisibility=0 req=1080x2400 d0
+09-13 21:47:43.987  1203  3900 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-13 21:47:43.987   875  1029 I SurfaceFlinger: id=1560 createSurf flag=40004, Splash Screen org.cosmosmataro.skymap$_1721#1560
+09-13 21:47:43.988  1203  3900 D WindowManager: makeSurface duration=1 name=Splash Screen org.cosmosmataro.skymap$_1721
+09-13 21:47:43.988  1203  1294 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10492; state: ENABLED
+09-13 21:47:43.990  1203  3900 V WindowManager: Changing focus from Window{38fb6f6 u0 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity} to null displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6810 com.android.server.wm.WindowManagerService.relayoutWindow:2820 com.android.server.wm.Session.relayout:274 
+09-13 21:47:43.990  1203  3900 D MARsPolicyManager: onPackageResumedFG pkgName = com.samsung.android.app.galaxyfinder, userId = 0
+09-13 21:47:43.990  1203  1948 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.IGameManagerService$Stub.onTransact(IGameManagerService.java:233)
+09-13 21:47:43.990  1203  1948 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:43.991   875  2652 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+09-13 21:47:43.991 13561 23962 I WindowsLink: (TaskInfoManager) +++++++++++onRecentTaskStackUpdated
+09-13 21:47:43.991   875  2652 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+09-13 21:47:43.991   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1759750  [875 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+09-13 21:47:43.993  1203  3900 D StatusBarManagerService: notifyRequestedSystemKey recent=false home=false
+09-13 21:47:43.993  1203  3900 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_NOSENSOR (5), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-13 21:47:43.993  1203  3900 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}
+09-13 21:47:43.993  1203  3900 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_NOSENSOR (5) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1872 com.android.server.wm.WindowManagerService.relayoutWindow:2851 com.android.server.wm.Session.relayout:274 android.view.IWindowSession$Stub.onTransact:779 
+09-13 21:47:43.993  1203  3900 V WindowManager: Relayout hash=968d3da, pid=1721, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302
+09-13 21:47:43.993  1203  3900 V WindowManager:   fl=81030118
+09-13 21:47:43.993  1203  3900 V WindowManager:   pfl=16000010
+09-13 21:47:43.993  1203  3900 V WindowManager:   bhv=DEFAULT
+09-13 21:47:43.993  1203  3900 V WindowManager:   fitSides= naviIconColor=0}
+09-13 21:47:43.993  1203  1203 I CocktailBarManagerServiceContainer: handleMessage: entry what = 6
+09-13 21:47:43.993  1203  1754 D CoreBackPreview: Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@7b1a6df, mPriority=0}
+09-13 21:47:43.994  1203  1286 D SGM:FgCheckThread: notePauseComponent(), received pkgName: com.samsung.android.app.galaxyfinder, userId: 0
+09-13 21:47:43.994  1721  1792 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 73 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(692, 0 - 748, 73), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={2.8125} cutoutSpec={M 0,0 H -9.866666666666667 V 25.86666666666667 H 9.866666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=68, center=Point(68, 68)}, RoundedCorner{position=TopRight, radius=68, center=Point(1012, 68)}, RoundedCorner{position=BottomRight, radius=68, center=Point(1012, 2332)}, RoundedCorner{position=BottomLeft, radius=68, center=Point(68, 2332)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 73) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,107], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=Splash Screen org.cosmosmataro.skymap from=android.view.ViewRootImpl.relayoutWindow:9802
+09-13 21:47:43.994  1721  1792 I ViewRootImpl@df3132e[skymap]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-13 21:47:43.995  1721  1792 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@df3132e[skymap] mNativeObject= 0x73e2ec1f90 sc.mNativeObject= 0x73730006d0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283 
+09-13 21:47:43.995  1721  1792 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@df3132e[skymap] mNativeObject= 0x73e2ec1f90 sc.mNativeObject= 0x73730006d0 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+09-13 21:47:43.995  1721  1792 I ViewRootImpl@df3132e[skymap]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=7 res=0x3 s={true 0x7472fd1030} ch=true seqId=0
+09-13 21:47:43.996  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:43.996  1203  1286 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:17028ms, uid:10492
+09-13 21:47:43.996  1203  1286 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:13574ms, uid:10079
+09-13 21:47:43.996  1721  1792 I ViewRootImpl@df3132e[skymap]: mThreadedRenderer.initialize() mSurface={isValid=true 0x7472fd1030} hwInitialized=true
+09-13 21:47:43.997  1721  1798 D OpenGLRenderer: eglCreateWindowSurface
+09-13 21:47:43.997   875   875 D SurfaceFlinger: GPIS:: requestGPIS
+09-13 21:47:43.998  1203  3149 D InputDispatcher: Focus left window (0): 38fb6f6 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity
+09-13 21:47:43.998   764   764 D Zygote  : Forked child process 20639
+09-13 21:47:43.998  1203  1294 I ActivityManager: Start proc 20639:org.cosmosmataro.skymap/u0a492 for next-top-activity {org.cosmosmataro.skymap/org.cosmosmataro.skymap.activities.SplashScreenActivity}
+09-13 21:47:43.998  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: MSG_WINDOW_FOCUS_CHANGED 0 0
+09-13 21:47:43.999  1721  1792 I ViewRootImpl@df3132e[skymap]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+09-13 21:47:43.999  1721  1792 I ViewRootImpl@df3132e[skymap]: Setup new sync id=0
+09-13 21:47:43.999  1721  1792 I ViewRootImpl@df3132e[skymap]: Setting syncFrameCallback
+09-13 21:47:43.999  1721  1792 I ViewRootImpl@df3132e[skymap]: registerCallbacksForSync syncBuffer=false
+09-13 21:47:43.999   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:43.999   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0x40000000000b00 0x40000000000b00) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.000   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.001   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:44.001   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0x40000000000b00 0x40000000000b00) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.001  1721  1831 I ViewRootImpl@df3132e[skymap]: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-13 21:47:44.001  1721  1831 I ViewRootImpl@df3132e[skymap]: Setting up sync and frameCommitCallback
+09-13 21:47:44.002   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.002   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:44.002   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0x40000000000b00 0x40000000000b00) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.003   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.003   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:44.003   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0x40000000000b00 0x40000000000b00) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.004   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.005  1721  1798 I BLASTBufferQueue: [ViewRootImpl@df3132e[skymap]#64](f:0,a:0) onFrameAvailable the first frame is available
+09-13 21:47:44.005  1721  1798 I ViewRootImpl@df3132e[skymap]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-13 21:47:44.005  1721  1798 D OpenGLRenderer: CFMS:: SetUp Pid : 1721    Tid : 1798
+09-13 21:47:44.006  1721  1798 W Parcel  : Expecting binder but got null!
+09-13 21:47:44.006  1721  1792 I ViewRootImpl@df3132e[skymap]: onSyncComplete
+09-13 21:47:44.006  1721  1792 I ViewRootImpl@df3132e[skymap]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+09-13 21:47:44.007  1721  1792 I ViewRootImpl@df3132e[skymap]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0x73a2fad510
+09-13 21:47:44.007  1203  3149 D WindowManager: finishDrawingWindow: Window{968d3da u0 Splash Screen org.cosmosmataro.skymap} mDrawState=DRAW_PENDING seqId=0
+09-13 21:47:44.007  1203  3149 V WindowManager: Finishing drawing window Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}: mDrawState=DRAW_PENDING
+09-13 21:47:44.007  1203  3149 V WindowManager: Draw state now committed in Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}
+09-13 21:47:44.008  1203  1287 W WindowManager: Execute app transition: mNextAppTransitionRequests=[TRANSIT_OPEN, TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.ActivityRecord.onStartingWindowDrawn:7496 com.android.server.wm.WindowState.performShowLocked:5504 com.android.server.wm.WindowStateAnimator.commitFinishDrawingLocked:351 com.android.server.wm.DisplayContent.lambda$new$8:1189 com.android.server.wm.DisplayContent.$r8$lambda$OtLCIQFjCt9o-SYztyeDUcWUwGs:0 
+09-13 21:47:44.008  1203  1287 D WindowManager: performShow logReadyForDisplay win=Window{968d3da u0 Splash Screen org.cosmosmataro.skymap} mToken.waitingToShow:true isTransitionSet:true
+09-13 21:47:44.010  1203  1287 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_WALLPAPER_CLOSE enter=false frame=Rect(0, 0 - 1080, 2192) insets=Rect(0, 0 - 0, 0) surfaceInsets=Rect(0, 0 - 0, 0)
+09-13 21:47:44.012  1203  1287 I WindowManager: Reparenting to leash, surface=Surface(name=Task=3117)/@0xe29bb4c, leashParent=Surface(name=DefaultTaskDisplayArea)/@0xf22e078
+09-13 21:47:44.013   875  2457 I SurfaceFlinger: id=1561 createSurf flag=24000, Surface(name=Task=3117)/@0xe29bb4c - animation-leash of app_transition#1561
+09-13 21:47:44.013 20639 20639 I osmataro.skymap: Late-enabling -Xcheck:jni
+09-13 21:47:44.013   875   875 I SurfaceFlinger: [38fb6f6 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity#1354] FrameRatePriority: -1
+09-13 21:47:44.014  1203  1287 D WindowManager: makeSurface duration=2 leash=Surface(name=Surface(name=Task=3117)/@0xe29bb4c - animation-leash of app_transition)/@0xfdb8392
+09-13 21:47:44.015  1203  1287 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_WALLPAPER_CLOSE enter=true frame=Rect(0, 0 - 1080, 2400) insets=Rect(0, 73 - 0, 135) surfaceInsets=Rect(0, 0 - 0, 0)
+09-13 21:47:44.016  1203  1287 I WindowManager: Reparenting to leash, surface=Surface(name=Task=3129)/@0xbaa46de, leashParent=Surface(name=DefaultTaskDisplayArea)/@0xf22e078
+09-13 21:47:44.017   875  2457 I SurfaceFlinger: id=1562 createSurf flag=24004, Surface(name=Task=3129)/@0xbaa46de - animation-leash of app_transition#1562
+09-13 21:47:44.018  1203  1287 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=Task=3129)/@0xbaa46de - animation-leash of app_transition)/@0xcd94ad5
+09-13 21:47:44.018  1203  1287 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{968d3da u0 Splash Screen org.cosmosmataro.skymap}
+09-13 21:47:44.019  1203  1287 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-13 21:47:44.019   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:44.019   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0xb66 0xb06) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.019   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.020   875   875 I Layer   : id=1563 Destroyed Screenshot Parent#1563
+09-13 21:47:44.024  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 5 Task ID = 0
+09-13 21:47:44.024   875  1030 I SurfaceFlinger: id=1564 createSurf flag=80000, 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564
+09-13 21:47:44.030   875   875 I Layer   : Layer [Splash Screen org.cosmosmataro.skymap$_1721#1560] hidden!! flag(0)
+09-13 21:47:44.033 20639 20639 I osmataro.skymap: Using CollectorTypeCC GC.
+09-13 21:47:44.037  1025  1053 I adbd    : jdwp connection from 20639
+09-13 21:47:44.041 20639 20639 D ActivityThread: setConscryptValidator
+09-13 21:47:44.042 20639 20639 D ActivityThread: setConscryptValidator - put
+09-13 21:47:44.044  1203  3149 I ActivityManager: DSS OFF for org.cosmosmataro.skymap
+09-13 21:47:44.045  1203  3149 I DexController: getTaskHasActivityIsWaitingToRun: r=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}, app=ProcessRecord{b280901 20639:org.cosmosmataro.skymap/u0a492}
+09-13 21:47:44.046  1203  3149 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_NOSENSOR (5), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-13 21:47:44.046  1203  3149 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}
+09-13 21:47:44.046  1203  3149 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_NOSENSOR (5) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1891 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2139 com.android.server.wm.ActivityTaskSupervisor.realStartActivityLocked:913 com.android.server.wm.RootWindowContainer$AttachApplicationHelper.test:4288 
+09-13 21:47:44.046  1203  3149 V WindowManager: updateDisplayAndOrientation: Change 530.086x527.792dpi to 397.5645x395.844dpi, BaseDpi=530.086x527.792, DisplayRatio=0.75x0.75
+09-13 21:47:44.046  1203  3149 D TspStateManager: updateCustomValue customSetting=
+09-13 21:47:44.046  1203  3149 V WindowManager: updateDisplayAndOrientation: Change 530.086x527.792dpi to 397.5645x395.844dpi, BaseDpi=530.086x527.792, DisplayRatio=0.75x0.75
+09-13 21:47:44.047  1203  3149 D TspStateManager: updateCustomValue customSetting=
+09-13 21:47:44.047  1203  3149 D SGM:PkgDataHelper: notifyAppCreate(), pkgName: org.cosmosmataro.skymap, userId: 0, sendRet: true
+09-13 21:47:44.047  1203  1531 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: org.cosmosmataro.skymap, userId: 0
+09-13 21:47:44.047  1203  3149 D MARsPolicyManager: onPackageResumedFG pkgName = org.cosmosmataro.skymap, userId = 0
+09-13 21:47:44.048  1203  3149 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=true r=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129} caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateIfNeeded:2535 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2527 com.android.server.wm.TaskFragment.setResumedActivity:493 com.android.server.wm.TaskFragment.onActivityStateChanged:805 com.android.server.wm.ActivityRecord.setState:6406 com.android.server.wm.Task.minimalResumeActivityLocked:6155 
+09-13 21:47:44.048  1203  3149 D InputDispatcher: Focused application(0): ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}
+09-13 21:47:44.048  1203  3149 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=3117, focused=false
+09-13 21:47:44.048  1203  3149 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=3129, focused=true
+09-13 21:47:44.049  1203  3149 D SGM:FgCheckThread:   sendRunningComponentFocus(), pkgName: org.cosmosmataro.skymap, userId: 0
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_TASK_FOCUSED, pkgName: org.cosmosmataro.skymap, userId: 0
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread: handleTaskFocused().
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread:   handleTaskFocused(), pkgName: org.cosmosmataro.skymap, userID:0
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread: handleResume().
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: (unknown), userId: 0
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread:   handleResume(). pkgName: org.cosmosmataro.skymap, userId: 0, isTunableApp: null
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: org.cosmosmataro.skymap, type: 4, isTunableApp: false, userId: 0
+09-13 21:47:44.049  1203  1531 D SGM:FgCheckThread:   notifyFocusInOut(). unexpected mPrevNotiType: -1
+09-13 21:47:44.049  1203  1531 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+09-13 21:47:44.050  1203  1576 D AS.MultiSoundManager: mForegroundUid = 10492
+09-13 21:47:44.050  1203  1286 I ActivityManager: Changes in 10492 19 to 2, 0 to 15
+09-13 21:47:44.050  1203  1286 I AppOps  : updateUidProcState uid: 10492 procState: 2 capability:15
+09-13 21:47:44.050  1203  1286 I AppOps  : commitUidPendingStateLocked() :: UID - 10492, 700 > 200, 0 > 15
+09-13 21:47:44.050  1203  1286 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-13 21:47:44.052  1203  1286 I SemPersonaManager: SecureFolder personaId = 150
+09-13 21:47:44.052 20639 20639 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10492; state: ENABLED
+09-13 21:47:44.053   879   905 I heimdall: insert_task_to_group:67, insert tgid 20639 to group org.cosmosmataro.skymap, ret = 0
+09-13 21:47:44.054   875   875 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      CLIENT | 0x7b1641be30 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#84
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      CLIENT | 0x7b16469170 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.samsung.android.app.galaxyfinder[...]derActivity$_3339#1481 (blurRegions)
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      DEVICE | 0x7b1642acb0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   76  168 1004 2232 | Splash Screen org.cosmosmataro.skymap$_1721#1560
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      DEVICE | 0x7b1642f5d0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   73.0 |    0    0 1080   73 | StatusBar$_1721#81
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      DEVICE | 0x7b16469290 | 0100 | RGBA_8888    |    0.0    0.0   67.0  411.0 |    0  619   67 1030 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_4350#1480
+09-13 21:47:44.054   875   875 D SurfaceFlinger:      DEVICE | 0x7b16466b30 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1721#76
+09-13 21:47:44.054   875   875 D SurfaceFlinger: 
+09-13 21:47:44.061 20639 20639 W ziparchive: Unable to open '/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/base.dm': No such file or directory
+09-13 21:47:44.061 20639 20639 W ziparchive: Unable to open '/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/base.dm': No such file or directory
+09-13 21:47:44.064  1203  1286 D EnterpriseDeviceManagerService: isMdmAdminPresentInternal() : MDM Admin Found - com.samsung.knox.securefolder
+09-13 21:47:44.065  1203  1286 D SGM:GameManager: identifyGamePackage. org.cosmosmataro.skymap, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.SortingMachine.isGame(SortingMachine.java:162)
+09-13 21:47:44.065  1203  1286 D SGM:PkgDataHelper: getGamePkgData(). org.cosmosmataro.skymap
+09-13 21:47:44.065  1203  1546 V NetworkPolicy: getFirewallRuleWifi UID:10492 policy:0
+09-13 21:47:44.066  1203  1286 D SGM:GameManager: identifyGamePackage. org.cosmosmataro.skymap, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.SemGameManager.isGamePackage(SemGameManager.java:104)
+09-13 21:47:44.066  1203  1286 D SGM:PkgDataHelper: getGamePkgData(). org.cosmosmataro.skymap
+09-13 21:47:44.066  1203  1286 D SGM:SemGameManager: isGamePackage(), pkgName=org.cosmosmataro.skymap, ret=false
+09-13 21:47:44.067  1203  1203 I CocktailBarManagerServiceContainer: handleMessage: entry what = 5
+09-13 21:47:44.067  1203  2978 I MediaSessionMonitor: Media session stopped : not playing state
+09-13 21:47:44.067  1203  1286 D SGM:FgCheckThread: noteResumeComponent(), received pkgName: org.cosmosmataro.skymap, userId: 0
+09-13 21:47:44.067  1203  1286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : org.cosmosmataro.skymap
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: org.cosmosmataro.skymap, userid: 0
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread: handleResume().
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: (unknown), userId: 0
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread:   handleResume(). pkgName: org.cosmosmataro.skymap, userId: 0, isTunableApp: null
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: org.cosmosmataro.skymap, type: 4, isTunableApp: false, userId: 0
+09-13 21:47:44.068  1203  1531 D SGM:FgCheckThread:   notifyFocusInOut(). unexpected mPrevNotiType: -1
+09-13 21:47:44.068  1203  1531 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+09-13 21:47:44.068  4350  4350 I ActivityUtils: HomePackage : com.sec.android.app.launcher, resumePackageName : org.cosmosmataro.skymap
+09-13 21:47:44.072  1203  1702 I Pageboost: 64 bit checked : true for 20639
+09-13 21:47:44.072  1203  1702 I Pageboost: IoRecord pid : 20639, started correctly
+09-13 21:47:44.073  2801  2801 E pageboostd: Received HALT command code 2
+09-13 21:47:44.081  3339  3339 I Worker  : cancel : [OEMPreGrantWorker]
+09-13 21:47:44.081  3339  3339 I Worker  : cancel : [SuggestedAppsWorker[4,2]]
+09-13 21:47:44.081  3339  3339 I Worker  : cancel : [SuggestedSettingsWorker]
+09-13 21:47:44.081  3339  3339 I Worker  : cancel : [SuggestedDirectoryWorker]
+09-13 21:47:44.081  3339  3339 I Worker  : cancel : [HistoryKeywordWorker]
+09-13 21:47:44.082  3339 20658 I Worker  : finish: [HistoryKeywordWorker] = [T:0ms][R:1] 
+09-13 21:47:44.083  3339  3339 I SemDvfsHyPerManager: acquire hyper - FINDER_BOOSTER/3339@5, type = -999
+09-13 21:47:44.083  3339  3339 I SemDvfsHyPerManager: acquire hyper - FINDER_BOOSTER/3339@5, type = -999
+09-13 21:47:44.083  3339  3339 I SemDvfsHyPerManager: acquire hyper - FINDER_BOOSTER/3339@5, type = -999
+09-13 21:47:44.084  3339  3339 I SemDvfsHyPerManager: acquire hyper - FINDER_BOOSTER/3339@5, type = -999
+09-13 21:47:44.084  2236 10064 I RecentModel: onTaskStackChangedBackground
+09-13 21:47:44.085   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5592845  [3339 / 5]    HINT : FINDER_BOOSTER    list : [TIMEOUT / 150] 
+09-13 21:47:44.085   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 5592845    Value : 1018417
+09-13 21:47:44.086   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5592845  [3339 / 5]    HINT : FINDER_BOOSTER    list : [TIMEOUT / 150] 
+09-13 21:47:44.086   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 5592845    Value : 1018417
+09-13 21:47:44.086   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5592845  [3339 / 5]    HINT : FINDER_BOOSTER    list : [TIMEOUT / 150] 
+09-13 21:47:44.086   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 5592845    Value : 1018417
+09-13 21:47:44.086   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5592845  [3339 / 5]    HINT : FINDER_BOOSTER    list : [TIMEOUT / 150] 
+09-13 21:47:44.086   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 5592845    Value : 1018417
+09-13 21:47:44.097  3339  3339 W Settings: Setting accessibility_reduce_transparency has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-13 21:47:44.167 20639 20639 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/org.cosmosmataro.skymap
+09-13 21:47:44.176 20639 20639 V GraphicsEnvironment: ANGLE Developer option for 'org.cosmosmataro.skymap' set to: 'default'
+09-13 21:47:44.176 20639 20639 V GraphicsEnvironment: ANGLE GameManagerService for org.cosmosmataro.skymap: false
+09-13 21:47:44.177 20639 20639 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+09-13 21:47:44.178 20639 20639 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-13 21:47:44.183  1203  1996 D MdnieScenarioControlService:  packageName : org.cosmosmataro.skymap    className : org.cosmosmataro.skymap.activities.SplashScreenActivity
+09-13 21:47:44.183  1203  1996 V MdnieScenarioControlService: setUIMode from UI function(3)
+09-13 21:47:44.184  1203  1203 I GestureDetector: handleMessage TAP
+09-13 21:47:44.185  1203  1284 I GestureDetector: handleMessage TAP
+09-13 21:47:44.188 20639 20639 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-13 21:47:44.193 20639 20639 W FirebaseApp: Default FirebaseApp failed to initialize because no default options were found. This usually means that com.google.gms:google-services was not applied to your gradle project.
+09-13 21:47:44.193 20639 20639 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+09-13 21:47:44.193 20639 20639 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: FATAL EXCEPTION: main
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: Process: org.cosmosmataro.skymap, PID: 20639
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider org.cosmosmataro.skymap.search.SearchTermsProvider: java.lang.ClassNotFoundException: Didn't find class "org.cosmosmataro.skymap.search.SearchTermsProvider" on path: DexPathList[[zip file "/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/base.apk"],nativeLibraryDirectories=[/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/lib/arm64, /system/lib64, /system/system_ext/lib64]]
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8333)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7833)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7582)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:226)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:313)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8762)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "org.cosmosmataro.skymap.search.SearchTermsProvider" on path: DexPathList[[zip file "/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/base.apk"],nativeLibraryDirectories=[/data/app/~~5aN-d3ZGmUNV41sjgwrrlA==/org.cosmosmataro.skymap-dQIvivhVuO4MstgAI2xynw==/lib/arm64, /system/lib64, /system/system_ext/lib64]]
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:147)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at androidx.core.app.CoreComponentFactory.instantiateProvider(CoreComponentFactory.java:66)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8317)
+09-13 21:47:44.194 20639 20639 E AndroidRuntime: 	... 11 more
+09-13 21:47:44.196  1203 20664 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+09-13 21:47:44.196  1203  3149 D Debug   : low && ship && 3rdparty app crash, do not dump
+09-13 21:47:44.197  1203  3149 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1252 com.android.server.am.AppErrors.crashApplicationInner:722 com.android.server.am.AppErrors.crashApplication:598 com.android.server.am.ActivityManagerService.handleApplicationCrashInner:10509 com.android.server.am.ActivityManagerService.handleApplicationCrash:10378 
+09-13 21:47:44.197  1203  3149 W ActivityManager: crash : org.cosmosmataro.skymap,10492
+09-13 21:47:44.198  1203  3149 W ActivityTaskManager:   Force finishing activity org.cosmosmataro.skymap/.activities.SplashScreenActivity
+09-13 21:47:44.198  1203  3149 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.requestTransitionAndLegacyPrepare:6509 com.android.server.wm.Task.finishTopCrashedActivityLocked:6797 com.android.server.wm.RootWindowContainer.lambda$finishTopCrashedActivities$19:2688 com.android.server.wm.RootWindowContainer.$r8$lambda$4nB35TzseTo6qyVD9NxDieoJN1Y:0 
+09-13 21:47:44.199  1203  3149 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=false r=ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129 f}} caller=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2510 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:602 com.android.server.wm.TaskDisplayArea.positionChildAt:537 com.android.server.wm.Task.moveToFrontInner:6053 com.android.server.wm.Task.moveToFront:6019 com.android.server.wm.Task.moveToFront:5953 
+09-13 21:47:44.200  1203  3149 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.ActivityRecord.finishIfPossible:4151 com.android.server.wm.ActivityRecord.finishIfPossible:3966 com.android.server.wm.Task.finishTopCrashedActivityLocked:6798 
+09-13 21:47:44.201  1203  3149 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-13 21:47:44.201  1203  3149 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-13 21:47:44.201   781   988 D gralloc : [mali_gralloc_allocate] begin
+09-13 21:47:44.201   781   988 D gralloc : buffer_descriptor: wh(1080 2400) usage_pc(0xb66 0xb06) hal_format(0x1) layer_count(1) sizes(0 0 0) strde(0) byte_stride(0) alloc_wh(0 0) internal_format(0x0) alloc_format(0x0) fd_count(1) plane_count(0)
+09-13 21:47:44.202   781   988 D gralloc : [mali_gralloc_allocate] allocation successful
+09-13 21:47:44.202   875   875 I Layer   : id=1565 Destroyed Screenshot Parent#1565
+09-13 21:47:44.205  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 5 Task ID = 0
+09-13 21:47:44.207 20639 20639 I Process : Sending signal. PID: 20639 SIG: 9
+09-13 21:47:44.207  2236  2236 I TopTaskTracker: onTaskMovedToFront : taskId = 3117
+09-13 21:47:44.208  1203  1293 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+09-13 21:47:44.208  1203  1293 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+09-13 21:47:44.212  4068  4068 I DMASA[D]: [a]blockList : com.samsung.context.sdk.sampleapp2
+09-13 21:47:44.212  4068  4068 W DMASA[D]: [a]This app does not allow 3rd-party FC detection: org.cosmosmataro.skymap
+09-13 21:47:44.220   875   875 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      CLIENT | 0x7b1641be30 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#84
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      CLIENT | 0x7b1642acb0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   11   25 1069 2375 | Splash Screen org.cosmosmataro.skymap$_1721#1560
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      CLIENT | 0x7b16461010 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.samsung.android.app.galaxyfinder[...]derActivity$_3339#1481 (blurRegions)
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      DEVICE | 0x7b1642f5d0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   73.0 |    0    0 1080   73 | StatusBar$_1721#81
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      DEVICE | 0x7b16469290 | 0100 | RGBA_8888    |    0.0    0.0   67.0  411.0 |    0  619   67 1030 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_4350#1480
+09-13 21:47:44.220   875   875 D SurfaceFlinger:      DEVICE | 0x7b16466b30 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1721#76
+09-13 21:47:44.220   875   875 D SurfaceFlinger: 
+09-13 21:47:44.221  4145  4145 I SDHMS:BarTender:Gatherer:AppError: update AppError : uid=10492, pkg=org.cosmosmataro.skymap, errorType=crash
+09-13 21:47:44.228  1203  1754 I ActivityManager: Process org.cosmosmataro.skymap (pid 20639) has died: fg  TOP (1418,3518)
+09-13 21:47:44.228  1203  1295 I libprocessgroup: Successfully killed process cgroup uid 10492 pid 20639 in 0ms
+09-13 21:47:44.228   764   764 I Zygote  : Process 20639 exited due to signal 9 (Killed)
+09-13 21:47:44.229  4145  4145 I SDHMS:BarTender:Analyzer:AppError: analyze app error : uid=10492, pkg=org.cosmosmataro.skymap, appErrorCount=10
+09-13 21:47:44.229  4145  4145 I SDHMS:BarTender:Analyzer:AppError: detected app error : uid=10492, pkg=org.cosmosmataro.skymap
+09-13 21:47:44.229  4145  4145 I SDHMS:BatteryStatsDBProvider: BarTender DB Provider Query Start
+09-13 21:47:44.231  1203  1754 V WindowManager: Schedule remove starting ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129 f}} startingWindow=null startingView=null Callers=com.android.server.wm.ActivityRecord.removeStartingWindow:3233 com.android.server.wm.ActivityRecord.onRemovedFromDisplay:4966 com.android.server.wm.DisplayContent.removeAppToken:1683 com.android.server.wm.ActivityRecord.removeFromHistory:4605 com.android.server.wm.ActivityRecord.handleAppDied:4861 
+09-13 21:47:44.232  1203  1754 D MARsPolicyManager: onPackageResumedFG pkgName = com.samsung.android.app.galaxyfinder, userId = 0
+09-13 21:47:44.232  1203  1754 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE, TRANSIT_OPEN], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.TaskFragment.resumeTopActivity:1583 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.resumeTopActivityInnerLocked:6451 
+09-13 21:47:44.232  1203  1754 D InputDispatcher: Focused application(0): ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117}
+09-13 21:47:44.233  1203  2405 I SemDvfsHyPerManager: acquire hyper - AMS_APP_SWITCH/1203@22, type = -999
+09-13 21:47:44.234   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 750947  [1203 / 22]    HINT : AMS_APP_SWITCH    list : 
+09-13 21:47:44.234   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 750947    Value : 2623359
+09-13 21:47:44.234  1203  1754 V WindowManager: Changing focus from null to Window{38fb6f6 u0 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6810 com.android.server.wm.ActivityTaskManagerService.setResumedActivityUncheckLocked:5766 com.android.server.wm.TaskFragment.onActivityStateChanged:807 
+09-13 21:47:44.234  1203  1754 D StatusBarManagerService: notifyRequestedSystemKey recent=false home=false
+09-13 21:47:44.234  1203  1754 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=3129, focused=false
+09-13 21:47:44.234  1203  1754 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=3117, focused=true
+09-13 21:47:44.235  1203  1754 D SGM:FgCheckThread:   sendRunningComponentFocus(), pkgName: com.samsung.android.app.galaxyfinder, userId: 0
+09-13 21:47:44.235  1203  1576 D AS.MultiSoundManager: mForegroundUid = 10079
+09-13 21:47:44.235  1203  1531 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_TASK_FOCUSED, pkgName: com.samsung.android.app.galaxyfinder, userId: 0
+09-13 21:47:44.235  1203  1531 D SGM:FgCheckThread: handleTaskFocused().
+09-13 21:47:44.235  1203  1531 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: (unknown), userId: 0
+09-13 21:47:44.235  1203  1531 D SGM:FgCheckThread:   handleTaskFocused(), pkgName: com.samsung.android.app.galaxyfinder, userID:0 mResumedPkgMap does not containsKey.
+09-13 21:47:44.235  1203  1754 D WindowManagerServiceExt: notifyOccludeChangeNotice: cn=ComponentInfo{com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity} occludesParent=true inMultiWindow=false styleFloating=false caller=com.android.server.wm.WindowManagerServiceExt.updateOccludeTargetIfNeeded:1402 com.android.server.wm.DisplayContent.ensureActivitiesVisible:7532 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2248 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2126 com.android.server.wm.TaskFragment.resumeTopActivity:1652 
+09-13 21:47:44.235  1203  1754 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-13 21:47:44.235  1203  1754 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117}
+09-13 21:47:44.235  1203  1754 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_UNSPECIFIED (-1) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1891 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2139 com.android.server.wm.TaskFragment.resumeTopActivity:1652 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+09-13 21:47:44.235  1203  1754 V WindowManager: updateDisplayAndOrientation: Change 530.086x527.792dpi to 397.5645x395.844dpi, BaseDpi=530.086x527.792, DisplayRatio=0.75x0.75
+09-13 21:47:44.236   797 20661 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMinFreq] RemoveResource Request ID : 5592845
+09-13 21:47:44.236  1203  1754 D TspStateManager: updateCustomValue customSetting=
+09-13 21:47:44.236   797 20661 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 5592845
+09-13 21:47:44.236  1203  1754 V WindowManager: updateDisplayAndOrientation: Change 530.086x527.792dpi to 397.5645x395.844dpi, BaseDpi=530.086x527.792, DisplayRatio=0.75x0.75
+09-13 21:47:44.236  1203  1754 D TspStateManager: updateCustomValue customSetting=
+09-13 21:47:44.237  1203  1754 W WindowManager: Execute app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE, TRANSIT_OPEN], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.RootWindowContainer.executeAppTransitionForAllDisplay:2580 com.android.server.wm.ActivityTaskSupervisor.reportResumedActivityLocked:2287 com.android.server.wm.ActivityRecord.completeResumeLocked:6987 com.android.server.wm.TaskFragment.resumeTopActivity:1743 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+09-13 21:47:44.237  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: stopped(false) old = false
+09-13 21:47:44.237  3339  3339 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+09-13 21:47:44.238  3339  3339 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+09-13 21:47:44.238  1203  1754 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_CRASHING_ACTIVITY_CLOSE enter=false frame=Rect(0, 0 - 1080, 2192) insets=Rect(0, 0 - 0, 0) surfaceInsets=Rect(0, 0 - 0, 0)
+09-13 21:47:44.238  1203  1754 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_CRASHING_ACTIVITY_CLOSE enter=true frame=Rect(0, 0 - 1080, 2400) insets=Rect(0, 73 - 0, 135) surfaceInsets=Rect(0, 0 - 0, 0)
+09-13 21:47:44.238  1203  1754 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117}
+09-13 21:47:44.239  1203  2405 D ActivityManagerPerformance: AMP_acquire() APP_SWITCH
+09-13 21:47:44.240  1203  1287 V WindowManager: Removing startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@1530efc
+09-13 21:47:44.240  3339  3339 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@fac9e39[GalaxyFinderActivity]
+09-13 21:47:44.241  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:44.242  1203  1286 I SemPersonaManager: SecureFolder personaId = 150
+09-13 21:47:44.242  1203  1754 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-13 21:47:44.244  4145  4145 I SemDvfsHyPerManager: acquire hyper - APP_START_SHORT/4145@12, type = -999
+09-13 21:47:44.245   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 8642415  [4145 / 12]    HINT : APP_START    list : [TIMEOUT / 1500] 
+09-13 21:47:44.245   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMaxFreq] UpdateResource Request ID : 8642415    Value : 2730000
+09-13 21:47:44.246   875   875 I SurfaceFlinger: [38fb6f6 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity#1354] FrameRatePriority: 1
+09-13 21:47:44.247  1203  1287 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117}
+09-13 21:47:44.247  1203  1286 D EnterpriseDeviceManagerService: isMdmAdminPresentInternal() : MDM Admin Found - com.samsung.knox.securefolder
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: performTraversals params={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   fl=81910100
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   pfl=12020040
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   vsysui=100
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   bhv=DEFAULT
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   fitSides= naviIconColor=0}
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   fl=81910100
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   pfl=12020040
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   vsysui=100
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   bhv=DEFAULT
+09-13 21:47:44.248  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]:   fitSides= naviIconColor=0}
+09-13 21:47:44.249 20478 20478 I DC.AnomalyReceiver: Received action : com.sec.android.sdhms.action.NOTIFY_ANOMALY
+09-13 21:47:44.250  1203  1754 V WindowManager: Relayout Window{38fb6f6 u0 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity}: viewVisibility=0 req=1080x2400 d0
+09-13 21:47:44.251 20478 20478 I DC.AnomalyReceiver: anomalyUserId 0, currentMyProcessUserId 0
+09-13 21:47:44.252 20478 20478 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1926 android.content.ContextWrapper.startService:834 com.samsung.android.sm.anomaly.AnomalyReceiver.onReceive:355 android.app.ActivityThread.handleReceiver:4894 android.app.ActivityThread.-$$Nest$mhandleReceiver:0 
+09-13 21:47:44.251  1203  1380 D AnalyticsContainerHandler: handleMessage : { when=0 what=1 target=com.android.server.knox.KnoxAnalyticsContainer$AnalyticsHandler }
+09-13 21:47:44.255  1203  1754 V WindowManager: Relayout hash=38fb6f6, pid=3339, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-13 21:47:44.255  1203  1754 V WindowManager:   fl=81910100
+09-13 21:47:44.255  1203  1754 V WindowManager:   pfl=12020040
+09-13 21:47:44.255  1203  1754 V WindowManager:   vsysui=100
+09-13 21:47:44.255  1203  1754 V WindowManager:   bhv=DEFAULT
+09-13 21:47:44.255  1203  1754 V WindowManager:   fitSides= naviIconColor=0}
+09-13 21:47:44.255  1203  1286 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.SortingMachine.isGame(SortingMachine.java:162)
+09-13 21:47:44.255  1203  1286 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:44.256  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=0x73e307d550 isSameSurfaceControl=true
+09-13 21:47:44.256  1203  1286 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.SemGameManager.isGamePackage(SemGameManager.java:104)
+09-13 21:47:44.256  1203  1286 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:44.256  3339  3339 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@600473e[GalaxyFinderActivity] mNativeObject= 0x73e307d550 sc.mNativeObject= 0x7373007bb0 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+09-13 21:47:44.256  1203  1286 D SGM:SemGameManager: isGamePackage(), pkgName=com.samsung.android.app.galaxyfinder, ret=false
+09-13 21:47:44.256  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=8 res=0x0 s={true 0x7472f02820} ch=false seqId=0
+09-13 21:47:44.256  1203  3149 I SemDvfsHyPerManager: acquire hyper - AMS_RESUME_TAIL/1203@20, type = -999
+09-13 21:47:44.256  1203  2978 I MediaSessionMonitor: Media session stopped : not playing state
+09-13 21:47:44.256  1203  1203 I CocktailBarManagerServiceContainer: handleMessage: entry what = 5
+09-13 21:47:44.256  1203  3149 I SemDvfsHyPerManager: acquire hyper - AMS_ACT_LAZY/1203@21, type = -999
+09-13 21:47:44.256  1203  3149 D ActivityManagerPerformance: AMP_acquire() TAIL
+09-13 21:47:44.256  1203  3149 D ActivityManagerPerformance: AMP_release() APP_SWITCH
+09-13 21:47:44.256  1203  3149 W ActivityTaskManager: Request to remove task ignored for non-existent task 3127
+09-13 21:47:44.257   797   883 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 748496  [1203 / 20]    HINT : AMS_RESUME_TAIL    list : 
+09-13 21:47:44.257   797   883 I HYPER-HAL: [ResourceManager.cpp]updateResource(): [CPUMinFreq] UpdateResource Request ID : 748496    Value : 1844882
+09-13 21:47:44.257  1203  1286 D SGM:FgCheckThread: noteResumeComponent(), received pkgName: com.samsung.android.app.galaxyfinder, userId: 0
+09-13 21:47:44.257  1203  1286 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.samsung.android.app.galaxyfinder
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: com.samsung.android.app.galaxyfinder, userid: 0
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread: handleResume().
+09-13 21:47:44.257   797   883 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMinFreq] RemoveResource Request ID : 750947
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: (unknown), userId: 0
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread:   handleResume(). pkgName: com.samsung.android.app.galaxyfinder, userId: 0, isTunableApp: null
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: com.samsung.android.app.galaxyfinder, type: 4, isTunableApp: false, userId: 0
+09-13 21:47:44.257  1203  1531 D SGM:FgCheckThread:   notifyFocusInOut(). unexpected mPrevNotiType: -1
+09-13 21:47:44.257  1203  1531 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+09-13 21:47:44.258   797   883 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 750947
+09-13 21:47:44.258  4350  4350 I ActivityUtils: HomePackage : com.sec.android.app.launcher, resumePackageName : com.samsung.android.app.galaxyfinder
+09-13 21:47:44.259  1203  1286 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-13 21:47:44.262   875   875 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+09-13 21:47:44.264   875   992 D SurfaceFlinger: [input] setFocusedWindow: 38fb6f6 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity
+09-13 21:47:44.264 20478 20676 I DC.AnomalyNotiService: pkg:org.cosmosmataro.skymap,uid:10492,auto:0,type:1008,reason:4
+09-13 21:47:44.264  1203  3149 D InputDispatcher: Focus entered window (0): 38fb6f6 com.samsung.android.app.galaxyfinder/com.samsung.android.app.galaxyfinder.GalaxyFinderActivity
+09-13 21:47:44.265  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: MSG_WINDOW_FOCUS_CHANGED 1 0
+09-13 21:47:44.266  3339  3339 I ViewRootImpl@600473e[GalaxyFinderActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0x7472f02820}
+09-13 21:47:44.266  3339  3339 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-13 21:47:44.266  1203  1272 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+09-13 21:47:44.266  1203  1272 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocusInternalLocked:4783 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocusInternal:4440 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocus:4379 com.android.internal.view.IInputMethodManager$Stub.onTransact:518 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> 
+09-13 21:47:44.266  1203  1272 D InputMethodManagerService: DESKTOP MODE! : 2
+09-13 21:47:44.266  1203  1272 D InputMethodManagerService: NOT IN KNOX DESKTOP MODE!
+09-13 21:47:44.266  1203  1272 V InputMethodManagerService: getDisplayIdOfInputMethodWindowToBeAdded: displayId=0
+09-13 21:47:44.266  1203  1272 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+09-13 21:47:44.266  1203  1272 D InputMethodManagerService: shouldShowImeSwitcherLocked : checking vis : 3
+09-13 21:47:44.267  1203  1272 D InputMethodManagerService: checkDisplayOfStartInputAndUpdateKeyboard: displayId=0, mFocusedDisplayId=0
+09-13 21:47:44.267  1203  1272 D InputTransport: Input channel constructed: 'ClientS', fd=1163
+09-13 21:47:44.267  1203  1272 D InputTransport: Input channel destroyed: 'ClientS', fd=1163
+09-13 21:47:44.271  5300  5300 I HBD     : HoneyBoardService onFinishInput 
+09-13 21:47:44.271  5300  5300 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#49144de}
+09-13 21:47:44.271  5300  5300 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  0 ms 
+09-13 21:47:44.271  5300  5300 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 3339 , caller uid : 10079 
+09-13 21:47:44.271  5300  5300 I HBD     : j updateConfigs 
+09-13 21:47:44.272  5300  5300 I HBD     : j isEnabledNightMode : true 
+09-13 21:47:44.272  5300  5300 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#49144de} 
+09-13 21:47:44.272  5300  5300 I HBD     : h [EditorInputType]setPrivateImeOptionsToTable privateImeOptions ( null )
+09-13 21:47:44.272  5300  5300 I HBD     : b incognitoMode : false 
+09-13 21:47:44.272  5300  5300 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-13 21:47:44.272  5300  5300 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-13 21:47:44.272  5300  5300 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-13 21:47:44.272  5300  5300 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-13 21:47:44.273  1203  3149 W ProcessStats: Tracking association SourceState{c68e29a com.microsoft.appmanager/10148 BTopFgs #71298} whose proc state 2 is better than process ProcessState{4d43611 com.samsung.android.mdx/10093 pkg=com.samsung.android.mdx} proc state 3 (48 skipped)
+09-13 21:47:44.273 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.274 13561 23962 I WindowsLink: (BaseContentProvider) call: method = TaskInfoManager@getRecentTasks / subMethod = getRecentTasks
+09-13 21:47:44.274  5300  5300 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-13 21:47:44.274  5300  5300 I HBD     : b update cached prediction status : false 
+09-13 21:47:44.275  5300  5300 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-13 21:47:44.275  5300  5300 I HBD     : a currentState : 0 
+09-13 21:47:44.275  5300  5300 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 1179653 kit: [0/11] vt: 0 ir: 1 
+09-13 21:47:44.275  5300  5300 I HBD     : a [NRIC] resetNoResponseState 
+09-13 21:47:44.275  5300  5300 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-13 21:47:44.275  5300  5300 I HBD     : b update cached prediction status : false 
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.275 13561 23962 I WindowsLink: (TaskInfoManager) getRecentTasks() size : 8
+09-13 21:47:44.277  5300  5300 I HBD     : HoneyBoardService [PF_OP][onStartInput]  5 ms 
+09-13 21:47:44.284  1203  1996 V MdnieScenarioControlService: mAclOffEnabled : false mAclPreviewState : false mAclCompensationState : false
+09-13 21:47:44.292 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.292 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:44.292 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:44.292 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.292 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:44.292 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:44.292  1203  4049 D [RAMS]RemoteAppModeService: isAllowed = true
+09-13 21:47:44.296  1203  1272 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.IGameManagerService$Stub.onTransact(IGameManagerService.java:233)
+09-13 21:47:44.296  1203  1272 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:44.296 13561 23962 I WindowsLink: (TaskInfoManager) +++++++++++onRecentTaskStackUpdated
+09-13 21:47:44.297  1203  4248 I AppOps  : updateUidProcState uid: 10053 procState: 0 capability:15
+09-13 21:47:44.297  1721  1798 D OpenGLRenderer: setSurface called with nullptr
+09-13 21:47:44.297  1721  1798 D OpenGLRenderer: setSurface() destroyed EGLSurface
+09-13 21:47:44.297  1026  2348 I CameraService: onUidStateChanged: uid=10053, procState is changed. (1 -> 0)
+09-13 21:47:44.297  1721  1798 D OpenGLRenderer: destroyEglSurface
+09-13 21:47:44.298  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:44.300 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.300 13561 23962 I WindowsLink: (BaseContentProvider) call: method = TaskInfoManager@getRecentTasks / subMethod = getRecentTasks
+09-13 21:47:44.301  1721  1792 I ViewRootImpl@df3132e[skymap]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302 alpha=0.0
+09-13 21:47:44.301  1721  1792 I ViewRootImpl@df3132e[skymap]:   fl=81030118
+09-13 21:47:44.301  1721  1792 I ViewRootImpl@df3132e[skymap]:   pfl=16000010
+09-13 21:47:44.301  1721  1792 I ViewRootImpl@df3132e[skymap]:   bhv=DEFAULT
+09-13 21:47:44.301  1721  1792 I ViewRootImpl@df3132e[skymap]:   fitSides= naviIconColor=0}
+09-13 21:47:44.302  1721  1792 I ViewRootImpl@df3132e[skymap]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302 alpha=0.0
+09-13 21:47:44.302  1721  1792 I ViewRootImpl@df3132e[skymap]:   fl=81030118
+09-13 21:47:44.302  1721  1792 I ViewRootImpl@df3132e[skymap]:   pfl=16000010
+09-13 21:47:44.302  1721  1792 I ViewRootImpl@df3132e[skymap]:   bhv=DEFAULT
+09-13 21:47:44.302  1721  1792 I ViewRootImpl@df3132e[skymap]:   fitSides= naviIconColor=0}
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302  1203  3900 V WindowManager: Relayout Window{968d3da u0 Splash Screen org.cosmosmataro.skymap EXITING}: viewVisibility=8 req=1080x2400 d0
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:44.302 13561 23962 I WindowsLink: (TaskInfoManager) getRecentTasks() size : 8
+09-13 21:47:44.303  1203  3900 V WindowManager: Relayout hash=968d3da, pid=1721, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030302 alpha=0.0
+09-13 21:47:44.303  1203  3900 V WindowManager:   fl=81030118
+09-13 21:47:44.303  1203  3900 V WindowManager:   pfl=16000010
+09-13 21:47:44.303  1203  3900 V WindowManager:   bhv=DEFAULT
+09-13 21:47:44.303  1203  3900 V WindowManager:   fitSides= naviIconColor=0}
+09-13 21:47:44.304  1721  1792 I ViewRootImpl@df3132e[skymap]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=2 res=0x0 s={false 0x0} ch=true seqId=0
+09-13 21:47:44.304  1203  4248 D CoreBackPreview: Window{968d3da u0 Splash Screen org.cosmosmataro.skymap EXITING}: Setting back callback null
+09-13 21:47:44.305  1721  1792 I ViewRootImpl@df3132e[skymap]: dispatchDetachedFromWindow
+09-13 21:47:44.305  1203  4248 D WindowManager: Starting window removed Window{968d3da u0 Splash Screen org.cosmosmataro.skymap EXITING}
+09-13 21:47:44.305  1203  4248 D InputTransport: Input channel destroyed: '968d3da', fd=810
+09-13 21:47:44.305  1203  4248 W InputManager-JNI: Input channel object '968d3da Splash Screen org.cosmosmataro.skymap (client)' was disposed without first being removed with the input manager!
+09-13 21:47:44.305  1203  4248 D InputTransport: Input channel destroyed: '968d3da', fd=863
+09-13 21:47:44.305  1203  4248 V WindowManager: Remove Window{968d3da u0 Splash Screen org.cosmosmataro.skymap EXITING}: mSurfaceController=Surface(name=Splash Screen org.cosmosmataro.skymap$_1721)/@0x6a9ae5f mAnimatingExit=true mRemoveOnExit=true mHasSurface=true surfaceShowing=true animating=true app-animation=true mWillReplaceWindow=false mDisplayFrozen=false callers=com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 com.android.server.wm.Session.onTransact:188 android.os.Binder.execTransactInternal:1321 
+09-13 21:47:44.305  1203  4248 I WindowManager: Destroying surface Surface(name=Splash Screen org.cosmosmataro.skymap$_1721)/@0x6a9ae5f called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.removeImmediately:2969 com.android.server.wm.WindowState.removeIfPossible:3228 com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 
+09-13 21:47:44.305  1203  4248 V WindowManager: Nulling last startingData
+09-13 21:47:44.307  1721  1792 D InputTransport: Input channel destroyed: '968d3da', fd=215
+09-13 21:47:44.312 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.312 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:44.312 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:44.313 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:44.313   875   875 I Layer   : id=1560 removeFromCurrentState Splash Screen org.cosmosmataro.skymap$_1721#1560 (136)
+09-13 21:47:44.313 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:44.313 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:44.313   875   875 I Layer   : id=1559 removeFromCurrentState 968d3da Splash Screen org.cosmosmataro.skymap#1559 (136)
+09-13 21:47:44.313  1203  1272 D [RAMS]RemoteAppModeService: isAllowed = true
+09-13 21:47:44.313   875   875 I SurfaceFlinger: id=1559 Removed 968d3da Splash Screen org.cosmosmataro.skymap#1559 (136)
+09-13 21:47:44.313   875   875 I SurfaceFlinger: id=1560 Removed Splash Screen org.cosmosmataro.skymap$_1721#1560 (136)
+09-13 21:47:44.314   875   875 I Layer   : id=1559 Destroyed 968d3da Splash Screen org.cosmosmataro.skymap#1559
+09-13 21:47:44.315   875   875 I Layer   : id=1560 Destroyed Splash Screen org.cosmosmataro.skymap$_1721#1560
+09-13 21:47:44.317  1203  1272 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.IGameManagerService$Stub.onTransact(IGameManagerService.java:233)
+09-13 21:47:44.317  1203  1272 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:44.317 13561 23962 I WindowsLink: (TaskInfoManager) +++++++++++onRecentTaskStackUpdated
+09-13 21:47:44.325   875   875 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-13 21:47:44.325   875   875 D SurfaceFlinger:      CLIENT | 0x7b1641be30 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#84
+09-13 21:47:44.325   875   875 D SurfaceFlinger:      CLIENT | 0x7b16469170 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.samsung.android.app.galaxyfinder[...]derActivity$_3339#1481 (blurRegions)
+09-13 21:47:44.325   875   875 D SurfaceFlinger:      DEVICE | 0x7b1642f5d0 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   73.0 |    0    0 1080   73 | StatusBar$_1721#81
+09-13 21:47:44.325   875   875 D SurfaceFlinger:      DEVICE | 0x7b16469290 | 0100 | RGBA_8888    |    0.0    0.0   67.0  411.0 |    0  619   67 1030 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_4350#1480
+09-13 21:47:44.325   875   875 D SurfaceFlinger:      DEVICE | 0x7b16466b30 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1721#76
+09-13 21:47:44.325   875   875 D SurfaceFlinger: 
+09-13 21:47:44.341  1203  4248 I ActivityManager: com.samsung.android.lool is exempt from freezer
+09-13 21:47:44.341  1203  4248 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 1000; state: DISABLED
+09-13 21:47:44.341  1203  4248 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 1000; state: DISABLED
+09-13 21:47:44.341  1203  4248 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 1000; state: DISABLED
+09-13 21:47:44.342  1203  4248 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 1000; state: ENABLED
+09-13 21:47:44.349   764   764 D Zygote  : Forked child process 20681
+09-13 21:47:44.350  1203  1294 I ActivityManager: Start proc 20681:com.samsung.android.sm.provider/1000 for content provider {com.samsung.android.lool/com.samsung.android.sm.database.SmProvider}
+09-13 21:47:44.374 20681 20681 I oid.sm.provider: Using CollectorTypeCC GC.
+09-13 21:47:44.378 20681 20681 E oid.sm.provider: Not starting debugger since process cannot load the jdwp agent.
+09-13 21:47:44.379  1203  1287 I WindowManager: Reparenting to original parent: Surface(name=DefaultTaskDisplayArea)/@0xf22e078, destroy=true, surface=Surface(name=Task=3117)/@0xe29bb4c
+09-13 21:47:44.381  1203  1287 I WindowManager: Reparenting to original parent: Surface(name=DefaultTaskDisplayArea)/@0xf22e078, destroy=true, surface=Surface(name=Task=3129)/@0xbaa46de
+09-13 21:47:44.386 20681 20681 D ActivityThread: setConscryptValidator
+09-13 21:47:44.387 20681 20681 D ActivityThread: setConscryptValidator - put
+09-13 21:47:44.389  1203  4248 I ActivityManager: DSS OFF for com.samsung.android.lool
+09-13 21:47:44.392 20681 20681 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
+09-13 21:47:44.393   879   905 I heimdall: insert_task_to_group:67, insert tgid 20681 to group com.samsung.android.sm.provider, ret = 0
+09-13 21:47:44.396   875   875 I Layer   : id=1561 removeFromCurrentState Surface(name=Task=3117)/@0xe29bb4c - animation-leash of app_transition#1561 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1562 removeFromCurrentState Surface(name=Task=3129)/@0xbaa46de - animation-leash of app_transition#1562 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1557 removeFromCurrentState Task=3129#1557 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1558 removeFromCurrentState ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1564 removeFromCurrentState 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1557 addToCurrentState Task=3129#1557 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1558 addToCurrentState ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558 (134)
+09-13 21:47:44.396   875   875 I Layer   : id=1564 addToCurrentState 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564 (134)
+09-13 21:47:44.396   875  1029 I SurfaceFlinger: id=1564 Removed 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564 (134)
+09-13 21:47:44.396   875   875 I SurfaceFlinger: id=1562 Removed Surface(name=Task=3129)/@0xbaa46de - animation-leash of app_transition#1562 (134)
+09-13 21:47:44.396   875   875 I SurfaceFlinger: id=1561 Removed Surface(name=Task=3117)/@0xe29bb4c - animation-leash of app_transition#1561 (134)
+09-13 21:47:44.396   875  1029 I SurfaceFlinger: id=1566 createSurf flag=24004, Task=3129#1566
+09-13 21:47:44.396   875   875 I Layer   : id=1562 Destroyed Surface(name=Task=3129)/@0xbaa46de - animation-leash of app_transition#1562
+09-13 21:47:44.396   875   875 I Layer   : id=1561 Destroyed Surface(name=Task=3117)/@0xe29bb4c - animation-leash of app_transition#1561
+09-13 21:47:44.397  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 3 Task ID = 3129
+09-13 21:47:44.397  1203 18963 D RemoteAppTaskWatcher:  ****** RemoteAppTaskWatcher: Message Received 3 Task ID = 3129
+09-13 21:47:44.400  1203  1269 W System  : A resource failed to call release. 
+09-13 21:47:44.400  1203  1269 W System  : A resource failed to call close. 
+09-13 21:47:44.401  2236  2236 I RecentsView: onTaskRemoved() taskId : 3129
+09-13 21:47:44.401  2236  2236 I TopTaskTracker: onTaskRemoved : taskId = 3129
+09-13 21:47:44.401  2236  2236 I RecentsView: onTaskRemoved() taskId : 3129
+09-13 21:47:44.401  2236  2236 I TopTaskTracker: onTaskRemoved : taskId = 3129
+09-13 21:47:44.403  1203  1269 W System  : A resource failed to call close. 
+09-13 21:47:44.405  1203  1269 W System  : A resource failed to call HardwareBuffer.close. 
+09-13 21:47:44.412   875   875 I Layer   : id=1558 removeFromCurrentState ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558 (133)
+09-13 21:47:44.412   875   875 I Layer   : id=1564 removeFromCurrentState 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564 (133)
+09-13 21:47:44.412   875   875 I Layer   : id=1557 removeFromCurrentState Task=3129#1557 (133)
+09-13 21:47:44.412   875   875 I Layer   : id=1566 removeFromCurrentState Task=3129#1566 (133)
+09-13 21:47:44.412   875   875 I SurfaceFlinger: id=1558 Removed ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558 (133)
+09-13 21:47:44.412   875   875 I SurfaceFlinger: id=1566 Removed Task=3129#1566 (133)
+09-13 21:47:44.412   875   875 I Layer   : id=1566 Destroyed Task=3129#1566
+09-13 21:47:44.412   875   875 I Layer   : id=1558 Destroyed ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t3129}#1558
+09-13 21:47:44.412   875   875 I Layer   : id=1564 Destroyed 76f682 ActivityRecordInputSink org.cosmosmataro.skymap/.activities.SplashScreenActivity#1564
+09-13 21:47:44.416 20681 20681 W oid.sm.provider: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*1628045882]#PCL[/system/framework/android.test.mock.jar*2695051129]})
+09-13 21:47:44.476  1203  4248 I GenerationRegistry: mBackingStore.isClosed() : false
+09-13 21:47:44.499 20681 20681 I SmApplication: onCreate
+09-13 21:47:44.499 20681 20681 I SmApplication: current process is com.samsung.android.sm.provider
+09-13 21:47:44.500  1203  1203 W AccessibilityManagerService:  wait for adding window timeout: 129
+09-13 21:47:44.507 20478 20676 I NotifiedWithin1DayAnomalyFilter: This app org.cosmosmataro.skymap 10492 is already notified within 24 hours, so we do not notify this anomaly
+09-13 21:47:44.507 20478 20676 I NotifiedWithin1DayAnomalyFilter: notified within 1 day. skip it p:org.cosmosmataro.skymap
+09-13 21:47:44.507 20478 20676 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1252 android.content.ContextWrapper.sendBroadcast:509 com.samsung.android.sm.anomaly.service.AnomalyNotificationService.onHandleIntent:532 android.app.IntentService$ServiceHandler.handleMessage:78 android.os.Handler.dispatchMessage:106 
+09-13 21:47:44.516  1203  4248 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.lool cmp = androidx.work.impl.background.systemjob.SystemJobService newState = 1 callingPackage = 1000/com.samsung.android.lool
+09-13 21:47:44.517  1203  4248 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.lool userId : 0
+09-13 21:47:44.517  1203  4248 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.lool userId : 0
+09-13 21:47:44.532  1203  1524 I HqmInfo::HqmManagerService: MSG_TYPE:MSG_TYPE_PROCESS_LOG_BY_HQM
+09-13 21:47:44.539   785   785 I android.hardware.health@2.1-service-samsung: updateLrpSysfs: write: 303
+09-13 21:47:44.539  1203  1523 D BatteryService: Sending ACTION_BATTERY_CHANGED: level:99, status:2, health:2, ac:false, usb:true, wireless:false, pogo:false, misc:0x30000, charge_type:1, charger_type:0, voltage:4090, temperature:285, online:5, current_avg:612, ps:false, hvc:false, capacity:280000, current_event:0x8000, current_now:-66, mcc:0, mcv:0, cc:4046368, present:true, scale:100, technology:Li-ion
+09-13 21:47:44.540  1203  1501 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+09-13 21:47:44.540  1203  1203 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=99, status=2
+09-13 21:47:44.540  1203  1650 I DeviceBatteryInfoService: action: android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.540  1203  1650 I DeviceBatteryInfoService: phone battery level: 99
+09-13 21:47:44.540  1203  1650 I DeviceBatteryInfoService: phone battery status: 2
+09-13 21:47:44.540  1203  1203 D AdaptiveBrightnessLongtermModelBuilder: Received android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.540  1203  1203 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.540  1701  1701 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.540  1701  1701 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.540  1203  1293 D BaseRestrictionMgr: Package: com.whatsapp, userid: 0, hostingType: broadcast is Restricted by policy: 4 caller is: null
+09-13 21:47:44.540  1203  1293 W BroadcastQueue: intent:Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) } is skipped in RestrictedPackage to ProcessRecord{c0e9a55 12699:com.whatsapp/u0a354}
+09-13 21:47:44.540  1721  1721 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+09-13 21:47:44.540  1203  1293 D BaseRestrictionMgr: Package: com.google.android.youtube, userid: 0, hostingType: broadcast is Restricted by policy: 4 caller is: null
+09-13 21:47:44.540  1203  1293 W BroadcastQueue: intent:Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) } is skipped in RestrictedPackage to ProcessRecord{d99997 3751:com.google.android.youtube/u0a256}
+09-13 21:47:44.541  1721  1721 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=99, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=179000, mBatteryChargingType=1, mBatteryChargerType=NORMAL, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+09-13 21:47:44.541  1721  1721 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+09-13 21:47:44.542  1721  1721 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+09-13 21:47:44.542  1721  1721 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+09-13 21:47:44.542  1721  1721 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+09-13 21:47:44.542  1721  1721 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+09-13 21:47:44.542  1721  1721 I PowerUI : BATTERY_HEALTH_CHECK extraHealth=2 mBatteryMiscEvent=196608
+09-13 21:47:44.542  1721  1721 W PowerUI : Plug reason
+09-13 21:47:44.542  1721  1721 W PowerUI : Skip charging animation - by plug status
+09-13 21:47:44.542  1721  1721 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+09-13 21:47:44.542  1721  1721 W PowerUI : Plug reason
+09-13 21:47:44.542  1721  1721 W PowerUI : Skip charging sound - by plug status
+09-13 21:47:44.542  1721  1721 I PowerUI : oldMisalign : false, curMisalign : false
+09-13 21:47:44.542  1721  8282 D SecPowerUI.Notification: dismissing low battery warning: level=99
+09-13 21:47:44.542  1721  8282 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+09-13 21:47:44.542  1721  8282 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=99, currentBatteryMode=1, chargingTime=179000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+09-13 21:47:44.542  1721  8282 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+09-13 21:47:44.542  1721  8282 E SecPowerUI.Notification: no saved value, so we do nothing !!
+09-13 21:47:44.542  1721  1721 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 179000 / mChargingTime : 179000
+09-13 21:47:44.542  1721  1721 D SecPowerUI.Notification: There is no change about charging status, so return!
+09-13 21:47:44.542  1721  1721 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+09-13 21:47:44.542  1721  1721 I PowerUI : mBatteryMiscEvent = 196608
+09-13 21:47:44.542  1721  1721 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+09-13 21:47:44.542  1721  1721 D KeyguardUpdateMonitor: handleBatteryUpdate
+09-13 21:47:44.551  1203  1289 E Watchdog: !@Sync: 724 heap: 152 / 163 FD: 1171 [2025-09-13 21:47:44.551]
+09-13 21:47:44.557   797 20675 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMinFreq] RemoveResource Request ID : 748496
+09-13 21:47:44.557   797 20675 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 748496
+09-13 21:47:44.558  4350  4350 I Utils   : isCurrentUser current = 0, ownerId = 0
+09-13 21:47:44.558  4350  4350 I TrayVisibilityController: getComputedTrayVisible : keyguardState = 1
+09-13 21:47:44.558  4350  4350 I TrayVisibilityController: updateTrayVisible: State=1 visible=1 mCurrentVisible=1 specificMode=0
+09-13 21:47:44.558  4350  4350 I TrayStateController: onNotifyUpdateTray: state=0
+09-13 21:47:44.568  1203  1272 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: ENABLED
+09-13 21:47:44.570  1203  1272 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 1000; state: DISABLED
+09-13 21:47:44.592  1203  1272 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.lool cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 1000/com.samsung.android.lool
+09-13 21:47:44.592  1203  1272 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.lool userId : 0
+09-13 21:47:44.593  1203  1272 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.lool userId : 0
+09-13 21:47:44.604  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:44.604  1203  1299 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-13 21:47:44.700  1203  1286 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{c4ec193 u0 org.cosmosmataro.skymap/.activities.SplashScreenActivity} t-1 f}}
+09-13 21:47:44.700  1203  1286 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=true r=ActivityRecord{4c27c12 u0 com.samsung.android.app.galaxyfinder/.GalaxyFinderActivity} t3117} caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateIfNeeded:2535 com.android.server.wm.ActivityTaskSupervisor.handleTopResumedStateReleased:2564 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessageInner:2990 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessage:2888 android.os.Handler.dispatchMessage:106 android.os.Looper.loopOnce:226 
+09-13 21:47:44.713 20478 20705 I SdhmsIntegrationWorker: integrate: 6
+09-13 21:47:44.724 20478 20702 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=2c626dd8-3a0a-4fdd-9f73-eea973755e33, tags={ com.samsung.android.sm.history.SdhmsIntegrationWorker } ]
+09-13 21:47:44.877   875   875 D SurfaceFlinger: GPIS:: requestGPIS
+09-13 21:47:44.980   797 20635 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMinFreq] RemoveResource Request ID : 747272
+09-13 21:47:44.980   797 20635 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 747272
+09-13 21:47:45.446   793   793 I Sensors : batch(19) - light_cct_sensor try to batching with 200000000
+09-13 21:47:45.446   793   793 I Sensors : LightCCT_Sensor old sensor_state 279041, new sensor_state : 1409595381924353 en : 1
+09-13 21:47:45.450   793   793 I Sensors : enable:: light_cct_sensor(19)
+09-13 21:47:45.450  1203  1999 D SensorManager: registerListener :: 33, TMD4910 RGB Sensor, 200000, 0, com.samsung.android.displaysolution.EyeComfortSolutionService$2@8de718b
+09-13 21:47:45.450   793   793 I Sensors : flush light_cct_sensor
+09-13 21:47:45.450   793   793 I Sensors : MetaEvent:: reportMetaEvent
+09-13 21:47:45.450   793   793 I Sensors : wakeMessage
+09-13 21:47:45.450   793  1452 E Sensors : MetaEvent:: 33
+09-13 21:47:45.450   793  1452 E Sensors : MetaEvent: hasPendingEvent+++(1)
+09-13 21:47:45.451  1203  1999 D SensorManager: registerListener :: 33, TMD4910 RGB Sensor, 200000, 0, com.samsung.android.displaysolution.EyeComfortSolutionService$1@10f6cef
+09-13 21:47:45.593   793  1452 I Sensors : lux = 3, CCT = 1370, r = 9, g = 0, b = 8, c = 0, atime = 128, again = 2048, lux_raw = 3, brightness = 66, time = 32119863490693
+09-13 21:47:45.594  1203  1999 V EyeComfortSolutionService: count : 102 , bopr_value : 68.0, platform_value : 66.0 , app_weighting : 1.0 , cal_value : 3.5721986 , sum_value : 663.0809 , BOPR_MAX_VALUE : 21000
+09-13 21:47:45.594  1203  1999 D SensorService: Calling activate off 33
+09-13 21:47:45.594   793   793 I Sensors : batch(19) - light_cct_sensor try to batching with 200000000
+09-13 21:47:45.594  1203  1999 D SensorManager: unregisterListener :: com.samsung.android.displaysolution.EyeComfortSolutionService$1@10f6cef
+09-13 21:47:45.595  1203  1999 D SensorService: Calling activate off 33
+09-13 21:47:45.595   793   793 I Sensors : LightCCT_Sensor old sensor_state 279041, new sensor_state : 1409591086957057 en : 0
+09-13 21:47:45.598   793   793 I Sensors : disable:: light_cct_sensor(19)
+09-13 21:47:45.598  1203  1999 D SensorManager: unregisterListener :: com.samsung.android.displaysolution.EyeComfortSolutionService$2@8de718b
+09-13 21:47:45.745   797 20634 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMaxFreq] RemoveResource Request ID : 8642415
+09-13 21:47:45.746   797 20634 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 8642415
+09-13 21:47:45.803 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.804 13561 23962 I WindowsLink: (BaseContentProvider) call: method = TaskInfoManager@getRecentTasks / subMethod = getRecentTasks
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (VirtualDisplayInfoHelper) getRecentTaskInfo() taskIncluded : true
+09-13 21:47:45.806 13561 23962 I WindowsLink: (TaskInfoManager) getRecentTasks() size : 8
+09-13 21:47:45.843 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.843 13561 23962 I WindowsLink: (BaseContentProvider) call: method = UserInfo@isTwoPhoneModeEnabled / subMethod = isTwoPhoneModeEnabled
+09-13 21:47:45.843 13561 23962 I WindowsLink: (UserInfoContentProvider) isEnabled: 0 - isTwoPhoneMode: false
+09-13 21:47:45.843 13561 23962 I WindowsLink: (UserInfoContentProvider) isTwoPhoneModeEnabled: result = false
+09-13 21:47:45.855 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.855 13561 23962 I WindowsLink: (BaseContentProvider) call: method = DeviceInfo@getVendorRssiLevel / subMethod = getVendorRssiLevel
+09-13 21:47:45.856 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.856 13561 23962 I WindowsLink: (BaseContentProvider) call: method = DeviceInfo@getMAXRssiLevel / subMethod = getMAXRssiLevel
+09-13 21:47:45.884  1203  3220 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 415, isSameBssidAndFreq true
+09-13 21:47:45.884  1203  1616 I SemWifiLinkQualityMonitor: Link Qos Query: 0,013 ms / 593,341 Mbps (866 / 0,004 / 1,000)
+09-13 21:47:45.887 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.888 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:45.888 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:45.888 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.888 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_adaptive_layout / subMethod = capability_adaptive_layout
+09-13 21:47:45.888 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_adaptive_layout / subMethod = capability_adaptive_layout
+09-13 21:47:45.889 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.889 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:45.889 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_android_apps_on_windows / subMethod = capability_android_apps_on_windows
+09-13 21:47:45.889 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.890 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:45.890 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_recent_apps_R2_3 / subMethod = capability_recent_apps_R2_3
+09-13 21:47:45.890  1203  3900 D [RAMS]RemoteAppModeService: isAllowed = true
+09-13 21:47:45.891 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.891 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_input_inject / subMethod = capability_input_inject
+09-13 21:47:45.891 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_input_inject / subMethod = capability_input_inject
+09-13 21:47:45.891 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.891 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_remote_lock_simulation / subMethod = capability_remote_lock_simulation
+09-13 21:47:45.891 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_remote_lock_simulation / subMethod = capability_remote_lock_simulation
+09-13 21:47:45.892 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:45.892 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_audio_streaming / subMethod = capability_audio_streaming
+09-13 21:47:45.892 13561 23962 I WindowsLink: (BaseContentProvider) call: method = capability_audio_streaming / subMethod = capability_audio_streaming
+09-13 21:47:45.940   549   549 D io_stats: !@   8,0 r 3146269 46907052 w 539456 3982912 d 248838 2759336 f 0 0 iot 553308 0 th 0 0 0 pt 0 inp 0 0 21721.066
+09-13 21:47:45.992   797 20637 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1759750
+09-13 21:47:46.717 13561 23962 I WindowsLink: (YpcSignatureChecker) isSignatureAllowed in
+09-13 21:47:46.718 13561 23962 I WindowsLink: (BaseContentProvider) call: method = UserInfo@isTwoPhoneModeEnabled / subMethod = isTwoPhoneModeEnabled
+09-13 21:47:46.718 13561 23962 I WindowsLink: (UserInfoContentProvider) isEnabled: 0 - isTwoPhoneMode: false
+09-13 21:47:46.718 13561 23962 I WindowsLink: (UserInfoContentProvider) isTwoPhoneModeEnabled: result = false
+09-13 21:47:46.853  3131 20346 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+09-13 21:47:46.854  3131 20346 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbyConnections.TxAdvertisement}
+09-13 21:47:46.886  1203  1359 D PowerManagerService: UserActivityStateListenerState: 0
+09-13 21:47:46.945  1203  1614 I SemWifiServiceDetector: Traff. tracking started
+09-13 21:47:47.222   738   738 E audit   : type=1400 audit(1757792867.219:7157): avc:  denied  { write } for  pid=3443 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=26721 scontext=u:r:gmscore_app:s0:c662,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-G986B_12_0001 audit_filtered
+09-13 21:47:47.222   738   738 E audit   : type=1300 audit(1757792867.219:7157): arch=c00000b7 syscall=203 success=no exit=-13 a0=5e a1=7312ee2bd0 a2=1e a3=ffffffff973a8a77 items=0 ppid=764 pid=3443 auid=4294967295 uid=15010242 gid=15010242 euid=15010242 suid=15010242 fsuid=15010242 egid=15010242 sgid=15010242 fsgid=15010242 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c662,c768 key=(null)
+09-13 21:47:47.222   738   738 E audit   : type=1327 audit(1757792867.219:7157): proctitle="com.google.android.gms.persistent"
+09-13 21:47:47.446  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04336829]
+09-13 21:47:47.446  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.1819429]
+09-13 21:47:47.446  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.9279607]
+09-13 21:47:47.446  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.262731 msecs
+09-13 21:47:47.447  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.3375 msecs
+09-13 21:47:47.447  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.201269 msecs
+09-13 21:47:47.940   549   549 D io_stats: !@   8,0 r 3146275 46907076 w 539510 3983624 d 248838 2759336 f 0 0 iot 553320 0 th 0 0 0 pt 0 inp 0 0 21723.066
+09-13 21:47:47.948  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.035336226]
+09-13 21:47:47.948  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.15115266]
+09-13 21:47:47.948  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.902044]
+09-13 21:47:47.948  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.252423 msecs
+09-13 21:47:47.948  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.355 msecs
+09-13 21:47:47.948  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.209153 msecs
+09-13 21:47:47.983   797 20636 I HYPER-HAL: [ResourceManager.cpp]removeResource(): [CPUMaxFreq] RemoveResource Request ID : 8650734
+09-13 21:47:47.984   797 20636 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 8650734
+09-13 21:47:47.988  1203  4205 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-13 21:47:47.988  1203  4205 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-13 21:47:47.989  1203  4205 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-13 21:47:48.449  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.029772067]
+09-13 21:47:48.449  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.51177853]
+09-13 21:47:48.449  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.8443732]
+09-13 21:47:48.449  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.286769 msecs
+09-13 21:47:48.449  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.420038 msecs
+09-13 21:47:48.450  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.238884 msecs
+09-13 21:47:48.950  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.030996159]
+09-13 21:47:48.950  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.35479906]
+09-13 21:47:48.950  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.86384076]
+09-13 21:47:48.951  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.272577 msecs
+09-13 21:47:48.951  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.356769 msecs
+09-13 21:47:48.951  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.235308 msecs
+09-13 21:47:48.964  1203  3220 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 416, isSameBssidAndFreq true
+09-13 21:47:48.964  1203  1616 I SemWifiLinkQualityMonitor: Link Qos Query: 0,012 ms / 641,609 Mbps (866 / 0,003 / 1,000)
+09-13 21:47:49.097  1203  1702 I Pageboost: IoRecord pid : 20639
+09-13 21:47:49.098  1203  1702 W System.err: java.io.FileNotFoundException: /proc/20639/io_record_control: open failed: ENOENT (No such file or directory)
+09-13 21:47:49.098  1203  1702 W System.err: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+09-13 21:47:49.098  1203  1702 W System.err: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+09-13 21:47:49.098  1203  1702 W System.err: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:186)
+09-13 21:47:49.098  1203  1702 W System.err: 	at java.io.FileWriter.<init>(FileWriter.java:96)
+09-13 21:47:49.098  1203  1702 W System.err: 	at com.android.server.am.Pageboost$IoRecord.write(Pageboost.java:1699)
+09-13 21:47:49.098  1203  1702 W System.err: 	at com.android.server.am.Pageboost$IoRecord.getResultFromKernel(Pageboost.java:1923)
+09-13 21:47:49.098  1203  1702 W System.err: 	at com.android.server.am.Pageboost$PageboostHandler.handleMessage(Pageboost.java:2451)
+09-13 21:47:49.098  1203  1702 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-13 21:47:49.098  1203  1702 W System.err: 	at android.os.Looper.loopOnce(Looper.java:226)
+09-13 21:47:49.098  1203  1702 W System.err: 	at android.os.Looper.loop(Looper.java:313)
+09-13 21:47:49.098  1203  1702 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+09-13 21:47:49.098  1203  1702 W System.err: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+09-13 21:47:49.098  1203  1702 W System.err: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+09-13 21:47:49.098  1203  1702 W System.err: 	at libcore.io.Linux.open(Native Method)
+09-13 21:47:49.098  1203  1702 W System.err: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+09-13 21:47:49.098  1203  1702 W System.err: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+09-13 21:47:49.098  1203  1702 W System.err: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+09-13 21:47:49.098  1203  1702 W System.err: 	... 11 more
+09-13 21:47:49.098  1203  1702 E Pageboost: StopRecording Failed
+09-13 21:47:49.098  1203  1702 E Pageboost: captureFinished fail
+09-13 21:47:49.112  1203  1702 I Pageboost: db update :org.cosmosmataro.skymap ret 1
+09-13 21:47:49.452  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.021267481]
+09-13 21:47:49.452  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.28929892]
+09-13 21:47:49.452  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.71492827]
+09-13 21:47:49.452  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.290808 msecs
+09-13 21:47:49.453  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.374924 msecs
+09-13 21:47:49.453  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.235846 msecs
+09-13 21:47:49.549  1721  1721 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 179000 / mChargingTime : 179000
+09-13 21:47:49.549  1721  1721 D SecPowerUI.Notification: There is no change about charging status, so return!
+09-13 21:47:49.940   549   549 D io_stats: !@   8,0 r 3146275 46907076 w 539516 3983644 d 248838 2759336 f 0 0 iot 553340 0 th 0 0 0 pt 0 inp 0 0 21725.067
+09-13 21:47:50.086  1203  8638 D SGM:GameManager: identifyGamePackage. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.SortingMachine.isGame(SortingMachine.java:162)
+09-13 21:47:50.086  1203  8638 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:50.446  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.26513708]
+09-13 21:47:50.446  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.16304818]
+09-13 21:47:50.446  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.7733708]
+09-13 21:47:50.446  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.301884 msecs
+09-13 21:47:50.447  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.411154 msecs
+09-13 21:47:50.447  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.278616 msecs
+09-13 21:47:50.948  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.18766034]
+09-13 21:47:50.948  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.16227494]
+09-13 21:47:50.948  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.85406685]
+09-13 21:47:50.948  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.273 msecs
+09-13 21:47:50.948  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.414616 msecs
+09-13 21:47:50.948  1782  1782 I wpa_supplicant: Heartbeat 2152
+09-13 21:47:50.949  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.246039 msecs
+09-13 21:47:51.449  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.14366502]
+09-13 21:47:51.449  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.16411838]
+09-13 21:47:51.449  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.7756047]
+09-13 21:47:51.449  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.274423 msecs
+09-13 21:47:51.450  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.390923 msecs
+09-13 21:47:51.450  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.264962 msecs
+09-13 21:47:51.951  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.11661315]
+09-13 21:47:51.951  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.040240474]
+09-13 21:47:51.951  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.74613833]
+09-13 21:47:51.951  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.275731 msecs
+09-13 21:47:51.952  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.397615 msecs
+09-13 21:47:51.952  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.236577 msecs
+09-13 21:47:52.056  1203  3900 D SGM:GameManager: identifyForegroundApp. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 0
+09-13 21:47:52.056  1203  3900 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:52.056  1203  4248 D SGM:GameManager: identifyForegroundApp. com.samsung.android.app.galaxyfinder, mCurrentUserId: 0, callerUserId: 150
+09-13 21:47:52.056  1203  4248 D SGM:PkgDataHelper: getGamePkgData(). com.samsung.android.app.galaxyfinder
+09-13 21:47:52.056  7606  7764 I PolicyManager: [#CMH#] Is foreground game app: false
+09-13 21:47:52.056 13304 13375 I PolicyManager: [#CMH#] Is foreground game app: false
+09-13 21:47:52.062  1203  3220 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 417, isSameBssidAndFreq true
+09-13 21:47:52.063  1203  1616 I SemWifiLinkQualityMonitor: Link Qos Query: 0,013 ms / 623,438 Mbps (866 / 0,004 / 1,000)
+09-13 21:47:52.452  1203  1614 D SemNscXgbMsL1: Probability - Cloud gaming: [0.3677628]
+09-13 21:47:52.452  1203  1614 D SemNscXgbMsL1: Probability - Real time: [0.05197548]
+09-13 21:47:52.452  1203  1614 D SemNscXgbMsL1: Probability - Non real time: [0.7688396]
+09-13 21:47:52.452  1203  1614 D SemNscXgbMsL1: 1 sample inference time: 0.270962 msecs
+09-13 21:47:52.452  1203  1614 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.352577 msecs
+09-13 21:47:52.453  1203  1614 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.225039 msecs
+09-13 21:47:52.482   738   738 E audit   : type=1400 audit(1757792872.479:7158): avc:  denied  { write } for  pid=3246 comm="PerfettoTrace" name="traced_producer" dev="tmpfs" ino=26721 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-G986B_12_0001 audit_filtered
+09-13 21:47:52.482   738   738 E audit   : type=1300 audit(1757792872.479:7158): arch=c00000b7 syscall=203 success=no exit=-13 a0=163 a1=6e0002cd70 a2=1e a3=ffffffff973a8a77 items=0 ppid=764 pid=3246 auid=4294967295 uid=10242 gid=10242 euid=10242 suid=10242 fsuid=10242 egid=10242 sgid=10242 fsgid=10242 tty=(none) ses=4294967295 comm="PerfettoTrace" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+09-13 21:47:52.482   738   738 E audit   : type=1327 audit(1757792872.479:7158): proctitle="com.google.android.gms"
+09-13 21:47:52.950  1203  1614 I SemWifiServiceDetector: Traff. tracking stopped

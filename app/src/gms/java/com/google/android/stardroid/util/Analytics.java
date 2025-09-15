@@ -17,10 +17,7 @@ package com.google.android.stardroid.util;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.tasks.Task;
 import com.google.android.stardroid.StardroidApplication;
-import com.google.firebase.analytics.FirebaseAnalytics;
 
 import javax.inject.Inject;
 
@@ -31,35 +28,25 @@ import javax.inject.Inject;
  * @author John Taylor
  */
 public class Analytics implements AnalyticsInterface {
-  /**
-   * Analytics ID associated with http://stardroid-server.appspot.com
-   */
-  private final HitBuilders.EventBuilder eventBuilder = new HitBuilders.EventBuilder();
-  private FirebaseAnalytics firebaseAnalytics;
   private static final String TAG = MiscUtil.getTag(Analytics.class);
 
   @Inject
   Analytics(StardroidApplication application) {
-    firebaseAnalytics = FirebaseAnalytics.getInstance(application);
-    Task<String> appId = firebaseAnalytics.getAppInstanceId();
-    appId.addOnCompleteListener(task -> Log.d(TAG, "Firebase ID " + task.getResult()));
+    Log.d(TAG, "Analytics initialized - SKIPPED");
   }
 
   @Override
   public void setEnabled(boolean enabled) {
-    Log.d(TAG, enabled ? "Enabling stats collection" : "Disabling stats collection");
-    firebaseAnalytics.setAnalyticsCollectionEnabled(enabled);
+    Log.d(TAG, "setEnabled - SKIPPED");
   }
 
   @Override
   public void trackEvent(String event, Bundle params) {
-    Log.d(TAG, String.format("Logging event %s, %s", event, params));
-    firebaseAnalytics.logEvent(event, params);
+    Log.d(TAG, "trackEvent - SKIPPED");
   }
 
   @Override
   public void setUserProperty(String propertyName, String propertyValue) {
-    Log.d(TAG, String.format("Logging user property %s, %s", propertyName, propertyValue));
-    firebaseAnalytics.setUserProperty(propertyName, propertyValue);
+    Log.d(TAG, "setUserProperty - SKIPPED");
   }
 }

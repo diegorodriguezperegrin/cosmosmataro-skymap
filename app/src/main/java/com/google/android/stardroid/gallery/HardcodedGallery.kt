@@ -17,7 +17,7 @@ import android.content.res.Resources
 import com.google.android.stardroid.gallery.GalleryImage
 import com.google.android.stardroid.gallery.GalleryFactory
 import com.google.android.stardroid.gallery.HardcodedGallery
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import java.util.*
 
 /**

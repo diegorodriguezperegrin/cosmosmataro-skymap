@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 
 /**
  *  Contains the provider buttons.

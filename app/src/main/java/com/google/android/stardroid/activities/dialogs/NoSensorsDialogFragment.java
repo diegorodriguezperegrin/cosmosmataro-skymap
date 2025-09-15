@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.CheckBox;
 
 import com.google.android.stardroid.ApplicationConstants;
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.inject.HasComponent;
 import com.google.android.stardroid.util.MiscUtil;
 

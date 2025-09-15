@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.StardroidApplication;
 import com.google.android.stardroid.inject.HasComponent;
 import com.google.android.stardroid.util.Analytics;
@@ -52,10 +52,7 @@ public class EulaDialogFragment extends DialogFragment {
     LayoutInflater inflater = parentActivity.getLayoutInflater();
     View view = inflater.inflate(R.layout.tos_view, null);
 
-    String apologyText = parentActivity.getString(R.string.language_apology_text);
-    Spanned formattedApologyText = Html.fromHtml(apologyText);
-    TextView apologyTextView = (TextView) view.findViewById(R.id.language_apology_box_text);
-    apologyTextView.setText(formattedApologyText, TextView.BufferType.SPANNABLE);
+    
 
     String eulaText = parentActivity.getString(R.string.eula_text);
     Spanned formattedEulaText = Html.fromHtml(eulaText);

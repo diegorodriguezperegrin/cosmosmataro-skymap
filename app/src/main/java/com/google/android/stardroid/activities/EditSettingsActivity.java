@@ -30,7 +30,7 @@ import android.widget.Toast;
 
 import com.google.android.stardroid.ApplicationComponent;
 import com.google.android.stardroid.ApplicationConstants;
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.StardroidApplication;
 import com.google.android.stardroid.activities.util.ActivityLightLevelChanger;
 import com.google.android.stardroid.activities.util.ActivityLightLevelManager;

@@ -8,14 +8,7 @@
         android:orientation="vertical"
         android:paddingLeft="5dp"
         android:paddingRight="5dp">
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/language_apology_box_text"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:autoLink="web"
-            style="@style/text"
-            android:text="@string/language_apology_text"/>
+        
         <TextView
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/eula_box_text"

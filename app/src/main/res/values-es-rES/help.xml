@@ -1,11 +1,11 @@
 <resources>
 <string name="help_text" translation_description="Please do not change the &lt; and &gt; markup">
-&lt;big&gt;&lt;b&gt;Sky Map para Android&lt;/b&gt;&lt;/big&gt;&lt;br/&gt;
+&lt;big&gt;&lt;b&gt;Cosmos Mataró Sky Map para Android&lt;/b&gt;&lt;/big&gt;&lt;br/&gt;
 &lt;i&gt;Versión %s&lt;/i&gt;&lt;br/&gt;
 &lt;i&gt;https://github.com/sky-map-team/stardroid&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;
 
 &lt;b&gt;Introducción e inicio rápido&lt;/b&gt;&lt;br/&gt;
-¡Sky Map es tu catálogo del cielo nocturno! Apunta tu dispositivo Android hacia arriba y verás un mapa de las
+¡Cosmos Mataró Sky Map es tu catálogo del cielo nocturno! Apunta tu dispositivo Android hacia arriba y verás un mapa de las
 estrellas, constelaciones, y planetas en esa zona del cielo.&lt;br/&gt;
 
 &lt;b&gt;Capas visibles&lt;/b&gt;&lt;br/&gt;
@@ -16,6 +16,7 @@ alternarse mediante los controles en pantalla. Las capas son:&lt;br/&gt;
       <span>&#8226;</span> Objetos Messier&lt;br/&gt;
       <span>&#8226;</span> Planetas&lt;br/&gt;
       <span>&#8226;</span> Lluvias de meteoros&lt;br/&gt;
+      <span>&#8226;</span> Objetos personalizados&lt;br/&gt;
       <span>&#8226;</span> Cuadrículas de Ascensión Recta y Declinación&lt;br/&gt;
       <span>&#8226;</span> Horizonte y puntos cardinales&lt;br/&gt;&lt;br/&gt;
       
@@ -39,14 +40,14 @@ cielo. También puedes rotar el mapa con dos dedos y usar un gesto de pellizcar 
 &lt;br/&gt;&lt;br/&gt;
 
 &lt;b&gt;Búsqueda&lt;/b&gt;&lt;br/&gt;
-Sky Map ayuda a responder la pregunta \'¿Qué estrella es esa?\' o \'¿Dónde está ...?\'
+Cosmos Mataró Sky Map ayuda a responder la pregunta \'¿Qué estrella es esa?\' o \'¿Dónde está ...?\'
 Accede a la función de búsqueda mediante el botón de menú del teléfono o mediante el cuadro de búsqueda rápida directamente en el
 escritorio. Ingresa el nombre de la estrella, constelación o planeta que deseas
 buscar, y Sky Map enumerará los elementos de búsqueda correspondientes. Selecciona uno
-y Sky Map mostrará un círculo de orientación y una flecha que te indicará adónde apuntar
+y Cosmos Mataró Sky Map mostrará un círculo de orientación y una flecha que te indicará adónde apuntar
 el teléfono para encontrar el objeto. El círculo cambiará de azul a rojo y finalmente se volverá naranja
 cuando el objeto esté dentro de tu campo de visión.&lt;br/&gt;
-NOTA: Si estás en modo manual, Sky Map simplemente moverá el mapa para mostrarte el objeto.&lt;br/&gt;
+NOTA: Si estás en modo manual, Cosmos Mataró Sky Map simplemente moverá el mapa para mostrarte el objeto.&lt;br/&gt;
 Para salir del modo de búsqueda, toca la equis en la esquina de la pantalla.&lt;br/&gt;&lt;br/&gt;
 
 &lt;b&gt;Viaje en el tiempo&lt;/b&gt;&lt;br/&gt;

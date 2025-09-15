@@ -44,12 +44,13 @@
         android:xlargeScreens="true"/>
 
     <application
-        android:name=".StardroidApplication"
-        android:icon="@drawable/skymap_logo"
+        android:name="com.google.android.stardroid.StardroidApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.SplashScreenActivity"
+            android:name="com.google.android.stardroid.activities.SplashScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="nosensor"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
@@ -60,7 +61,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.DynamicStarMapActivity"
+            android:name="com.google.android.stardroid.activities.DynamicStarMapActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -77,24 +78,24 @@
                 android:resource="@xml/searchable"/>
         </activity>
         <activity
-            android:name=".activities.EditSettingsActivity"/>
+            android:name="com.google.android.stardroid.activities.EditSettingsActivity"/>
         <activity
-            android:name=".activities.ImageGalleryActivity"/>
+            android:name="com.google.android.stardroid.activities.ImageGalleryActivity"/>
         <activity
-            android:name=".activities.ImageDisplayActivity"
+            android:name="com.google.android.stardroid.activities.ImageDisplayActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activities.DiagnosticActivity"
+            android:name="com.google.android.stardroid.activities.DiagnosticActivity"
             android:label="@string/title_activity_diagnostic">
         </activity>
         <!-- Provides search suggestions. -->
         <provider
-            android:name=".search.SearchTermsProvider"
+            android:name="com.google.android.stardroid.search.SearchTermsProvider"
             android:authorities="com.google.android.stardroid.searchterms"
             android:exported="false"
             android:syncable="false"/>
 
-        <activity android:name=".activities.CompassCalibrationActivity"
+        <activity android:name="com.google.android.stardroid.activities.CompassCalibrationActivity"
                   android:launchMode="singleTop">
         </activity>
     </application>

@@ -44,7 +44,7 @@ import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.stardroid.ApplicationConstants;
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.activities.dialogs.EulaDialogFragment;
 import com.google.android.stardroid.activities.dialogs.HelpDialogFragment;
 import com.google.android.stardroid.activities.dialogs.MultipleSearchResultsDialogFragment;
@@ -607,9 +607,9 @@ public class DynamicStarMapActivity extends InjectableActivity
     Log.d(TAG, "Query string " + queryString);
     List<SearchResult> results = layerManager.searchByObjectName(queryString);
     Bundle b = new Bundle();
-    b.putString(AnalyticsInterface.SEARCH_TERM, queryString);
+    // b.putString(AnalyticsInterface.SEARCH_TERM, queryString); // Removed Firebase Analytics
     b.putBoolean(AnalyticsInterface.SEARCH_SUCCESS, results.size() > 0);
-    analytics.trackEvent(AnalyticsInterface.SEARCH_EVENT, b);
+    // analytics.trackEvent(AnalyticsInterface.SEARCH_EVENT, b); // Removed Firebase Analytics
     if (results.isEmpty()) {
       Log.d(TAG, "No results returned");
       noSearchResultsDialogFragment.show(fragmentManager, "No Search Results");
@@ -660,7 +660,7 @@ public class DynamicStarMapActivity extends InjectableActivity
     if (auto) {
       sensorAccuracyMonitor.start();
     } else {
-      sensorAccuracyMonitor.stop();
+      // sensorAccuracyMonitor.stop(); // Removed Google Play Services dependency
     }
   }
 

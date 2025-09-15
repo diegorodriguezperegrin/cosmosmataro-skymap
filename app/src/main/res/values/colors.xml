@@ -1,4 +1,5 @@
 <resources>
+    <color name="ic_launcher_background">#1C243A</color>
     <color name="black_overlay">#66000000</color>
     <color name="high_accuracy">#8BC34A</color>
     <color name="medium_accuracy">#FFEB3B</color>

@@ -41,6 +41,7 @@
     <string name="show_meteors_pref">Lluvias de meteoros</string>
     <string name="show_comet_layer_pref">Cometas</string>
     <string name="show_satellite_layer_pref" translation_description="The layer for satellites">Satélites</string>
+    <string name="show_custom_objects_pref">Objetos personalizados</string>
     <!-- Just in case we decide to have such a layer for the 4/24 launch -->
     <string name="show_hubble_layer_pref">Imágenes del Hubble</string>
     <string name="sensor_prefs">Ajustes del sensor</string>

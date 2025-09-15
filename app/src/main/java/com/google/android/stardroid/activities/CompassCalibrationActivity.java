@@ -11,7 +11,7 @@ import android.webkit.WebView;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.activities.util.ActivityLightLevelManager;
 import com.google.android.stardroid.activities.util.SensorAccuracyDecoder;
 import com.google.android.stardroid.util.Analytics;

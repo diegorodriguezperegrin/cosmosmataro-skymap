@@ -16,7 +16,7 @@ package com.google.android.stardroid.layers
 import android.content.SharedPreferences
 import android.content.res.Resources
 import android.graphics.Color
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.math.Vector3
 import com.google.android.stardroid.math.getGeocentricCoords
 import com.google.android.stardroid.renderables.AbstractAstronomicalRenderable

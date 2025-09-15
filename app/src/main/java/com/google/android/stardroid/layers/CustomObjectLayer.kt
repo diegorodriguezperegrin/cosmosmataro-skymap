@@ -15,7 +15,7 @@ package com.google.android.stardroid.layers
 
 import android.content.SharedPreferences
 import android.content.res.Resources
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.control.AstronomerModel
 import com.google.android.stardroid.math.Vector3
 import com.google.android.stardroid.renderables.*
@@ -45,7 +45,10 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
     val dec: Float,
     val color: Long,
     val size: Float,
-    val icon: String
+    val icon: String,
+    val catalogName: String?,
+    val baptismDate: String?,
+    val comments: String?
   )
 
   private fun initializeCustomObjects() {
@@ -62,8 +65,11 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       val color = if (colorString.startsWith("0x")) colorString.substring(2).toLong(16) else colorString.toLong(16)
       val size = jsonObject.getDouble("size").toFloat()
       val icon = jsonObject.getString("icon")
+      val catalogName = jsonObject.optString("catalogName", null)
+      val baptismDate = jsonObject.optString("baptismDate", null)
+      val comments = jsonObject.optString("comments", null)
 
-      customObjects.add(CustomObject(name, ra, dec, color, size, icon))
+      customObjects.add(CustomObject(name, ra, dec, color, size, icon, catalogName, baptismDate, comments))
     }
   }
 
@@ -75,7 +81,7 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
 
   override val layerDepthOrder = 80
   override val preferenceId = "source_provider.7"
-  override val layerName = "Custom Objects"
+  override val layerName = _resources.getString(R.string.show_custom_objects_pref)
   // TODO: Add a new string resource for this.
   override val layerNameId = R.string.show_custom_objects_pref
 
@@ -116,10 +122,16 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
         UP,
         customObject.size
       )
+      theImage.requiresBlending = true // Enable alpha blending
       images.add(theImage)
+      var fullLabelText = name
+      customObject.catalogName?.let { fullLabelText += "\nCat: $it" }
+      customObject.baptismDate?.let { fullLabelText += "\nDate: $it" }
+      customObject.comments?.let { fullLabelText += "\nComments: $it" }
+
       label = TextPrimitive(
         getGeocentricCoords(customObject.ra, customObject.dec),
-        name,
+        fullLabelText,
         customObject.color.toInt()
       )
       labels.add(label)

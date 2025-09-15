@@ -13,7 +13,7 @@
 // limitations under the License.
 package com.google.android.stardroid.ephemeris
 
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.base.TimeConstants
 import com.google.android.stardroid.math.DEGREES_TO_RADIANS
 import com.google.android.stardroid.math.julianCenturies

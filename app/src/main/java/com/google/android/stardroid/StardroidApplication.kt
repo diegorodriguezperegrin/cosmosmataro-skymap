@@ -26,6 +26,7 @@ import android.text.TextUtils
 import android.util.Log
 import androidx.core.content.pm.PackageInfoCompat
 import androidx.preference.PreferenceManager
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.layers.LayerManager
 import com.google.android.stardroid.util.AnalyticsInterface
 import com.google.android.stardroid.util.MiscUtil.getTag

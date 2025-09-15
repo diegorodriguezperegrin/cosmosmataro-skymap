@@ -17,7 +17,7 @@ import android.content.SharedPreferences
 import android.content.res.Resources
 import android.graphics.Color
 import android.util.Log
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 import com.google.android.stardroid.base.TimeConstants
 import com.google.android.stardroid.control.AstronomerModel
 import com.google.android.stardroid.ephemeris.OrbitalElements

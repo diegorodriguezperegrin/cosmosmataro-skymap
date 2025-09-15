@@ -16,7 +16,7 @@ package com.google.android.stardroid.layers
 import android.content.SharedPreferences
 import android.content.res.AssetManager
 import android.content.res.Resources
-import com.google.android.stardroid.R
+import org.cosmosmataro.skymap.R
 
 /**
  * An implementation of the [AbstractFileBasedLayer] for displaying stars

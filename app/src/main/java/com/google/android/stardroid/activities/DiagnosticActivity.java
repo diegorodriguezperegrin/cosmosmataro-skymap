@@ -18,7 +18,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.StardroidApplication;
 import com.google.android.stardroid.activities.util.ActivityLightLevelManager;
 import com.google.android.stardroid.activities.util.SensorAccuracyDecoder;

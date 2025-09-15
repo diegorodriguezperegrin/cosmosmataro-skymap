@@ -102,7 +102,7 @@
                 android:paddingTop="11px"
                 android:paddingBottom="7px"
                 stardroid:image_off="@drawable/star_off"
-                stardroid:image_on="@drawable/star_on"
+                stardroid:image_on="@drawable/baseline_star_outline_24"
                 stardroid:pref_key="source_provider.0" />
 
             <com.google.android.stardroid.views.PreferencesButton

@@ -19,7 +19,7 @@ import static com.google.android.stardroid.math.MathUtilsKt.TWO_PI;
 
 import android.content.res.Resources;
 
-import com.google.android.stardroid.R;
+import org.cosmosmataro.skymap.R;
 import com.google.android.stardroid.math.MathUtils;
 import com.google.android.stardroid.math.Vector3;
 import com.google.android.stardroid.renderer.util.SearchHelper;
