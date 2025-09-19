@@ -91,7 +91,8 @@ public class ImagePrimitive extends AbstractPrimitive {
 
     this.image = BitmapFactory.decodeResource(resources, imageId, opts);
     if (image == null) {
-      throw new RuntimeException("Coud not decode image " + imageId);
+      android.util.Log.e("ImagePrimitive", "Could not decode image " + imageId);
+      this.image = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
     }
   }
 

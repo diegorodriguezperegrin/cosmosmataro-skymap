@@ -60,8 +60,9 @@ class SearchTermsProvider : ContentProvider() {
     uri: Uri, projection: Array<String>?, selection: String?, selectionArgs: Array<String>?,
     sortOrder: String?
   ): Cursor? {
-    Log.d(TAG, "Got query for $uri")
+    Log.d(TAG, "Query received for URI: $uri")
     if (!maybeInjectMe()) {
+      Log.e(TAG, "Injection failed in query")
       return null
     }
     require(TextUtils.isEmpty(selection)) { "selection not allowed for $uri" }
@@ -72,23 +73,41 @@ class SearchTermsProvider : ContentProvider() {
       if (uri.pathSegments.size > 1) {
         query = uri.lastPathSegment
       }
-      Log.d(TAG, "Got suggestions query for $query")
+      Log.d(TAG, "Got suggestions query for '$query'")
       return getSuggestions(query)
     }
     throw IllegalArgumentException("Unknown URL $uri")
   }
 
   private fun getSuggestions(query: String?): Cursor {
+    Log.d(TAG, "DEBUG: getSuggestions called with query: '$query'")
     val cursor = MatrixCursor(COLUMNS)
-    if (query == null) {
-      return cursor
+    if (query.isNullOrEmpty()) {
+        Log.d(TAG, "DEBUG: Query is null or empty. Adding default suggestions.")
+        // When the query is empty, show some default suggestions.
+        val defaultSuggestions = listOf(
+            SearchTerm("Sol", "Estrella"),
+            SearchTerm("Luna", "Satélite"),
+            SearchTerm("Marte", "Planeta"),
+            SearchTerm("Júpiter", "Planeta"),
+            SearchTerm("Saturno", "Planeta"),
+            SearchTerm("Venus", "Planeta")
+        )
+        for (suggestion in defaultSuggestions) {
+            cursor.addRow(columnValuesOfSuggestion(suggestion))
+        }
+        Log.d(TAG, "DEBUG: Added ${cursor.count} default suggestions.")
+        return cursor
+    } else {
+        Log.d(TAG, "DEBUG: Query is not empty. Searching for prefix.")
+        val results = layerManager.getObjectNamesMatchingPrefix(query)
+        Log.d("SearchTermsProvider", "Got ${results.size} results from LayerManager")
+        for (result in results) {
+          cursor.addRow(columnValuesOfSuggestion(result))
+        }
+        Log.d(TAG, "DEBUG: Found ${cursor.count} prefix matches.")
+        return cursor
     }
-    val results = layerManager.getObjectNamesMatchingPrefix(query)
-    Log.d("SearchTermsProvider", "Got results n=" + results.size)
-    for (result in results) {
-      cursor.addRow(columnValuesOfSuggestion(result))
-    }
-    return cursor
   }
 
   private fun columnValuesOfSuggestion(suggestion: SearchTerm): Array<String> {

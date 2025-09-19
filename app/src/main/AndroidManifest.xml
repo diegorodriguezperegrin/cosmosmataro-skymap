@@ -89,11 +89,9 @@
             android:label="@string/title_activity_diagnostic">
         </activity>
         <!-- Provides search suggestions. -->
-        <provider
-            android:name="com.google.android.stardroid.search.SearchTermsProvider"
-            android:authorities="com.google.android.stardroid.searchterms"
-            android:exported="false"
-            android:syncable="false"/>
+        <provider android:name="com.google.android.stardroid.search.SearchTermsProvider"
+                  android:authorities="com.google.android.stardroid.searchterms"
+                  android:exported="false" />
 
         <activity android:name="com.google.android.stardroid.activities.CompassCalibrationActivity"
                   android:launchMode="singleTop">

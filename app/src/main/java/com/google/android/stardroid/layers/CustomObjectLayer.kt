@@ -65,9 +65,9 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       val color = if (colorString.startsWith("0x")) colorString.substring(2).toLong(16) else colorString.toLong(16)
       val size = jsonObject.getDouble("size").toFloat()
       val icon = jsonObject.getString("icon")
-      val catalogName = jsonObject.optString("catalogName", null)
-      val baptismDate = jsonObject.optString("baptismDate", null)
-      val comments = jsonObject.optString("comments", null)
+      val catalogName = jsonObject.optString("catalogName")
+      val baptismDate = jsonObject.optString("baptismDate")
+      val comments = jsonObject.optString("comments")
 
       customObjects.add(CustomObject(name, ra, dec, color, size, icon, catalogName, baptismDate, comments))
     }
@@ -100,7 +100,7 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       get() = getGeocentricCoords(customObject.ra, customObject.dec)
 
     override fun initialize(): Renderable {
-      theImage.setImageId(resources.getIdentifier(customObject.icon, "drawable", resources.getResourcePackageName(R.drawable.gift_on)))
+      theImage.setImageId(resources.getIdentifier("star_on", "drawable", resources.getResourcePackageName(R.drawable.gift_on)))
       label.text = name
       return this
     }
@@ -118,9 +118,9 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       theImage = ImagePrimitive(
         getGeocentricCoords(customObject.ra, customObject.dec),
         resources,
-        resources.getIdentifier(customObject.icon, "drawable", resources.getResourcePackageName(R.drawable.gift_on)),
+        resources.getIdentifier("star_on", "drawable", resources.getResourcePackageName(R.drawable.gift_on)),
         UP,
-        customObject.size
+        0.03f
       )
       theImage.requiresBlending = true // Enable alpha blending
       images.add(theImage)

@@ -1,13 +1,35 @@
 [
   {
-    "name": "My Custom Star",
-    "ra": 0.0,
-    "dec": 0.0,
+    "name": "Familia Ribosa i Nogué",
+    "ra": 333.7,
+    "dec": -21.7,
     "color": "0xFFFFFF",
     "size": 10.0,
-    "icon": "baseline_star_outline_24",
-    "catalogName": "",
+    "icon": "star_on",
+    "catalogName": "BD-22 5866",
     "baptismDate": "",
-    "comments": ""
+    "comments": "Joan Ribosa i Ramon, Maria Àngels Nogué Sincalbras, Maria Ribosa i Nogué, Jordi Ribosa Nogué, Roser Ribosa i Nogué (promotora)"
+  },
+  {
+    "name": "Lourdes",
+    "ra": 56.3,
+    "dec": 42.6,
+    "color": "0xFFFFFF",
+    "size": 10.0,
+    "icon": "star_on",
+    "catalogName": "HD 23230",
+    "baptismDate": "",
+    "comments": "Abuela de Eva Montero"
+  },
+  {
+    "name": "Belén Oriana Solana Quintero",
+    "ra": 298.1,
+    "dec": 10.4,
+    "color": "0xFFFFFF",
+    "size": 10.0,
+    "icon": "star_on",
+    "catalogName": "HD 187961",
+    "baptismDate": "",
+    "comments": "Arnau Serrés Vallés"
   }
 ]
