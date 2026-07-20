@@ -4,11 +4,17 @@
           android:vmSafeMode="false">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <!-- For Google Analytics -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />  <!-- Required=false so it still installs on no-camera devices, though AR wont work -->
 
     <uses-feature
         android:name="android.hardware.location.gps"
@@ -53,7 +59,7 @@
             android:name="com.google.android.stardroid.activities.SplashScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="nosensor"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -80,11 +86,6 @@
         <activity
             android:name="com.google.android.stardroid.activities.EditSettingsActivity"/>
         <activity
-            android:name="com.google.android.stardroid.activities.ImageGalleryActivity"/>
-        <activity
-            android:name="com.google.android.stardroid.activities.ImageDisplayActivity"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name="com.google.android.stardroid.activities.DiagnosticActivity"
             android:label="@string/title_activity_diagnostic">
         </activity>
@@ -96,6 +97,7 @@
         <activity android:name="com.google.android.stardroid.activities.CompassCalibrationActivity"
                   android:launchMode="singleTop">
         </activity>
+        <!-- ARActivity removed/disabled -->
     </application>
 
 </manifest>

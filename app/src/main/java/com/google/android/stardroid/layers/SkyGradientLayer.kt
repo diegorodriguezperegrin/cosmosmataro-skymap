@@ -27,6 +27,7 @@ import com.google.android.stardroid.space.Universe
 import com.google.android.stardroid.util.MiscUtil
 import java.util.concurrent.locks.ReentrantLock
 import kotlin.math.abs
+import com.google.android.stardroid.math.Vector3
 
 /**
  * If enabled, keeps the sky gradient up to date.
@@ -77,7 +78,7 @@ class SkyGradientLayer(private val model: AstronomerModel, resources: Resources)
 
     override val layerDepthOrder = -10
     private val layerNameId = R.string.show_sky_gradient
-    override val preferenceId = "source_provider.$layerNameId"
+    override val preferenceId = "source_provider.sky_gradient"
     override val layerName = resources.getString(layerNameId)
 
     override fun searchByObjectName(name: String): List<SearchResult> {
@@ -86,6 +87,10 @@ class SkyGradientLayer(private val model: AstronomerModel, resources: Resources)
 
     override fun getObjectNamesMatchingPrefix(prefix: String): Set<String> {
         return emptySet()
+    }
+
+    override fun searchByPosition(position: Vector3, radiusDegrees: Float): List<SearchResult> {
+        return emptyList()
     }
 
     companion object {

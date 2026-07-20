@@ -22,6 +22,9 @@ import com.google.android.stardroid.search.PrefixStore
 import com.google.android.stardroid.search.SearchResult
 import com.google.android.stardroid.util.MiscUtil
 import java.util.*
+import com.google.android.stardroid.math.Vector3
+import com.google.android.stardroid.math.DEGREES_TO_RADIANS
+import kotlin.math.cos
 
 /**
  * Layer for objects which are [AstronomicalRenderable]s.
@@ -36,6 +39,7 @@ abstract class AbstractRenderablesLayer(resources: Resources, private val should
   private val imagePrimitives = ArrayList<ImagePrimitive>()
   private val pointPrimitives = ArrayList<PointPrimitive>()
   private val linePrimitives = ArrayList<LinePrimitive>()
+  private val hairlinePrimitives = ArrayList<HairlinePrimitive>()
   private val astroRenderables = ArrayList<AstronomicalRenderable>()
   private val searchIndex = HashMap<String, SearchResult>()
   private val prefixStore = PrefixStore()
@@ -50,6 +54,7 @@ abstract class AbstractRenderablesLayer(resources: Resources, private val should
       imagePrimitives.addAll(renderables.images)
       pointPrimitives.addAll(renderables.points)
       linePrimitives.addAll(renderables.lines)
+      hairlinePrimitives.addAll(renderables.hairlines)
       val names = astroRenderable.names
       if (names.isNotEmpty()) {
         for (name in names) {
@@ -101,7 +106,32 @@ abstract class AbstractRenderablesLayer(resources: Resources, private val should
   }
 
   private fun redraw(updateTypes: EnumSet<UpdateType>) {
-    super.redraw(textPrimitives, pointPrimitives, linePrimitives, imagePrimitives, updateTypes)
+    super.redraw(textPrimitives, pointPrimitives, linePrimitives, hairlinePrimitives, imagePrimitives, updateTypes)
+  }
+
+  @Synchronized
+  override fun searchByPosition(position: Vector3, radiusDegrees: Float): List<SearchResult> {
+    val matches = ArrayList<SearchResult>()
+    val cosRadius = cos(radiusDegrees * DEGREES_TO_RADIANS)
+
+    for (astroRenderable in astroRenderables) {
+      if (astroRenderable.isVisible) {
+        // Optimization and crash prevention: objects without names cannot be searched
+        // and might not implement searchLocation (throwing UnsupportedOperationException).
+        if (astroRenderable.names.isEmpty()) continue
+
+        val location = astroRenderable.searchLocation
+        val cosAngle = position dot location
+        if (cosAngle >= cosRadius) {
+          for (name in astroRenderable.names) {
+            matches.add(SearchResult(name, astroRenderable))
+          }
+        }
+      }
+    }
+
+    matches.sortByDescending { it.renderable.searchLocation dot position }
+    return matches
   }
 
   override fun searchByObjectName(name: String): List<SearchResult> {

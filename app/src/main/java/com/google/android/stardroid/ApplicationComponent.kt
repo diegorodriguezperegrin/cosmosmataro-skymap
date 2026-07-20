@@ -5,9 +5,8 @@ import android.content.SharedPreferences
 import android.hardware.SensorManager
 import android.location.LocationManager
 import android.net.ConnectivityManager
+import com.google.android.stardroid.activities.DynamicStarMapActivity
 import com.google.android.stardroid.activities.EditSettingsActivity
-import com.google.android.stardroid.activities.ImageDisplayActivity
-import com.google.android.stardroid.activities.ImageGalleryActivity
 import com.google.android.stardroid.control.AstronomerModel
 import com.google.android.stardroid.control.MagneticDeclinationCalculator
 import com.google.android.stardroid.layers.LayerManager
@@ -17,10 +16,6 @@ import dagger.Component
 import javax.inject.Named
 import javax.inject.Singleton
 
-/**
- * Dagger component.
- * Created by johntaylor on 3/26/16.
- */
 @Singleton
 @Component(modules = [ApplicationModule::class])
 interface ApplicationComponent {

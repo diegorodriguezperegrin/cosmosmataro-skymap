@@ -137,7 +137,7 @@ class ProtobufAstronomicalRenderable(
                 points.add(
                     PointPrimitive(
                         getCoords(element.location),
-                        element.color, element.size, shapeMap[element.shape]
+                        element.color, element.size, shapeMap[element.shape] ?: PointPrimitive.Shape.CIRCLE
                     )
                 )
             }

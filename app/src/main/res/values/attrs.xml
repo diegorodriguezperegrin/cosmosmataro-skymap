@@ -23,6 +23,8 @@
         <attr name="pref_key" format="string"/>
         <attr name="image_on" format="reference"/>
         <attr name="image_off" format="reference"/>
+        <attr name="image_tint_on" format="color|reference"/>
+        <attr name="image_tint_off" format="color|reference"/>
         <attr name="default_value" format="boolean"/>
     </declare-styleable>
 

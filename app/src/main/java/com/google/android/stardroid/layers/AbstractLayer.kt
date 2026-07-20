@@ -26,6 +26,7 @@ import com.google.android.stardroid.search.SearchResult
 import com.google.android.stardroid.util.MiscUtil
 import java.util.*
 import java.util.concurrent.locks.ReentrantLock
+import com.google.android.stardroid.math.Vector3
 
 /**
  * Base implementation of the [Layer] interface.
@@ -59,14 +60,14 @@ abstract class AbstractLayer(protected val resources: Resources,
     protected abstract fun updateLayerForControllerChange()
 
     override fun setVisible(visible: Boolean) {
-        if (renderer == null) return
+        val renderer = this.renderer ?: return
         renderMapLock.lock()
         try {
-            val atomic = renderer?.createAtomic()
+            val atomic = renderer.createAtomic()
             for ((_, value) in renderMap) {
                 value.queueEnabled(visible, atomic)
             }
-            renderer?.queueAtomic(atomic)
+            renderer.queueAtomic(atomic)
         } finally {
             renderMapLock.unlock()
         }
@@ -94,6 +95,7 @@ abstract class AbstractLayer(protected val resources: Resources,
         textPrimitives: List<TextPrimitive>,
         pointPrimitives: List<PointPrimitive>,
         linePrimitives: List<LinePrimitive>,
+        hairlinePrimitives: List<HairlinePrimitive>,
         imagePrimitives: List<ImagePrimitive>,
         updateTypes: EnumSet<UpdateType> = EnumSet.of(UpdateType.Reset)
     ) {
@@ -102,9 +104,10 @@ abstract class AbstractLayer(protected val resources: Resources,
         renderMapLock.lock()
         try {
             val atomic = localRenderer.createAtomic() // won't be null since renderer was checked
-            setSources(textPrimitives, updateTypes, TextPrimitive::class.java, atomic ?: return)
+            setSources(textPrimitives, updateTypes, TextPrimitive::class.java, atomic)
             setSources(pointPrimitives, updateTypes, PointPrimitive::class.java, atomic)
             setSources(linePrimitives, updateTypes, LinePrimitive::class.java, atomic)
+            setSources(hairlinePrimitives, updateTypes, HairlinePrimitive::class.java, atomic)
             setSources(imagePrimitives, updateTypes, ImagePrimitive::class.java, atomic)
             localRenderer.queueAtomic(atomic)
         } finally {
@@ -138,6 +141,7 @@ abstract class AbstractLayer(protected val resources: Resources,
             TextPrimitive::class -> controller.createLabelManager(layerDepthOrder, fontSizeScale) as
                 RenderManager<E>
             LinePrimitive::class -> controller.createLineManager(layerDepthOrder) as RenderManager<E>
+            HairlinePrimitive::class -> controller.createHairlineManager(layerDepthOrder) as RenderManager<E>
             PointPrimitive::class -> controller.createPointManager(layerDepthOrder) as RenderManager<E>
             else -> throw IllegalStateException("Unknown source type: $(E::class)")
         }
@@ -153,7 +157,11 @@ abstract class AbstractLayer(protected val resources: Resources,
         // Override this if the layer should be searchable.
         return emptySet()
     }
-
+ override fun searchByPosition(position: Vector3, radiusDegrees: Float): List<SearchResult> {
+        // By default, layers will return no search results.
+        // Override this if the layer should be searchable by position.
+        return emptyList()
+    }
     /**
      * Provides a string ID to the internationalized name of this layer.
      */

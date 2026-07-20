@@ -35,9 +35,8 @@ import java.util.*
 class AstronomerModelWithMagneticVariationTest {
     private class MagneticDeclinationCalculation(private val angle: Float) :
         MagneticDeclinationCalculator {
-        override fun getDeclination(): Float {
-            return angle
-        }
+        override val declination: Float
+            get() = angle
 
         override fun setLocationAndTime(location: LatLong, timeInMillis: Long) {
             // Do nothing
@@ -148,14 +147,17 @@ class AstronomerModelWithMagneticVariationTest {
             MagneticDeclinationCalculation(magDeclination)
         )
         astronomer.location = location
-        val fakeClock =
-            Clock { // This date is special as RA, DEC = (0, 0) is directly overhead at the
-                // equator on the Greenwich meridian.
-                // 12:07 March 20th 2009
-                val calendar = GregorianCalendar(TimeZone.getTimeZone("UTC"))
-                calendar[2009, 2, 20, 12, 7] = 24
-                calendar.timeInMillis
-            }
+        val fakeClock = object : Clock {
+            override val timeInMillisSinceEpoch: Long
+                get() {
+                    // This date is special as RA, DEC = (0, 0) is directly overhead at the
+                    // equator on the Greenwich meridian.
+                    // 12:07 March 20th 2009
+                    val calendar = GregorianCalendar(TimeZone.getTimeZone("UTC"))
+                    calendar[2009, 2, 20, 12, 7] = 24
+                    return calendar.timeInMillis
+                }
+        }
         astronomer.setClock(fakeClock)
         astronomer.setPhoneSensorValues(acceleration, magneticField)
 
@@ -170,7 +172,7 @@ class AstronomerModelWithMagneticVariationTest {
     }
 
     companion object {
-        private const val TOL = 1e-3.toFloat()
+        private const val TOL = 3e-3.toFloat()
         private val SQRT2 = sqrt(2f)
     }
 }

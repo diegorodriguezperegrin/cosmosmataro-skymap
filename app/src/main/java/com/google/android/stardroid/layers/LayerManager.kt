@@ -54,6 +54,14 @@ class LayerManager(private val sharedPreferences: SharedPreferences) : OnSharedP
         }
     }
 
+    fun setLayerVisibility(prefId: String, visible: Boolean) {
+        for (layer in layers) {
+            if (layer.preferenceId == prefId) {
+                layer.setVisible(visible)
+            }
+        }
+    }
+
     /**
      * Search all visible layers for an object with the given name.
      * @param name the name to search for
@@ -90,7 +98,50 @@ class LayerManager(private val sharedPreferences: SharedPreferences) : OnSharedP
         return all
     }
 
+    /**
+     * Search all visible layers for objects near the given position.
+     * @param position the direction vector in sky coordinates (should be normalized)
+     * @param radiusDegrees the search radius in degrees
+     * @return a list of all matching objects within the radius, sorted by distance.
+     */
+    fun searchByPosition(position: com.google.android.stardroid.math.Vector3, radiusDegrees: Float): List<SearchResult> {
+        val all = ArrayList<SearchResult>()
+        for (layer in layers) {
+            if (isLayerVisible(layer)) {
+                all.addAll(layer.searchByPosition(position, radiusDegrees))
+            }
+        }
+        // Sort combined results by distance
+        all.sortByDescending { it.renderable.searchLocation dot position }
+        return all
+    }
+
+    fun setDetectedPointSources(points: List<Pair<Float, Float>>, width: Float, height: Float) {
+        for (layer in layers) {
+            if (layer is PointSourceComparisonLayer) {
+                layer.setDetectedPoints(points, width, height)
+            }
+        }
+    }
+
     private fun isLayerVisible(layer: Layer) = sharedPreferences.getBoolean(layer.preferenceId, true)
+    
+    fun refreshComets() {
+        for (layer in layers) {
+            if (layer is CometsLayer) {
+                layer.refresh()
+            }
+        }
+    }
+
+    fun identifyObjectForDiagnostics(skyPos: com.google.android.stardroid.math.Vector3): String? {
+        for (layer in layers) {
+            if (layer is PointSourceComparisonLayer && isLayerVisible(layer)) {
+                 return layer.getObjectName(skyPos, 4.0f) // 4 degrees threshold
+            }
+        }
+        return null
+    }
 
     companion object {
         private val TAG = MiscUtil.getTag(LayerManager::class.java)

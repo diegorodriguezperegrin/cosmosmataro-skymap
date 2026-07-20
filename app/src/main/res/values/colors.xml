@@ -6,4 +6,6 @@
     <color name="low_accuracy">#FF9800</color>
     <color name="bad_sensor">#E91E63</color>
     <color name="absent_sensor">#ffa0a0a0</color>
+    <color name="control_active">#FF9800</color>
+    <color name="control_inactive">#808080</color>
 </resources>

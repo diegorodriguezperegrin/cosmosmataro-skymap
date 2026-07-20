@@ -31,4 +31,7 @@ interface Renderable {
 
     /** Returns the list of images that should be drawn in the renderer.  */
     val images: List<ImagePrimitive>
+
+    /** Returns the list of hairlines that should be drawn in the renderer.  */
+    val hairlines: List<HairlinePrimitive>
 }

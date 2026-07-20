@@ -1,0 +1,515 @@
+[
+  {
+    "id": "CON hevelius.old And",
+    "name": "Andromeda",
+    "file": "illustrations/andromeda.png",
+    "ra": 129.4658,
+    "dec": 35.6802,
+    "scale": 40.97,
+    "rotation": 242.06
+  },
+  {
+    "id": "CON hevelius.old Aps",
+    "name": "Apus",
+    "file": "illustrations/apus.png",
+    "ra": 243.6278,
+    "dec": -75.2372,
+    "scale": 26.26,
+    "rotation": 343.55
+  },
+  {
+    "id": "CON hevelius.old Aql",
+    "name": "Aquila",
+    "file": "illustrations/aquila.png",
+    "ra": 291.3615,
+    "dec": 5.9746,
+    "scale": 52.49,
+    "rotation": 89.37
+  },
+  {
+    "id": "CON hevelius.old Aqr",
+    "name": "Aquarius",
+    "file": "illustrations/aquarius1024.png",
+    "ra": 328.44,
+    "dec": -13.9928,
+    "scale": 42.72,
+    "rotation": 125.64
+  },
+  {
+    "id": "CON hevelius.old Ara",
+    "name": "Ara",
+    "file": "illustrations/ara.png",
+    "ra": 260.4322,
+    "dec": -50.9795,
+    "scale": 6.62,
+    "rotation": 356.91
+  },
+  {
+    "id": "CON hevelius.old Ari",
+    "name": "Aries",
+    "file": "illustrations/aries.png",
+    "ra": 41.2526,
+    "dec": 20.8136,
+    "scale": 26.81,
+    "rotation": 91.66
+  },
+  {
+    "id": "CON hevelius.old Aur",
+    "name": "Auriga",
+    "file": "illustrations/auriga.png",
+    "ra": 81.1169,
+    "dec": 41.3707,
+    "scale": 20.41,
+    "rotation": 127.59
+  },
+  {
+    "id": "CON hevelius.old Boo",
+    "name": "Bo\u00f6tes",
+    "file": "illustrations/bootes.png",
+    "ra": 224.3599,
+    "dec": 28.7625,
+    "scale": 47.73,
+    "rotation": 85.77
+  },
+  {
+    "id": "CON hevelius.old Cam",
+    "name": "Camelopardalis",
+    "file": "illustrations/camelopardalis.png",
+    "ra": 72.1741,
+    "dec": 57.8893,
+    "scale": 56.34,
+    "rotation": 214.81
+  },
+  {
+    "id": "CON hevelius.old Cap",
+    "name": "Capricornus",
+    "file": "illustrations/capricornus.png",
+    "ra": 314.7094,
+    "dec": -15.2895,
+    "scale": 51.93,
+    "rotation": 145.44
+  },
+  {
+    "id": "CON hevelius.old Cas",
+    "name": "Cassiopeia",
+    "file": "illustrations/cassiopeia.png",
+    "ra": 13.2947,
+    "dec": 57.0993,
+    "scale": 11.41,
+    "rotation": 32.29
+  },
+  {
+    "id": "CON hevelius.old Cen",
+    "name": "Centaurus",
+    "file": "illustrations/centaurus.png",
+    "ra": 204.5536,
+    "dec": -49.309,
+    "scale": 68.63,
+    "rotation": 46.23
+  },
+  {
+    "id": "CON hevelius.old Cep",
+    "name": "Cepheus",
+    "file": "illustrations/cepheus.png",
+    "ra": 331.3506,
+    "dec": 66.5879,
+    "scale": 41.76,
+    "rotation": 150.4
+  },
+  {
+    "id": "CON hevelius.old Cet",
+    "name": "Cetus",
+    "file": "illustrations/cetus.png",
+    "ra": 32.567,
+    "dec": -16.5981,
+    "scale": 62.34,
+    "rotation": 137.95
+  },
+  {
+    "id": "CON hevelius.old Cha",
+    "name": "Chamaeleon",
+    "file": "illustrations/chamaeleon.png",
+    "ra": 156.0275,
+    "dec": -79.1121,
+    "scale": 25.87,
+    "rotation": 259.02
+  },
+  {
+    "id": "CON hevelius.old CMa",
+    "name": "Canis Major",
+    "file": "illustrations/canis-major.png",
+    "ra": 102.7165,
+    "dec": -21.325,
+    "scale": 29.9,
+    "rotation": 77.32
+  },
+  {
+    "id": "CON hevelius.old CMi",
+    "name": "Canis Minor",
+    "file": "illustrations/canis-minor.png",
+    "ra": 116.0995,
+    "dec": 6.4868,
+    "scale": 3.88,
+    "rotation": 97.12
+  },
+  {
+    "id": "CON hevelius.old Cnc",
+    "name": "Cancer",
+    "file": "illustrations/cancer.png",
+    "ra": 130.1406,
+    "dec": 16.6011,
+    "scale": 26.82,
+    "rotation": 33.98
+  },
+  {
+    "id": "CON hevelius.old Col",
+    "name": "Columba",
+    "file": "illustrations/columba.png",
+    "ra": 92.5036,
+    "dec": -29.2658,
+    "scale": 42.6,
+    "rotation": 264.74
+  },
+  {
+    "id": "CON hevelius.old Com",
+    "name": "Coma Berenices",
+    "file": "illustrations/coma-berenices.png",
+    "ra": 194.0857,
+    "dec": 24.558,
+    "scale": 28.17,
+    "rotation": 210.19
+  },
+  {
+    "id": "CON hevelius.old CrA",
+    "name": "Corona Australis",
+    "file": "illustrations/corona-australis.png",
+    "ra": 283.658,
+    "dec": -38.9205,
+    "scale": 6.87,
+    "rotation": 176.84
+  },
+  {
+    "id": "CON hevelius.old CrB",
+    "name": "Corona Borealis",
+    "file": "illustrations/corona-borealis.png",
+    "ra": 236.4264,
+    "dec": 28.9201,
+    "scale": 7.18,
+    "rotation": 269.39
+  },
+  {
+    "id": "CON hevelius.old Crt",
+    "name": "Crater",
+    "file": "illustrations/crater.png",
+    "ra": 172.7285,
+    "dec": -16.9377,
+    "scale": 20.28,
+    "rotation": 268.09
+  },
+  {
+    "id": "CON hevelius.old Cru",
+    "name": "Crux",
+    "file": "illustrations/crux.png",
+    "ra": 187.4552,
+    "dec": -61.9622,
+    "scale": 18.62,
+    "rotation": 247.54
+  },
+  {
+    "id": "CON hevelius.old Crv",
+    "name": "Corvus",
+    "file": "illustrations/corvus.png",
+    "ra": 188.7743,
+    "dec": -19.0761,
+    "scale": 7.81,
+    "rotation": 196.76
+  },
+  {
+    "id": "CON hevelius.old Cvn",
+    "name": "Canes Venatici",
+    "file": "illustrations/canes-venatici.png",
+    "ra": 203.2782,
+    "dec": 41.1157,
+    "scale": 33.71,
+    "rotation": 277.46
+  },
+  {
+    "id": "CON hevelius.old Cyg",
+    "name": "Cygnus",
+    "file": "illustrations/cygnus.png",
+    "ra": 302.2425,
+    "dec": 33.7332,
+    "scale": 52.74,
+    "rotation": 148.74
+  },
+  {
+    "id": "CON hevelius.old Del",
+    "name": "Delphinus",
+    "file": "illustrations/delphinus.png",
+    "ra": 310.4293,
+    "dec": 13.1281,
+    "scale": 11.82,
+    "rotation": 163.78
+  },
+  {
+    "id": "CON hevelius.old Dor",
+    "name": "Dorado",
+    "file": "illustrations/dorado.png",
+    "ra": 78.1896,
+    "dec": -53.8374,
+    "scale": 2.28,
+    "rotation": 183.72
+  },
+  {
+    "id": "CON hevelius.old Dra",
+    "name": "Draco",
+    "file": "illustrations/draco.png",
+    "ra": 236.7938,
+    "dec": 61.0905,
+    "scale": 93.95,
+    "rotation": 265.32
+  },
+  {
+    "id": "CON hevelius.old Equ",
+    "name": "Equuleus",
+    "file": "illustrations/equuleus.png",
+    "ra": 320.5297,
+    "dec": 6.3998,
+    "scale": 24.87,
+    "rotation": 304.21
+  },
+  {
+    "id": "CON hevelius.old Eri",
+    "name": "Eridanus",
+    "file": "illustrations/eridanus.png",
+    "ra": 52.2895,
+    "dec": -22.8705,
+    "scale": 72.84,
+    "rotation": 157.41
+  },
+  {
+    "id": "CON hevelius.old Gem",
+    "name": "Gemini",
+    "file": "illustrations/gemini.png",
+    "ra": 107.4854,
+    "dec": 21.5624,
+    "scale": 31.38,
+    "rotation": 340.55
+  },
+  {
+    "id": "CON hevelius.old Gru",
+    "name": "Grus",
+    "file": "illustrations/grus.png",
+    "ra": 335.8664,
+    "dec": -40.1424,
+    "scale": 8.76,
+    "rotation": 39.01
+  },
+  {
+    "id": "CON hevelius.old Her",
+    "name": "Hercules",
+    "file": "illustrations/hercules.png",
+    "ra": 260.944,
+    "dec": 28.3708,
+    "scale": 69.72,
+    "rotation": 23.61
+  },
+  {
+    "id": "CON hevelius.old Hya",
+    "name": "Hydra",
+    "file": "illustrations/hydra.png",
+    "ra": 173.9334,
+    "dec": -17.3144,
+    "scale": 85.81,
+    "rotation": 134.3
+  },
+  {
+    "id": "CON hevelius.old Hyi",
+    "name": "Hydrus",
+    "file": "illustrations/hydrus.png",
+    "ra": 137.3426,
+    "dec": -71.021,
+    "scale": 44.63,
+    "rotation": 302.66
+  },
+  {
+    "id": "CON hevelius.old Ind",
+    "name": "Indus",
+    "file": "illustrations/indus.png",
+    "ra": 314.3526,
+    "dec": -51.0123,
+    "scale": 36.98,
+    "rotation": 106.44
+  },
+  {
+    "id": "CON hevelius.old Lac",
+    "name": "Lacerta",
+    "file": "illustrations/lacerta.png",
+    "ra": 336.0531,
+    "dec": 48.3857,
+    "scale": 22.47,
+    "rotation": 311.88
+  },
+  {
+    "id": "CON hevelius.old Leo",
+    "name": "Leo",
+    "file": "illustrations/leo.png",
+    "ra": 159.4392,
+    "dec": 23.1033,
+    "scale": 41.8,
+    "rotation": 196.24
+  },
+  {
+    "id": "CON hevelius.old Lep",
+    "name": "Lepus",
+    "file": "illustrations/lepus.png",
+    "ra": 81.9914,
+    "dec": -16.1362,
+    "scale": 29.05,
+    "rotation": 151.79
+  },
+  {
+    "id": "CON hevelius.old Lib",
+    "name": "Libra",
+    "file": "illustrations/libra.png",
+    "ra": 228.6175,
+    "dec": -13.4046,
+    "scale": 24.8,
+    "rotation": 287.93
+  },
+  {
+    "id": "CON hevelius.old LMi",
+    "name": "Leo Minor",
+    "file": "illustrations/leo-minor.png",
+    "ra": 151.0213,
+    "dec": 35.0455,
+    "scale": 49.09,
+    "rotation": 157.32
+  },
+  {
+    "id": "CON hevelius.old Lup",
+    "name": "Lupus",
+    "file": "illustrations/lupus.png",
+    "ra": 231.4689,
+    "dec": -44.5434,
+    "scale": 25.18,
+    "rotation": 245.26
+  },
+  {
+    "id": "CON hevelius.old Lyn",
+    "name": "Lynx",
+    "file": "illustrations/lynx.png",
+    "ra": 106.665,
+    "dec": 49.0489,
+    "scale": 51.05,
+    "rotation": 126.43
+  },
+  {
+    "id": "CON hevelius.old Lyr",
+    "name": "Lyra",
+    "file": "illustrations/lyra.png",
+    "ra": 281.9869,
+    "dec": 34.317,
+    "scale": 12.71,
+    "rotation": 67.25
+  },
+  {
+    "id": "CON hevelius.old Mon",
+    "name": "Monoceros",
+    "file": "illustrations/monoceros.png",
+    "ra": 103.8184,
+    "dec": -4.6004,
+    "scale": 10.7,
+    "rotation": 243.85
+  },
+  {
+    "id": "CON hevelius.old Mus",
+    "name": "Musca Australis",
+    "file": "illustrations/musca.png",
+    "ra": 191.7346,
+    "dec": -69.4498,
+    "scale": 2.91,
+    "rotation": 197.88
+  },
+  {
+    "id": "CON hevelius.old MBo",
+    "name": "Musca Borealis",
+    "file": "illustrations/musca-borealis.png",
+    "ra": 41.5707,
+    "dec": 24.969,
+    "scale": 14.05,
+    "rotation": 308.52
+  },
+  {
+    "id": "CON hevelius.old Nav",
+    "name": "Argo Navis",
+    "file": "illustrations/argo-navis.png",
+    "ra": 125.9457,
+    "dec": -51.6667,
+    "scale": 51.0,
+    "rotation": 281.11
+  },
+  {
+    "id": "CON hevelius.old Ori",
+    "name": "Orion",
+    "file": "illustrations/orion.png",
+    "ra": 82.7307,
+    "dec": 1.5662,
+    "scale": 35.0,
+    "rotation": 180.0
+  },
+  {
+    "id": "CON hevelius.old Pav",
+    "name": "Pavo",
+    "file": "illustrations/pavo.png",
+    "ra": 291.0526,
+    "dec": -64.8917,
+    "scale": 25.85,
+    "rotation": 316.72
+  },
+  {
+    "id": "CON hevelius.old Peg",
+    "name": "Pegasus",
+    "file": "illustrations/pegasus.png",
+    "ra": 339.202,
+    "dec": 17.721,
+    "scale": 49.33,
+    "rotation": 186.4
+  },
+  {
+    "id": "CON hevelius.old Per",
+    "name": "Perseus",
+    "file": "illustrations/perseus.png",
+    "ra": 54.4622,
+    "dec": 46.0936,
+    "scale": 38.15,
+    "rotation": 153.82
+  },
+  {
+    "id": "CON hevelius.old Phe",
+    "name": "Phoenix",
+    "file": "illustrations/phoenix.png",
+    "ra": 15.2528,
+    "dec": -46.9566,
+    "scale": 45.74,
+    "rotation": 180.83
+  },
+  {
+    "id": "CON hevelius.old PsA",
+    "name": "Piscis Austrinus",
+    "file": "illustrations/piscis-austrinus.png",
+    "ra": 336.4475,
+    "dec": -33.4934,
+    "scale": 28.14,
+    "rotation": 220.13
+  },
+  {
+    "id": "CON hevelius.old UMa",
+    "name": "Ursa Major",
+    "file": "illustrations/ursa-major.png",
+    "ra": 167.2256,
+    "dec": 55.0157,
+    "scale": 49.47,
+    "rotation": 182.94
+  }
+]

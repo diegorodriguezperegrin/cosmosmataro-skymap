@@ -55,6 +55,20 @@ class SensorAccuracyMonitor @Inject internal constructor(
     (sensorManager ?: return).unregisterListener(this)
   }
 
+  interface Callback {
+    fun onAccuracyChanged(isReliable: Boolean)
+  }
+
+  private var callback: Callback? = null
+
+  fun register(callback: Callback) {
+      this.callback = callback
+  }
+
+  fun unregister() {
+      this.callback = null
+  }
+
   override fun onSensorChanged(event: SensorEvent) {
     if (!hasReading) {
       onAccuracyChanged(event.sensor, event.accuracy)
@@ -63,11 +77,15 @@ class SensorAccuracyMonitor @Inject internal constructor(
 
   override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
     hasReading = true
-    if (accuracy == SensorManager.SENSOR_STATUS_ACCURACY_HIGH
-      || accuracy == SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM
-    ) {
+    val isReliable = (accuracy == SensorManager.SENSOR_STATUS_ACCURACY_HIGH || accuracy == SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM)
+    
+    // Notify callback
+    callback?.onAccuracyChanged(isReliable)
+
+    if (isReliable) {
       return  // OK
     }
+
     Log.d(TAG, "Compass accuracy insufficient")
     val nowMillis = System.currentTimeMillis()
     val lastWarnedMillis = sharedPreferences.getLong(LAST_CALIBRATION_WARNING_PREF_KEY, 0)

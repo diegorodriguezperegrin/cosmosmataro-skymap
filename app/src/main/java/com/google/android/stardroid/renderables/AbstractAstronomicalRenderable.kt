@@ -48,4 +48,6 @@ abstract class AbstractAstronomicalRenderable : AstronomicalRenderable {
         get() = emptyList()
     override val points: List<PointPrimitive>
         get() = emptyList()
+    override val hairlines: List<HairlinePrimitive>
+        get() = emptyList()
 }

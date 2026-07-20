@@ -21,13 +21,13 @@ import com.google.android.stardroid.math.Vector3
 object ApplicationConstants {
   const val APP_NAME = "Stardroid"
 
-  /** Default value for 'south' in phone coords when the app starts  */
+  /** Default value for 'magnetic field' in phone coords when the app starts  */
   @JvmField
-  val INITIAL_SOUTH = Vector3(0f, -1f, 0f)
+  val INITIAL_MAGNETIC_FIELD = Vector3(0f, 1f, 0f)
 
-  /** Default value for 'down' in phone coords when the app starts  */
+  /** Default value for 'acceleration' in phone coords when the app starts  */
   @JvmField
-  val INITIAL_DOWN = Vector3(0f, -1f, -9f)
+  val INITIAL_ACCELERATION = Vector3(0f, 0f, 10f)
 
   // Preference keys
   const val AUTO_MODE_PREF_KEY = "auto_mode"
@@ -58,5 +58,7 @@ object ApplicationConstants {
   const val SENSOR_DAMPING_STANDARD = "STANDARD"
   const val SENSOR_DAMPING_PREF_KEY = "sensor_damping"
   const val REVERSE_MAGNETIC_Z_PREFKEY = "reverse_magnetic_z"
-  const val VIEW_MODE_PREFKEY = "viewing_direction" // End Preference Keys
+  const val VIEW_MODE_PREFKEY = "viewing_direction" 
+  const val AR_MODE_ACTIVE_PREF_KEY = "ar_mode_active"
+  const val AR_CAMERA_FOV_PREF_KEY = "ar_camera_fov" // Persisted FOV setting
 }

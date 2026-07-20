@@ -2,7 +2,9 @@ package com.google.android.stardroid.space
 
 import com.google.android.stardroid.base.VisibleForTesting
 import com.google.android.stardroid.ephemeris.SolarSystemBody
+import com.google.android.stardroid.ephemeris.nameResourceId
 import com.google.android.stardroid.math.*
+import com.google.android.stardroid.math.LatLong
 import java.util.*
 
 import com.google.android.stardroid.math.RaDec.Companion.fromGeocentricCoords
@@ -47,18 +49,15 @@ abstract class SolarSystemObject(protected val solarSystemBody : SolarSystemBody
      */
     // TODO(jontayler): not clear why default viz doesn't work here.
     @VisibleForTesting
-    open fun calculatePhaseAngle(time: Date): Float {
-        // For the moon, we will approximate phase angle by calculating the
+    open fun calculatePhaseAngle(time: Date, location: LatLong? = null): Float {
+        // For the moon, we will approximate phase angle by calculation the
         // elongation of the moon relative to the sun. This is accurate to within
         // about 1%.
-        // TODO(serafini): We need to correct the Ra/Dec for the user's location. The
-        // current calculation is probably accurate to a degree or two, but we can,
-        // and should, do better.
         if (solarSystemBody === SolarSystemBody.Moon) {
-            val moonRaDec: RaDec = this.getRaDec(time)
+            val moonRaDec: RaDec = this.getRaDec(time, location)
             val moon: Vector3 = getGeocentricCoords(moonRaDec)
             val sunCoords: Vector3 =
-                heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time))
+                heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time.time))
             val sunRaDec = fromGeocentricCoords(sunCoords)
             val (x, y, z) = getGeocentricCoords(sunRaDec)
             return 180.0f -
@@ -66,12 +65,10 @@ abstract class SolarSystemObject(protected val solarSystemBody : SolarSystemBody
         }
 
         // First, determine position in the solar system.
-        val planetCoords: Vector3 =
-            heliocentricCoordinatesFromOrbitalElements(solarSystemBody.getOrbitalElements(time))
+        val planetCoords: Vector3 = solarSystemBody.getHeliocentricCoordinates(time.time)
 
         // Second, determine position relative to Earth
-        val earthCoords: Vector3 =
-            heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time))
+        val earthCoords: Vector3 = SolarSystemBody.Earth.getHeliocentricCoordinates(time.time)
         val earthDistance = planetCoords.distanceFrom(earthCoords)
 
         // Finally, calculate the phase of the body.
@@ -105,11 +102,10 @@ abstract class SolarSystemObject(protected val solarSystemBody : SolarSystemBody
      */
     open fun getMagnitude(time: Date): Float {
         // First, determine position in the solar system.
-        val planetCoords = heliocentricCoordinatesFromOrbitalElements(solarSystemBody.getOrbitalElements(time))
+        val planetCoords: Vector3 = solarSystemBody.getHeliocentricCoordinates(time.time)
 
         // Second, determine position relative to Earth
-        val earthCoords =
-            heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time))
+        val earthCoords: Vector3 = SolarSystemBody.Earth.getHeliocentricCoordinates(time.time)
         val earthDistance = planetCoords.distanceFrom(earthCoords)
 
         // Third, calculate the phase of the body.

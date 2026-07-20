@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:stardroid="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_sky_view_root"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:theme="@android:style/Theme.Black">
+    android:layout_height="fill_parent">
 
+    <!-- LAYER 1: Background Sky View (Edge-to-Edge, NO fitsSystemWindows) -->
     <FrameLayout
         android:id="@+id/main_sky_view"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
+        android:layout_height="fill_parent">
 
-        <android.opengl.GLSurfaceView
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- The Sky View --><android.opengl.GLSurfaceView
             android:id="@+id/skyrenderer_view"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
+
+
         <!-- Provides a translucent mask over the whole screen -->
         <View
             android:id="@+id/view_mask"
@@ -25,49 +32,196 @@
             android:background="#ff990099"
             android:visibility="invisible" />
 
+        <View
+            android:id="@+id/touch_feedback_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/touch_feedback_circle"
+            android:elevation="100dp"
+            android:visibility="invisible" />
+
+        <com.google.android.stardroid.ar.PointSourceOverlay
+            android:id="@+id/point_source_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="200dp"
+            android:visibility="gone" />
+
+        <!-- Compass Accuracy Warning (Red Dot) -->
+        <View
+            android:id="@+id/compass_accuracy_warning"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/compass_indicator_circle"
+            android:elevation="300dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- LAYER 2: UI Overlay (Padded for System Bars) -->
+    <FrameLayout
+        android:id="@+id/ui_overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="false"
+            android:background="@color/black_overlay"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            stardroid:popupTheme="@style/ToolbarPopupTheme"
+            stardroid:contentInsetStartWithNavigation="0dp"
+            stardroid:contentInsetStart="0dp"
+            stardroid:contentInsetLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp">
+
+            <LinearLayout
+                android:id="@+id/title_container_custom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Logo (Splash Source) -->
+                <ImageView
+                    android:id="@+id/toolbar_logo_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/skymap_logo"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name" />
+
+                <!-- Split Title -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/toolbar_title_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cosmos Mataró"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/toolbar_title_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sky Map"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Action Buttons: Search, Night, Menu -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/toolbar_action_search"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_menu_search"
+                        android:contentDescription="@string/menu_search"
+                        android:tint="@android:color/white" />
+
+                    <ImageButton
+                        android:id="@+id/toolbar_action_night_mode"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_menu_view"
+                        android:contentDescription="@string/menu_toggle_dim"
+                        android:tint="@android:color/white" />
+
+                    <ImageButton
+                        android:id="@+id/menu_item_menu"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_menu_hamburger"
+                        android:scaleType="centerInside"
+                        android:onClick="onMenuClicked"
+                        android:padding="12dp"
+                        android:tint="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view_inline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay"
+                android:visibility="gone"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:iconifiedByDefault="false"
+                app:searchIcon="@android:drawable/ic_menu_search"
+                app:queryHint="@string/search_hint" />
+        </androidx.appcompat.widget.Toolbar>
+
         <!-- Include a place for all the modal controls. -->
         <RelativeLayout
             android:id="@+id/search_control_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#20990099"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FF000000"
             android:orientation="vertical"
-            android:padding="1dip"
             android:visibility="gone">
 
-            <ImageView
-                android:id="@+id/search_icon"
-                android:layout_width="34dip"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dip"
-                android:src="@drawable/search_lens_very_small" />
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:paddingStart="16dp">
 
-            <TextView
-                android:id="@+id/search_status_label"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="2dip"
-                android:layout_toRightOf="@id/search_icon"
-                android:paddingLeft="10dip"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/search_status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:id="@+id/search_prompt"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/search_status_label"
-                android:layout_marginLeft="34dip"
-                android:text="@string/search_overlay_title"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/search_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_overlay_title"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
 
             <ImageButton
                 android:id="@+id/cancel_search_button"
-                android:layout_width="32dip"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentRight="true"
-                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
-                android:src="@drawable/time_travel_close" />
+                android:src="@drawable/ic_close"
+                android:scaleType="centerInside"
+                android:padding="12dp"
+                android:tint="@android:color/white" />
         </RelativeLayout>
 
         <LinearLayout
@@ -87,7 +241,7 @@
         <!--  The layers/providers button -->
         <com.google.android.stardroid.views.ButtonLayerView
             android:id="@+id/layer_buttons_control"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
             android:background="@drawable/sidebarnoelements"
@@ -98,66 +252,82 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="11px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/star_off"
-                stardroid:image_on="@drawable/baseline_star_outline_24"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_star"
+                stardroid:image_on="@drawable/ic_star"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.0" />
 
             <com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/stars_off"
-                stardroid:image_on="@drawable/stars_on"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_constellation"
+                stardroid:image_on="@drawable/ic_constellation"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.1" />
 
             <com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/messier_off"
-                stardroid:image_on="@drawable/messier_on"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_messier"
+                stardroid:image_on="@drawable/ic_messier"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.2" />
 
             <com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/planet_off"
-                stardroid:image_on="@drawable/planet_on"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_planet"
+                stardroid:image_on="@drawable/ic_planet"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.3" />
 
-            <com.google.android.stardroid.views.PreferencesButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/b_meteor_off"
-                stardroid:image_on="@drawable/b_meteor_on"
-                stardroid:pref_key="source_provider.6" />
+
 
             <com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/gift_off"
-                stardroid:image_on="@drawable/gift_on"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_meteor"
+                stardroid:image_on="@drawable/ic_meteor"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
+                stardroid:pref_key="source_provider.6" />
+
+
+
+            <com.google.android.stardroid.views.PreferencesButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_gift"
+                stardroid:image_on="@drawable/ic_gift"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.7" />
             <!--com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
@@ -173,57 +343,70 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="7px"
-                stardroid:image_off="@drawable/grid_off"
-                stardroid:image_on="@drawable/grid_on"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_grid"
+                stardroid:image_on="@drawable/ic_grid"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
                 stardroid:pref_key="source_provider.4" />
 
             <com.google.android.stardroid.views.PreferencesButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
-                android:paddingLeft="5px"
-                android:paddingTop="7px"
-                android:paddingBottom="11px"
-                stardroid:image_off="@drawable/horizon_off"
-                stardroid:image_on="@drawable/horizon_on"
-                stardroid:pref_key="source_provider.5" />
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                stardroid:image_off="@drawable/ic_horizon"
+                stardroid:image_on="@drawable/ic_horizon"
+                stardroid:image_tint_on="@color/control_active"
+                stardroid:image_tint_off="@color/control_inactive"
+                stardroid:pref_key="source_provider.landscape" />
         </com.google.android.stardroid.views.ButtonLayerView>
 
-        <!-- Manual/auto button -->
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/manual_bar"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical">
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/sidebarnoelements"
+            android:orientation="vertical">
 
-            <FrameLayout
-                android:id="@+id/manual_bar"
-                android:layout_width="fill_parent"
+            <ImageButton
+                android:id="@+id/btn_mode_ar"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom">
+                android:padding="4dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_ar_mode"
+                android:contentDescription="AR Mode" />
 
-                <com.google.android.stardroid.views.ButtonLayerView
-                    android:id="@+id/layer_manual_auto_toggle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|right"
-                    android:orientation="vertical"
-                    stardroid:fade_time="500">
+            <ImageButton
+                android:id="@+id/btn_mode_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_automaticmode"
+                android:contentDescription="Auto Mode" />
 
-                    <com.google.android.stardroid.views.PreferencesButton
-                        android:id="@+id/manual_auto_toggle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#00000000"
-                        stardroid:default_value="true"
-                        stardroid:image_off="@drawable/automaticmode"
-                        stardroid:image_on="@drawable/manualmode"
-                        stardroid:pref_key="auto_mode" />
-                </com.google.android.stardroid.views.ButtonLayerView>
-            </FrameLayout>
-        </RelativeLayout>
+            <ImageButton
+                android:id="@+id/btn_mode_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_manual_mode"
+                android:contentDescription="Manual Mode" />
+
+        </LinearLayout>
     </FrameLayout>
-</RelativeLayout>
 
+    <ImageButton
+        android:id="@+id/btn_dummy_removed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -32,7 +32,7 @@ class DragRotateZoomGestureDetector(private val listener: DragRotateZoomGestureD
    * @author John Taylor
    */
   interface DragRotateZoomGestureDetectorListener {
-    fun onDrag(xPixels: Float, yPixels: Float): Boolean
+    fun onDrag(xPixels: Float, yPixels: Float, pointerCount: Int): Boolean
     fun onStretch(ratio: Float): Boolean
     fun onRotate(degrees: Float): Boolean
   }
@@ -85,7 +85,7 @@ class DragRotateZoomGestureDetector(private val listener: DragRotateZoomGestureD
       val current1Y = ev.y
       // Log.d(TAG, "Move.  Last position " + last1X + ", " + last1Y +
       //    "Current position " + current1X + ", " + current1Y);
-      listener.onDrag(current1X - last1X, current1Y - last1Y)
+      listener.onDrag(current1X - last1X, current1Y - last1Y, 1)
       last1X = current1X
       last1Y = current1Y
       return true
@@ -116,7 +116,8 @@ class DragRotateZoomGestureDetector(private val listener: DragRotateZoomGestureD
       // Dragging map by the mean of the points
       listener.onDrag(
         (distanceMovedX1 + distanceMovedX2) / 2,
-        (distanceMovedY1 + distanceMovedY2) / 2
+        (distanceMovedY1 + distanceMovedY2) / 2,
+        2
       )
 
       // These are the vectors between the two points.

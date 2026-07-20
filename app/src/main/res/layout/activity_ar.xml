@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ARActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/sky_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+    <ImageButton
+        android:id="@+id/btn_control_mode"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#00000000"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_ar_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/set_manual" />
+
+    <ImageButton
+        android:id="@+id/btn_toggle_detector"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#80FF0000"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Toggle Detector"
+        android:elevation="10dp"
+        android:layout_marginTop="32dp"/>
+
+    <com.google.android.stardroid.ar.PointSourceOverlay
+        android:id="@+id/point_source_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:elevation="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

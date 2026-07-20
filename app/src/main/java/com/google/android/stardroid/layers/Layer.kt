@@ -16,6 +16,7 @@ package com.google.android.stardroid.layers
 import com.google.android.stardroid.renderer.RendererController
 import com.google.android.stardroid.search.SearchResult
 import com.google.android.stardroid.renderables.AstronomicalRenderable
+import com.google.android.stardroid.math.Vector3
 
 /**
  * A logical collection of objects which should be displayed in SkyMap. For
@@ -78,4 +79,12 @@ interface Layer {
      * @return a set of matching queries.
      */
     fun getObjectNamesMatchingPrefix(prefix: String): Set<String>
+
+    /**
+     * Search the layer for objects near the given position in sky coordinates.
+     * @param position the direction vector in sky coordinates (should be normalized)
+     * @param radiusDegrees the search radius in degrees
+     * @return a list of all matching objects within the radius, sorted by distance.
+     */
+    fun searchByPosition(position: Vector3, radiusDegrees: Float): List<SearchResult>
 }

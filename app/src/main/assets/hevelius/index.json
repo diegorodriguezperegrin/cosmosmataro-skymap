@@ -1,0 +1,1301 @@
+{
+  "id": "hevelius.old",
+  "region": "???",
+  "classification": [""],
+  "fallback_to_international_names": false,
+  "constellations": [
+    {
+      "id": "CON hevelius.old And",
+      "lines": [[677, 3092, 5447], [9640, 5447, 4436, 3881]],
+      "image": {
+        "file": "illustrations/andromeda.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [227, 143], "hip": 113726},
+          {"pos": [665, 919], "hip": 9640},
+          {"pos": [965, 355], "hip": 3693}
+        ]
+      },
+      "common_name": {"english": "Andromeda", "native": "Andromeda"}
+    },
+    {
+      "id": "CON hevelius.old Ane",
+      "lines": [[94827, 94703]],
+      "common_name": {"english": "Ansere", "native": "Ansere"}
+    },
+    {
+      "id": "CON hevelius.old Ans",
+      "lines": [[97804, 99473]],
+      "common_name": {"english": "Antinous", "native": "Antinous"}
+    },
+    {
+      "id": "CON hevelius.old Aps",
+      "lines": [[84969, 81852, 81065, 72370], [81065, 70638]],
+      "image": {
+        "file": "illustrations/apus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [242, 40], "hip": 84969},
+          {"pos": [246, 266], "hip": 81065},
+          {"pos": [324, 325], "hip": 72370}
+        ]
+      },
+      "common_name": {"english": "Apus", "native": "Apus"}
+    },
+    {
+      "id": "CON hevelius.old Aql",
+      "lines": [[98036, 97649, 97278], [97649, 95501, 97804], [99473, 97804], [95501, 93747, 93244], [95501, 93805]],
+      "image": {
+        "file": "illustrations/aquila.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [676, 304], "hip": 93244},
+          {"pos": [394, 654], "hip": 99473},
+          {"pos": [708, 684], "hip": 93805}
+        ]
+      },
+      "common_name": {"english": "Aquila", "native": "Aquila"}
+    },
+    {
+      "id": "CON hevelius.old Aqr",
+      "lines": [[106278, 109074, 110395, 110960, 111497, 112961, 114855, 115438], [109074, 110003, 109139], [110003, 111123, 112716, 113136, 114341], [102618, 106278]],
+      "image": {
+        "file": "illustrations/aquarius1024.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [352, 772], "hip": 114341},
+          {"pos": [958, 188], "hip": 102618},
+          {"pos": [871, 830], "hip": 107380}
+        ]
+      },
+      "common_name": {"english": "Aquarius", "native": "Aquarius"}
+    },
+    {
+      "id": "CON hevelius.old Ara",
+      "lines": [[88714, 85792, 83081, 82363, 85727, 85267, 85258, 88714]],
+      "image": {
+        "file": "illustrations/ara.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [217, 129], "hip": 85792},
+          {"pos": [223, 383], "hip": 85727},
+          {"pos": [329, 278], "hip": 83081}
+        ]
+      },
+      "common_name": {"english": "Ara", "native": "Ara"}
+    },
+    {
+      "id": "CON hevelius.old Ari",
+      "lines": [[9884, 8903, 8832]],
+      "image": {
+        "file": "illustrations/aries.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [168, 88], "hip": 9884},
+          {"pos": [53, 422], "hip": 15737},
+          {"pos": [287, 343], "hip": 12832}
+        ]
+      },
+      "common_name": {"english": "Aries", "native": "Aries"}
+    },
+    {
+      "id": "CON hevelius.old Aur",
+      "lines": [[28380, 28360, 24608, 23453, 23015], [25428, 23015], [25428, 28380]],
+      "image": {
+        "file": "illustrations/auriga.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [658, 418], "hip": 24608},
+          {"pos": [388, 688], "hip": 28380},
+          {"pos": [800, 827], "hip": 23015}
+        ]
+      },
+      "common_name": {"english": "Auriga", "native": "Auriga"}
+    },
+    {
+      "id": "CON hevelius.old Boo",
+      "lines": [[71795, 69673, 72105, 74666, 73555, 71075, 71053, 69673, 67927, 67459]],
+      "image": {
+        "file": "illustrations/bootes.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [656, 196], "hip": 73555},
+          {"pos": [378, 369], "hip": 76267},
+          {"pos": [637, 700], "hip": 69673}
+        ]
+      },
+      "common_name": {"english": "Boötes", "native": "Boötes"}
+    },
+    {
+      "id": "CON hevelius.old Cam",
+      "lines": [[16228, 18505, 22783], [16228, 17959, 22783], [17959, 25110]],
+      "image": {
+        "file": "illustrations/camelopardalis.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [743, 854], "hip": 15863},
+          {"pos": [87, 552], "hip": 41704},
+          {"pos": [467, 243], "hip": 11767}
+        ]
+      },
+      "common_name": {"english": "Camelopardalis", "native": "Camelopardalis"}
+    },
+    {
+      "id": "CON hevelius.old Cap",
+      "lines": [[100064, 100345, 104139, 105515, 106985, 107556], [105515, 105881, 104139], [100345, 102485], [104139, 102978]],
+      "image": {
+        "file": "illustrations/capricornus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [709, 375], "hip": 100064},
+          {"pos": [317, 558], "hip": 107556},
+          {"pos": [622, 687], "hip": 102978}
+        ]
+      },
+      "common_name": {"english": "Capricornus", "native": "Capricornus"}
+    },
+    {
+      "id": "CON hevelius.old Cas",
+      "lines": [[8886, 6686, 4427, 3179, 746]],
+      "image": {
+        "file": "illustrations/cassiopeia.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [550, 368], "hip": 3179},
+          {"pos": [377, 474], "hip": 2599},
+          {"pos": [558, 587], "hip": 6686}
+        ]
+      },
+      "common_name": {"english": "Cassiopeia", "native": "Cassiopeia"}
+    },
+    {
+      "id": "CON hevelius.old Cen",
+      "lines": [[71683, 68702, 66657, 68002, 68282, 67472, 67464, 65936, 65109], [67464, 68933], [67472, 71352, 73334], [68002, 61932, 60823, 59196, 56480, 56561]],
+      "image": {
+        "file": "illustrations/centaurus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [471, 300], "hip": 68933},
+          {"pos": [263, 610], "hip": 71683},
+          {"pos": [604, 656], "hip": 59196}
+        ]
+      },
+      "common_name": {"english": "Centaurus", "native": "Centaurus"}
+    },
+    {
+      "id": "CON hevelius.old Cep",
+      "lines": [[109492, 112724, 106032, 105199, 109492], [112724, 116727, 106032]],
+      "image": {
+        "file": "illustrations/cepheus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [588, 589], "hip": 116727},
+          {"pos": [504, 78], "hip": 110609},
+          {"pos": [202, 308], "hip": 99655}
+        ]
+      },
+      "common_name": {"english": "Cepheus", "native": "Cepheus"}
+    },
+    {
+      "id": "CON hevelius.old Cer",
+      "lines": [[90139, 88886]],
+      "common_name": {"english": "Cerberus", "native": "Cerberus"}
+    },
+    {
+      "id": "CON hevelius.old Cet",
+      "lines": [[10324, 11484], [8102, 3419, 1562], [3419, 5364, 6537, 8645, 11345, 12390, 12770, 11783, 8102], [10826, 12390], [10826, 12387, 12706, 14135, 13954, 12828, 11484, 12093, 12706]],
+      "image": {
+        "file": "illustrations/cetus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [813, 498], "hip": 3419},
+          {"pos": [358, 787], "hip": 14146},
+          {"pos": [192, 250], "hip": 12828}
+        ]
+      },
+      "common_name": {"english": "Cetus", "native": "Cetus"}
+    },
+    {
+      "id": "CON hevelius.old Cha",
+      "lines": [[40702, 51839, 60000]],
+      "image": {
+        "file": "illustrations/chamaeleon.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [142, 87], "hip": 60000},
+          {"pos": [133, 140], "hip": 51839},
+          {"pos": [89, 206], "hip": 40702}
+        ]
+      },
+      "common_name": {"english": "Chamaeleon", "native": "Chamaeleon"}
+    },
+    {
+      "id": "CON hevelius.old CMa",
+      "lines": [[35904, 34444], [33856, 33579, 32759], [33579, 30122], [33856, 33152, 33977, 34444, 33856], [33152, 31416], [33152, 31592, 30324], [33977, 33347, 34045, 33160, 32349, 33347]],
+      "image": {
+        "file": "illustrations/canis-major.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [539, 212], "hip": 32349},
+          {"pos": [194, 631], "hip": 35904},
+          {"pos": [678, 704], "hip": 30122}
+        ]
+      },
+      "common_name": {"english": "Canis Major", "native": "Canis Major"}
+    },
+    {
+      "id": "CON hevelius.old CMi",
+      "lines": [[39311, 37279, 36188, 36284, 36041]],
+      "image": {
+        "file": "illustrations/canis-minor.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [194, 23], "hip": 36425},
+          {"pos": [131, 143], "hip": 37279},
+          {"pos": [14, 180], "hip": 39311}
+        ]
+      },
+      "common_name": {"english": "Canis Minor", "native": "Canis Minor"}
+    },
+    {
+      "id": "CON hevelius.old Cnc",
+      "lines": [[43103, 42806, 40843], [42806, 42911, 40526], [42911, 44066]],
+      "image": {
+        "file": "illustrations/cancer.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [593, 144], "hip": 43103},
+          {"pos": [322, 739], "hip": 44066},
+          {"pos": [684, 938], "hip": 40526}
+        ]
+      },
+      "common_name": {"english": "Cancer", "native": "Cancer"}
+    },
+    {
+      "id": "CON hevelius.old Col",
+      "lines": [[30277, 29807, 28199, 27628, 26634, 25859]],
+      "image": {
+        "file": "illustrations/columba.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [108, 184], "hip": 30122},
+          {"pos": [314, 293], "hip": 25859},
+          {"pos": [60, 452], "hip": 31685}
+        ]
+      },
+      "common_name": {"english": "Columba", "native": "Columba"}
+    },
+    {
+      "id": "CON hevelius.old Com",
+      "lines": [[64241, 64394, 60742]],
+      "image": {
+        "file": "illustrations/coma-berenices.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [225, 193], "hip": 64394},
+          {"pos": [378, 290], "hip": 60742},
+          {"pos": [119, 352], "hip": 64241}
+        ]
+      },
+      "common_name": {"english": "Coma Berenices", "native": "Coma Berenices"}
+    },
+    {
+      "id": "CON hevelius.old CrA",
+      "lines": [[91875, 92989, 93174, 93825, 94114, 94160, 94005, 93542, 92953], [91875, 90887]],
+      "image": {
+        "file": "illustrations/corona-australis.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [189, 205], "hip": 92308},
+          {"pos": [38, 58], "hip": 94114},
+          {"pos": [172, 53], "hip": 91875}
+        ]
+      },
+      "common_name": {"english": "Corona Australis", "native": "Corona Australis"}
+    },
+    {
+      "id": "CON hevelius.old CrB",
+      "lines": [[76127, 75695, 76267, 76952, 77512, 78159, 78493]],
+      "image": {
+        "file": "illustrations/corona-borealis.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [39, 148], "hip": 78493},
+          {"pos": [244, 440], "hip": 76952},
+          {"pos": [451, 143], "hip": 76127}
+        ]
+      },
+      "common_name": {"english": "Corona Borealis", "native": "Corona Borealis"}
+    },
+    {
+      "id": "CON hevelius.old Crt",
+      "lines": [[53740, 54682, 55705, 55282, 53740], [55282, 55687, 56633, 58188, 57283, 55705]],
+      "image": {
+        "file": "illustrations/crater.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [342, 349], "hip": 53740},
+          {"pos": [261, 128], "hip": 56633},
+          {"pos": [119, 219], "hip": 58188}
+        ]
+      },
+      "common_name": {"english": "Crater", "native": "Crater"}
+    },
+    {
+      "id": "CON hevelius.old Cru",
+      "lines": [[61084, 60718], [62434, 59747]],
+      "image": {
+        "file": "illustrations/crux.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [165, 141], "hip": 59747},
+          {"pos": [101, 110], "hip": 62434},
+          {"pos": [100, 181], "hip": 60718}
+        ]
+      },
+      "common_name": {"english": "Crux", "native": "Crux"}
+    },
+    {
+      "id": "CON hevelius.old Crv",
+      "lines": [[61174, 60965, 59803, 59316, 59199], [59316, 61359, 60965]],
+      "image": {
+        "file": "illustrations/corvus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [895, 562], "hip": 59316},
+          {"pos": [751, 377], "hip": 59803},
+          {"pos": [269, 892], "hip": 64962}
+        ]
+      },
+      "common_name": {"english": "Corvus", "native": "Corvus"}
+    },
+    {
+      "id": "CON hevelius.old Cvn",
+      "lines": [[61317, 63125]],
+      "image": {
+        "file": "illustrations/canes-venatici.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [289, 93], "hip": 67301},
+          {"pos": [423, 317], "hip": 61317},
+          {"pos": [71, 230], "hip": 69879}
+        ]
+      },
+      "common_name": {"english": "Canes Venatici", "native": "Canes Venatici"}
+    },
+    {
+      "id": "CON hevelius.old Cyg",
+      "lines": [[94779, 95853, 97165, 100453, 102098], [100453, 102488, 104732, 107310], [100453, 98110, 95947]],
+      "image": {
+        "file": "illustrations/cygnus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [524, 268], "hip": 94779},
+          {"pos": [217, 833], "hip": 107310},
+          {"pos": [714, 679], "hip": 95947}
+        ]
+      },
+      "common_name": {"english": "Cygnus", "native": "Cygnus"}
+    },
+    {
+      "id": "CON hevelius.old Del",
+      "lines": [[101421, 101769, 101958, 102532, 102281, 101769]],
+      "image": {
+        "file": "illustrations/delphinus.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [85, 41], "hip": 102532},
+          {"pos": [174, 119], "hip": 101421},
+          {"pos": [139, 244], "hip": 102633}
+        ]
+      },
+      "common_name": {"english": "Delphinus", "native": "Delphinus"}
+    },
+    {
+      "id": "CON hevelius.old Dor",
+      "lines": [[27100, 27890, 26069, 27100], [26069, 21281, 19893]],
+      "image": {
+        "file": "illustrations/dorado.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [148, 373], "hip": 19893},
+          {"pos": [200, 260], "hip": 19780},
+          {"pos": [390, 200], "hip": 34481}
+        ]
+      },
+      "common_name": {"english": "Dorado", "native": "Dorado"}
+    },
+    {
+      "id": "CON hevelius.old Dra",
+      "lines": [[87585, 87833, 85670, 85829, 87585, 94376, 97433, 89937, 83895, 80331, 78527, 75458, 68756, 61281, 56211]],
+      "image": {
+        "file": "illustrations/draco.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [495, 191], "hip": 87833},
+          {"pos": [442, 830], "hip": 47193},
+          {"pos": [646, 491], "hip": 97433}
+        ]
+      },
+      "common_name": {"english": "Draco", "native": "Draco"}
+    },
+    {
+      "id": "CON hevelius.old Equ",
+      "lines": [[104521, 104858, 105570, 104987, 104521]],
+      "image": {
+        "file": "illustrations/equuleus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [193, 385], "hip": 104521},
+          {"pos": [386, 332], "hip": 107315},
+          {"pos": [195, 263], "hip": 104987}
+        ]
+      },
+      "common_name": {"english": "Equuleus", "native": "Equuleus"}
+    },
+    {
+      "id": "CON hevelius.old Eri",
+      "lines": [[7588, 9007, 10602, 11407, 12413, 12486, 13847, 15510, 17797, 17874, 20042, 20535, 21393, 17651, 16611, 15474, 14146, 12843, 13701, 15197, 16537, 17378, 21444, 22109, 22701, 23875, 23972, 21594]],
+      "image": {
+        "file": "illustrations/eridanus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [93, 358], "hip": 24436},
+          {"pos": [532, 164], "hip": 13701},
+          {"pos": [766, 570], "hip": 10602}
+        ]
+      },
+      "common_name": {"english": "Eridanus", "native": "Eridanus"}
+    },
+    {
+      "id": "CON hevelius.old Gem",
+      "lines": [[31681, 34088, 35550, 35350, 32362], [35550, 36962, 37740], [36962, 37826], [36962, 36046, 34693, 36850], [34693, 33018], [34693, 32246, 30883], [32246, 30343, 29655, 28734]],
+      "image": {
+        "file": "illustrations/gemini.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [413, 338], "hip": 36850},
+          {"pos": [459, 857], "hip": 35350},
+          {"pos": [777, 895], "hip": 31681}
+        ]
+      },
+      "common_name": {"english": "Gemini", "native": "Gemini"}
+    },
+    {
+      "id": "CON hevelius.old Gru",
+      "lines": [[114131, 110997, 109268, 112122, 114421, 114131], [112122, 113638], [112122, 112623], [110997, 109111, 108085], [112122, 110997]],
+      "image": {
+        "file": "illustrations/grus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [282, 42], "hip": 108085},
+          {"pos": [308, 229], "hip": 109268},
+          {"pos": [116, 307], "hip": 114421}
+        ]
+      },
+      "common_name": {"english": "Grus", "native": "Grus"}
+    },
+    {
+      "id": "CON hevelius.old Her",
+      "lines": [[86414, 87808, 85112, 84606, 84380, 81833, 81126, 79992, 77760], [81833, 81693, 80816, 80170], [81693, 83207, 85693, 84379], [86974, 87933, 88794], [87933, 86974], [83207, 84380], [80816, 84379], [85693, 86974]],
+      "image": {
+        "file": "illustrations/hercules.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [837, 775], "hip": 91262},
+          {"pos": [340, 829], "hip": 79992},
+          {"pos": [588, 232], "hip": 84345}
+        ]
+      },
+      "common_name": {"english": "Hercules", "native": "Hercules"}
+    },
+    {
+      "id": "CON hevelius.old Hya",
+      "lines": [[42799, 42402, 42313, 43109, 43234, 42799], [43234, 43813, 45336, 46776, 46509, 46390, 48356, 49841, 51069, 52943, 56343, 57936, 64166, 64962]],
+      "image": {
+        "file": "illustrations/hydra.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [866, 193], "hip": 43109},
+          {"pos": [251, 533], "hip": 61941},
+          {"pos": [280, 820], "hip": 64962}
+        ]
+      },
+      "common_name": {"english": "Hydra", "native": "Hydra"}
+    },
+    {
+      "id": "CON hevelius.old Hyi",
+      "lines": [[107089, 2021, 17678, 12394, 11001, 9236]],
+      "image": {
+        "file": "illustrations/hydrus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [159, 402], "hip": 9236},
+          {"pos": [342, 395], "hip": 17678},
+          {"pos": [329, 167], "hip": 107089}
+        ]
+      },
+      "common_name": {"english": "Hydrus", "native": "Hydrus"}
+    },
+    {
+      "id": "CON hevelius.old Ind",
+      "lines": [[105319, 101772, 103227, 105319]],
+      "image": {
+        "file": "illustrations/indus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [436, 81], "hip": 101772},
+          {"pos": [264, 125], "hip": 105319},
+          {"pos": [284, 243], "hip": 103227}
+        ]
+      },
+      "common_name": {"english": "Indus", "native": "Indus"}
+    },
+    {
+      "id": "CON hevelius.old Lac",
+      "lines": [[110609, 111022, 111104, 110351, 110609], [111104, 109937], [111104, 109754]],
+      "image": {
+        "file": "illustrations/lacerta.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [200, 145], "hip": 110609},
+          {"pos": [403, 366], "hip": 109937},
+          {"pos": [268, 293], "hip": 111104}
+        ]
+      },
+      "common_name": {"english": "Lacerta", "native": "Lacerta"}
+    },
+    {
+      "id": "CON hevelius.old Leo",
+      "lines": [[57632, 54879, 49669, 49583, 50583, 54872, 57632], [50583, 50335, 48455, 47908], [54872, 54879]],
+      "image": {
+        "file": "illustrations/leo.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [849, 460], "hip": 47908},
+          {"pos": [314, 461], "hip": 54879},
+          {"pos": [605, 110], "hip": 53229}
+        ]
+      },
+      "common_name": {"english": "Leo", "native": "Leo"}
+    },
+    {
+      "id": "CON hevelius.old Lep",
+      "lines": [[28910, 28103, 27288, 25985, 24305], [25985, 27654, 27072], [25606, 23685], [25985, 25606], [24305, 24845], [24305, 24327, 24244], [24845, 24873], [27654, 28910]],
+      "image": {
+        "file": "illustrations/lepus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [357, 138], "hip": 24244},
+          {"pos": [134, 211], "hip": 28910},
+          {"pos": [391, 319], "hip": 23685}
+        ]
+      },
+      "common_name": {"english": "Lepus", "native": "Lepus"}
+    },
+    {
+      "id": "CON hevelius.old Lib",
+      "lines": [[77853, 76333, 74785, 72622]],
+      "image": {
+        "file": "illustrations/libra.png",
+        "size": [560, 600],
+        "anchors": [
+          {"pos": [330, 320], "hip": 74785},
+          {"pos": [429, 503], "hip": 72622},
+          {"pos": [201, 412], "hip": 76333}
+        ]
+      },
+      "common_name": {"english": "Libra", "native": "Libra"}
+    },
+    {
+      "id": "CON hevelius.old LMi",
+      "lines": [[53229, 51233, 49593, 46952], [49593, 53229]],
+      "image": {
+        "file": "illustrations/leo-minor.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [440, 462], "hip": 53229},
+          {"pos": [677, 419], "hip": 48833},
+          {"pos": [777, 572], "hip": 45860}
+        ]
+      },
+      "common_name": {"english": "Leo Minor", "native": "Leo Minor"}
+    },
+    {
+      "id": "CON hevelius.old Lup",
+      "lines": [[77634, 78970, 78384, 77634], [78384, 76297, 75141, 75177], [75141, 73273], [76297, 76552, 74395, 71860], [74395, 71536], [71860, 70576], [71860, 73273]],
+      "image": {
+        "file": "illustrations/lupus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [107, 114], "hip": 78918},
+          {"pos": [308, 308], "hip": 73273},
+          {"pos": [203, 449], "hip": 74395}
+        ]
+      },
+      "common_name": {"english": "Lupus", "native": "Lupus"}
+    },
+    {
+      "id": "CON hevelius.old Lyn",
+      "lines": [[45860, 45688, 44700, 44248, 41075, 36145, 33449, 30060]],
+      "image": {
+        "file": "illustrations/lynx.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [256, 546], "hip": 44248},
+          {"pos": [796, 321], "hip": 30060},
+          {"pos": [884, 585], "hip": 28360}
+        ]
+      },
+      "common_name": {"english": "Lynx", "native": "Lynx"}
+    },
+    {
+      "id": "CON hevelius.old Lyr",
+      "lines": [[91262, 91971, 92420, 93194, 92791, 91971]],
+      "image": {
+        "file": "illustrations/lyra.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [456, 140], "hip": 92862},
+          {"pos": [240, 500], "hip": 94713},
+          {"pos": [944, 532], "hip": 89826}
+        ]
+      },
+      "common_name": {"english": "Lyra", "native": "Lyra"}
+    },
+    {
+      "id": "CON hevelius.old Mon",
+      "lines": [[29651, 34769], [30867, 34769, 39863, 41307], [34769, 31216, 30419], [34769, 37447, 39863]],
+      "image": {
+        "file": "illustrations/monoceros.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [841, 421], "hip": 30419},
+          {"pos": [861, 626], "hip": 29651},
+          {"pos": [333, 521], "hip": 39863}
+        ]
+      },
+      "common_name": {"english": "Monoceros", "native": "Monoceros"}
+    },
+    {
+      "id": "CON hevelius.old Mmn",
+      "lines": [[70327, 71832, 73424, 74649]],
+      "common_name": {"english": "Mons Mænalus", "native":"Mons Mænalus" }
+    },
+    {
+      "id": "CON hevelius.old Mus",
+      "lines": [[62322, 61585, 61199, 63613, 62322]],
+      "image": {
+        "file": "illustrations/musca.png",
+        "size": [128, 128],
+        "anchors": [
+          {"pos": [33, 36], "hip": 63613},
+          {"pos": [95, 56], "hip": 62322},
+          {"pos": [25, 78], "hip": 61199}
+        ]
+      },
+      "common_name": {"english": "Musca Australis", "native": "Musca Australis"}
+    },
+    {
+      "id": "CON hevelius.old MBo",
+      "lines": [[12489, 12719, 13209], [12719, 13061, 13209]],
+      "image": {
+        "file": "illustrations/musca-borealis.png",
+        "size": [128, 128],
+        "anchors": [
+          {"pos": [56, 39], "hip": 13061},
+          {"pos": [100, 94], "hip": 12489},
+          {"pos": [45, 91], "hip": 13209}
+        ]
+      },
+      "common_name": {"english": "Musca Borealis", "native": "Musca Borealis"}
+    },
+    {
+      "id": "CON hevelius.old Nav",
+      "lines": [[30438, 41037, 45556, 48774, 45941, 42913, 39953, 39429, 39757, 35264, 31685, 30438], [45941, 44816, 43409, 39429], [43409, 39953]],
+      "image": {
+        "file": "illustrations/argo-navis.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [646, 830], "hip": 30438},
+          {"pos": [628, 351], "hip": 43409},
+          {"pos": [320, 598], "hip": 48774}
+        ]
+      },
+      "common_name": {"english": "Argo Navis", "native": "Argo Navis"}
+    },
+    {
+      "id": "CON hevelius.old Ori",
+      "lines": [[26727, 26311, 25930], [28691, 29426, 29038, 27913], [29426, 28614, 27989, 26727, 27366, 24436, 25930, 25336, 26207, 27989], [25336, 22449, 22549, 22730, 23123], [22449, 22509, 22845], [29038, 28614]],
+      "image": {
+        "file": "illustrations/orion.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [390, 375], "hip": 27989},
+          {"pos": [791, 353], "hip": 22449},
+          {"pos": [468, 792], "hip": 27366}
+        ]
+      },
+      "common_name": {"english": "Orion", "native": "Orion"}
+    },
+    {
+      "id": "CON hevelius.old Pav",
+      "lines": [[100751, 105858, 102395, 99240, 98495], [91792, 93015, 99240], [93015, 92609, 90098, 88866, 86929], [88866, 93015], [90098, 93015], [86929, 93015], [86929, 91792]],
+      "image": {
+        "file": "illustrations/pavo.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [55, 129], "hip": 100751},
+          {"pos": [236, 398], "hip": 98495},
+          {"pos": [454, 216], "hip": 86929}
+        ]
+      },
+      "common_name": {"english": "Pavo", "native": "Pavo"}
+    },
+    {
+      "id": "CON hevelius.old Peg",
+      "lines": [[1067, 113963], [113881, 112158, 109352], [113881, 112748, 112440, 109176, 107354], [113963, 112447, 112029, 109427, 107315], [677, 113881], [677, 1067], [113881, 113963]],
+      "image": {
+        "file": "illustrations/pegasus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [493, 408], "hip": 113963},
+          {"pos": [466, 674], "hip": 113881},
+          {"pos": [96, 617], "hip": 107354}
+        ]
+      },
+      "common_name": {"english": "Pegasus", "native": "Pegasus"}
+    },
+    {
+      "id": "CON hevelius.old Per",
+      "lines": [[17448, 18246, 18614, 18532, 17358, 15863, 14328, 13268], [15863, 14576, 14354, 13254]],
+      "image": {
+        "file": "illustrations/perseus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [275, 495], "hip": 19812},
+          {"pos": [649, 352], "hip": 12777},
+          {"pos": [473, 909], "hip": 18246}
+        ]
+      },
+      "common_name": {"english": "Perseus", "native": "Perseus"}
+    },
+    {
+      "id": "CON hevelius.old Phe",
+      "lines": [[2081, 2072, 5165, 6867, 8837], [5165, 7083], [5165, 5348], [5165, 765, 116602]],
+      "image": {
+        "file": "illustrations/phoenix.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [314, 210], "hip": 2081},
+          {"pos": [187, 196], "hip": 6867},
+          {"pos": [206, 332], "hip": 5348}
+        ]
+      },
+      "common_name": {"english": "Phoenix", "native": "Phoenix"}
+    },
+    {
+      "id": "CON hevelius.old PsA",
+      "lines": [[113368, 111954, 108661, 107608, 109422, 111188, 113246]],
+      "image": {
+        "file": "illustrations/piscis-austrinus.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [47, 304], "hip": 113368},
+          {"pos": [322, 352], "hip": 108085},
+          {"pos": [432, 231], "hip": 105140}
+        ]
+      },
+      "common_name": {"english": "Piscis Austrinus", "native": "Piscis Austrinus"}
+    },
+    {
+      "id": "CON hevelius.old Psc",
+      "lines": [[4889, 5742], [4889, 6193, 5742, 7097, 8198, 9487, 8833, 7884, 7007, 4906, 3760, 1645, 118268, 116771, 116928, 115738, 114971, 115830, 116771]],
+      "image": {
+        "file": "illustrations/pisces.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [76, 129], "hip": 5447},
+          {"pos": [813, 496], "hip": 114971},
+          {"pos": [67, 825], "hip": 9487}
+        ]
+      },
+      "common_name": {"english": "Pisces", "native": "Pisces"}
+    },
+    {
+      "id": "CON hevelius.old Rob",
+      "lines": [[45238, 52419, 57363], [52419, 52727]],
+      "image": {
+        "file": "illustrations/robur-caroli.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [335, 382], "hip": 45238},
+          {"pos": [235, 296], "hip": 52419},
+          {"pos": [227, 107], "hip": 52727}
+        ]
+      },
+      "common_name": {"english": "Robur Caroli", "native": "Robur Caroli"}
+    },
+    {
+      "id": "CON hevelius.old Sco",
+      "lines": [[85927, 86670, 87073, 86228, 84143, 82671, 82514, 82396, 81266, 80763, 78401], [80763, 78265], [80763, 78820], [78265, 73714], [78820, 78727]],
+      "image": {
+        "file": "illustrations/scorpius.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [632, 108], "hip": 79375},
+          {"pos": [955, 597], "hip": 73714},
+          {"pos": [324, 700], "hip": 82396}
+        ]
+      },
+      "common_name": {"english": "Scorpius", "native": "Scorpius"}
+    },
+    {
+      "id": "CON hevelius.old Sct",
+      "lines": [[92175, 92202, 92814, 90595, 91117, 92175]],
+      "image": {
+        "file": "illustrations/scutum.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [133, 215], "hip": 93026},
+          {"pos": [397, 269], "hip": 90135},
+          {"pos": [354, 422], "hip": 90595}
+        ]
+      },
+      "common_name": {"english": "Scutum", "native": "Scutum"}
+    },
+    {
+      "id": "CON hevelius.old Ser",
+      "lines": [[77516, 77622, 77070, 76276, 77233, 78072, 77450, 77233], [92946, 89962, 86565, 86263, 84880]],
+      "common_name": {"english": "Serpens", "native": "Serpens"}
+    },
+    {
+      "id": "CON hevelius.old Sex",
+      "lines": [[47205, 49641, 47431, 47205]],
+      "image": {
+        "file": "illustrations/sextans.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [104, 161], "hip": 51437},
+          {"pos": [452, 151], "hip": 47310},
+          {"pos": [257, 416], "hip": 48437}
+        ]
+      },
+      "common_name": {"english": "Sextans Uraniae", "native": "Sextans Uraniae"}
+    },
+    {
+      "id": "CON hevelius.old Sge",
+      "lines": [[96837, 97365, 96757], [97365, 98337, 98920]],
+      "image": {
+        "file": "illustrations/sagitta.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [405, 310], "hip": 96757},
+          {"pos": [334, 242], "hip": 97679},
+          {"pos": [288, 306], "hip": 98920}
+        ]
+      },
+      "common_name": {"english": "Sagitta", "native": "Sagitta"}
+    },
+    {
+      "id": "CON hevelius.old Sgr",
+      "lines": [[89931, 90496], [89642, 90185], [88635, 89931, 90185], [92041, 89931], [90496, 89341], [93506, 93864, 92855, 92041], [92855, 93085, 93683, 94820, 95168], [93864, 96465], [98688, 93506], [98688, 98412, 98032], [93506, 95347, 95241]],
+      "image": {
+        "file": "illustrations/sagittarius.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [683, 292], "hip": 93085},
+          {"pos": [151, 719], "hip": 102831},
+          {"pos": [779, 844], "hip": 92308}
+        ]
+      },
+      "common_name": {"english": "Sagittarius", "native": "Sagittarius"}
+    },
+    {
+      "id": "CON hevelius.old Srt",
+      "lines": [[86032, 83000], [86032, 86742, 85365, 83262, 83000], [85365, 84012], [83262, 81377]],
+      "image": {
+        "file": "illustrations/serpentarius.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [414, 185], "hip": 86032},
+          {"pos": [859, 376], "hip": 77622},
+          {"pos": [404, 860], "hip": 84970}
+        ]
+      },
+      "common_name": {"english": "Serpentarius", "native": "Serpentarius"}
+    },
+    {
+      "id": "CON hevelius.old Tau",
+      "lines": [[25428, 21881, 20889], [21421, 26451], [20205, 20455], [21421, 20889], [21421, 20894, 20205], [20889, 20648, 20455, 17702, 16369, 18724, 21589], [16369, 15900, 19860]],
+      "image": {
+        "file": "illustrations/taurus.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [455, 22], "hip": 26451},
+          {"pos": [350, 493], "hip": 20205},
+          {"pos": [777, 579], "hip": 18246}
+        ]
+      },
+      "common_name": {"english": "Taurus", "native": "Taurus"}
+    },
+    {
+      "id": "CON hevelius.old TAs",
+      "lines": [[82273, 74946, 77952, 82273]],
+      "image": {
+        "file": "illustrations/triangulum-australe.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [227, 145], "hip": 74946},
+          {"pos": [82, 426], "hip": 77952},
+          {"pos": [479, 431], "hip": 82273}
+        ]
+      },
+      "common_name": {"english": "Triangulum Australe", "native": "Triangulum Australe"}
+    },
+    {
+      "id": "CON hevelius.old TMa",
+      "lines": [[10670, 10064, 8796, 10670]],
+      "image": {
+        "file": "illustrations/triangulum-majus.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [117, 87], "hip": 10064},
+          {"pos": [212, 192], "hip": 8796},
+          {"pos": [85, 118], "hip": 10670}
+        ]
+      },
+      "common_name": {"english": "Triangulum Majus", "native": "Triangulum Majus"}
+    },
+    {
+      "id": "CON hevelius.old TMi",
+      "lines": [[11486, 10793, 10280, 11486]],
+      "image": {
+        "file": "illustrations/triangulum-minus.png",
+        "size": [128, 128],
+        "anchors": [
+          {"pos": [93, 21], "hip": 10280},
+          {"pos": [81, 67], "hip": 10793},
+          {"pos": [31, 65], "hip": 11486}
+        ]
+      },
+      "common_name": {"english": "Triangulum Minus", "native": "Triangulum Minus"}
+    },
+    {
+      "id": "CON hevelius.old Tuc",
+      "lines": [[110130, 114996, 1599], [114996, 2484]],
+      "image": {
+        "file": "illustrations/toucan.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [215, 54], "hip": 110130},
+          {"pos": [131, 59], "hip": 114996},
+          {"pos": [96, 170], "hip": 2484}
+        ]
+      },
+      "common_name": {"english": "Toucan", "native": "Toucan"}
+    },
+    {
+      "id": "CON hevelius.old UMa",
+      "lines": [[67301, 65378, 62956, 59774, 54061, 53910, 58001, 59774], [58001, 57399, 54539, 50372], [54539, 50801], [53910, 48402, 46853, 44471], [46853, 44127], [48402, 48319, 41704, 46733, 54061]],
+      "image": {
+        "file": "illustrations/ursa-major.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [25, 162], "hip": 67301},
+          {"pos": [894, 428], "hip": 41704},
+          {"pos": [476, 750], "hip": 50801}
+        ]
+      },
+      "common_name": {"english": "Ursa Major", "native": "Ursa Major"}
+    },
+    {
+      "id": "CON hevelius.old UMi",
+      "lines": [[11767, 85822, 82080, 77055, 79822, 75097, 72607, 77055]],
+      "image": {
+        "file": "illustrations/ursa-minor.png",
+        "size": [512, 512],
+        "anchors": [
+          {"pos": [95, 102], "hip": 11767},
+          {"pos": [326, 337], "hip": 75097},
+          {"pos": [315, 245], "hip": 70692}
+        ]
+      },
+      "common_name": {"english": "Ursa Minor", "native":"Ursa Minor"}
+    },
+    {
+      "id": "CON hevelius.old Vir",
+      "lines": [[57380, 60030, 61941, 65474, 69427, 69701, 71957], [65474, 66249, 68520, 72220], [66249, 63090, 63608], [63090, 61941]],
+      "image": {
+        "file": "illustrations/virgo.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [480, 144], "hip": 58948},
+          {"pos": [456, 993], "hip": 71957},
+          {"pos": [38, 663], "hip": 69673}
+        ]
+      },
+      "common_name": {"english": "Virgo", "native": "Virgo"}
+    },
+    {
+      "id": "CON hevelius.old Vol",
+      "lines": [[37504, 34481, 39794, 37504], [39794, 35228], [39794, 41312, 44382, 39794]],
+      "image": {
+        "file": "illustrations/piscis-volans.png",
+        "size": [256, 256],
+        "anchors": [
+          {"pos": [81, 71], "hip": 44382},
+          {"pos": [174, 160], "hip": 35228},
+          {"pos": [114, 183], "hip": 37504}
+        ]
+      },
+      "common_name": {"english": "Piscis Volans", "native": "Piscis Volans"}
+    },
+    {
+      "id": "CON hevelius.old Vul",
+      "lines": [[95771, 98543]],
+      "image": {
+        "file": "illustrations/vulpecula.png",
+        "size": [1024, 1024],
+        "anchors": [
+          {"pos": [660, 431], "hip": 95771},
+          {"pos": [194, 621], "hip": 105502},
+          {"pos": [558, 558], "hip": 98337}
+        ]
+      },
+      "common_name": {"english": "Vulpecula", "native": "Vulpecula"}
+    }
+  ],
+  "common_names": {
+    "HIP 677": [{"english": "Alpheratz"}],
+    "HIP 746": [{"english": "Caph"}],
+    "HIP 1067": [{"english": "Algenib"}],
+    "HIP 2081": [{"english": "Ankaa"}],
+    "HIP 3179": [{"english": "Shedir"}],
+    "HIP 3419": [{"english": "Diphda"}],
+    "HIP 3829": [{"english": "Van Maanen 2"}],
+    "HIP 5447": [{"english": "Mirach"}],
+    "HIP 6411": [{"english": "Adhil"}],
+    "HIP 6686": [{"english": "Ruchbah"}],
+    "HIP 7588": [{"english": "Achernar"}],
+    "HIP 8645": [{"english": "Baten Kaitos"}],
+    "HIP 8796": [{"english": "Mothallah"}],
+    "HIP 8832": [{"english": "Mesarthim"}],
+    "HIP 8903": [{"english": "Sheratan"}],
+    "HIP 9487": [{"english": "Alrescha"}],
+    "HIP 9640": [{"english": "Almaak"}],
+    "HIP 9884": [{"english": "Hamal"}],
+    "HIP 10826": [{"english": "Mira"}],
+    "HIP 11767": [{"english": "Polaris"}],
+    "HIP 13701": [{"english": "Azha"}],
+    "HIP 13847": [{"english": "Acamar"}],
+    "HIP 14135": [{"english": "Menkar"}],
+    "HIP 14576": [{"english": "Algol"}],
+    "HIP 14838": [{"english": "Botein"}],
+    "HIP 15197": [{"english": "Zibal"}],
+    "HIP 15863": [{"english": "Mirphak"}],
+    "HIP 17448": [{"english": "Atik"}],
+    "HIP 17489": [{"english": "Celaeno"}],
+    "HIP 17499": [{"english": "Electra"}],
+    "HIP 17531": [{"english": "Taygeta"}],
+    "HIP 17573": [{"english": "Maia"}],
+    "HIP 17579": [{"english": "Asterope"}],
+    "HIP 17608": [{"english": "Merope"}],
+    "HIP 17702": [{"english": "Alcyone"}],
+    "HIP 17847": [{"english": "Atlas"}],
+    "HIP 17851": [{"english": "Pleione"}],
+    "HIP 18543": [{"english": "Zaurak"}],
+    "HIP 18614": [{"english": "Menkib"}],
+    "HIP 19587": [{"english": "Beid"}],
+    "HIP 19849": [{"english": "Keid"}],
+    "HIP 20889": [{"english": "Ain"}],
+    "HIP 21421": [{"english": "Aldebaran"}],
+    "HIP 23875": [{"english": "Cursa"}],
+    "HIP 24186": [{"english": "Kapteyn's Star"}],
+    "HIP 24436": [{"english": "Rigel"}],
+    "HIP 24608": [{"english": "Capella"}],
+    "HIP 25336": [{"english": "Bellatrix"}],
+    "HIP 25428": [{"english": "Alnath"}],
+    "HIP 25606": [{"english": "Nihal"}],
+    "HIP 25930": [{"english": "Mintaka"}],
+    "HIP 25985": [{"english": "Arneb"}],
+    "HIP 26207": [{"english": "Meissa"}],
+    "HIP 26311": [{"english": "Alnilam"}],
+    "HIP 26634": [{"english": "Phact"}],
+    "HIP 26727": [{"english": "Alnitak"}],
+    "HIP 27366": [{"english": "Saiph"}],
+    "HIP 27628": [{"english": "Wazn"}],
+    "HIP 27989": [{"english": "Betelgeuse"}],
+    "HIP 28360": [{"english": "Menkalinan"}],
+    "HIP 29655": [{"english": "Propus"}],
+    "HIP 30089": [{"english": "Red Rectangle"}],
+    "HIP 30122": [{"english": "Furud"}],
+    "HIP 30324": [{"english": "Mirzam"}],
+    "HIP 30343": [{"english": "Tejat"}],
+    "HIP 30438": [{"english": "Canopus"}],
+    "HIP 31681": [{"english": "Alhena"}],
+    "HIP 32246": [{"english": "Mebsuta"}],
+    "HIP 32349": [{"english": "Sirius"}],
+    "HIP 33579": [{"english": "Adhara"}],
+    "HIP 34045": [{"english": "Muliphein"}],
+    "HIP 34088": [{"english": "Mekbuda"}],
+    "HIP 34444": [{"english": "Wezen"}],
+    "HIP 35488": [{"english": "Bernes 135"}],
+    "HIP 35550": [{"english": "Wasat"}],
+    "HIP 35904": [{"english": "Aludra"}],
+    "HIP 36188": [{"english": "Gomeisa"}],
+    "HIP 36208": [{"english": "Luyten's Star"}],
+    "HIP 36850": [{"english": "Castor"}],
+    "HIP 37279": [{"english": "Procyon"}],
+    "HIP 37826": [{"english": "Pollux"}],
+    "HIP 39429": [{"english": "Naos"}],
+    "HIP 39953": [{"english": "Regor"}],
+    "HIP 40167": [{"english": "Tegmine"}],
+    "HIP 41037": [{"english": "Avior"}],
+    "HIP 41704": [{"english": "Muscida"}],
+    "HIP 42806": [{"english": "Asellus Borealis"}],
+    "HIP 42911": [{"english": "Asellus Australis"}],
+    "HIP 44066": [{"english": "Acubens"}],
+    "HIP 44127": [{"english": "Talitha"}],
+    "HIP 44816": [{"english": "Suhail"}],
+    "HIP 45238": [{"english": "Miaplacidus"}],
+    "HIP 45556": [{"english": "Aspidiske"}],
+    "HIP 46390": [{"english": "Alphard"}],
+    "HIP 46750": [{"english": "Alterf"}],
+    "HIP 47508": [{"english": "Subra"}],
+    "HIP 48455": [{"english": "Rasalas"}],
+    "HIP 49669": [{"english": "Regulus"}],
+    "HIP 50335": [{"english": "Adhafera"}],
+    "HIP 50372": [{"english": "Tania Borealis"}],
+    "HIP 50583": [{"english": "Algieba"}],
+    "HIP 50801": [{"english": "Tania Australis"}],
+    "HIP 53740": [{"english": "Alkes"}],
+    "HIP 53910": [{"english": "Merak"}],
+    "HIP 54061": [{"english": "Dubhe"}],
+    "HIP 54872": [{"english": "Zosma"}],
+    "HIP 54879": [{"english": "Chertan"}],
+    "HIP 55203": [{"english": "Alula Australis"}],
+    "HIP 55219": [{"english": "Alula Borealis"}],
+    "HIP 56211": [{"english": "Giausar"}],
+    "HIP 57632": [{"english": "Denebola"}],
+    "HIP 57757": [{"english": "Zavijava"}],
+    "HIP 58001": [{"english": "Phad"}],
+    "HIP 59199": [{"english": "Alchiba"}],
+    "HIP 59774": [{"english": "Megrez"}],
+    "HIP 59803": [{"english": "Gienah"}],
+    "HIP 60129": [{"english": "Zaniah"}],
+    "HIP 60718": [{"english": "Acrux"}],
+    "HIP 60965": [{"english": "Algorab"}],
+    "HIP 61084": [{"english": "Gacrux"}],
+    "HIP 61317": [{"english": "Chara"}],
+    "HIP 61941": [{"english": "Porrima"}],
+    "HIP 62434": [{"english": "Mimosa"}],
+    "HIP 62956": [{"english": "Alioth"}],
+    "HIP 63125": [{"english": "Cor Caroli"}],
+    "HIP 63608": [{"english": "Vindemiatrix"}],
+    "HIP 65378": [{"english": "Mizar"}],
+    "HIP 65474": [{"english": "Spica"}],
+    "HIP 65477": [{"english": "Alcor"}],
+    "HIP 67301": [{"english": "Alkaid"}],
+    "HIP 67927": [{"english": "Muphrid"}],
+    "HIP 68702": [{"english": "Hadar"}],
+    "HIP 68756": [{"english": "Thuban"}],
+    "HIP 68933": [{"english": "Menkent"}],
+    "HIP 69673": [{"english": "Arcturus"}],
+    "HIP 69701": [{"english": "Syrma"}],
+    "HIP 70890": [{"english": "Proxima"}],
+    "HIP 71075": [{"english": "Seginus"}],
+    "HIP 71683": [{"english": "Rigil Kent"}],
+    "HIP 72105": [{"english": "Izar"}],
+    "HIP 72487": [{"english": "Merga"}],
+    "HIP 72607": [{"english": "Kocab"}],
+    "HIP 72622": [{"english": "Zubenelgenubi"}],
+    "HIP 73555": [{"english": "Nekkar"}],
+    "HIP 74785": [{"english": "Zubeneschamali"}],
+    "HIP 75097": [{"english": "Pherkad"}],
+    "HIP 75411": [{"english": "Alkalurops"}],
+    "HIP 75458": [{"english": "Edasich"}],
+    "HIP 75695": [{"english": "Nusakan"}],
+    "HIP 76267": [{"english": "Alphekka"}],
+    "HIP 77070": [{"english": "Unukalhai"}],
+    "HIP 78401": [{"english": "Dschubba"}],
+    "HIP 78820": [{"english": "Acrab"}],
+    "HIP 79043": [{"english": "Marsic"}],
+    "HIP 79593": [{"english": "Yed Prior"}],
+    "HIP 79882": [{"english": "Yed Posterior"}],
+    "HIP 80112": [{"english": "Al Niyat"}],
+    "HIP 80463": [{"english": "Cujam"}],
+    "HIP 80763": [{"english": "Antares"}],
+    "HIP 80816": [{"english": "Kornephoros"}],
+    "HIP 80883": [{"english": "Marfik"}],
+    "HIP 82273": [{"english": "Atria"}],
+    "HIP 83608": [{"english": "Alrakis"}],
+    "HIP 84012": [{"english": "Sabik"}],
+    "HIP 84345": [{"english": "Rasalgethi"}],
+    "HIP 85670": [{"english": "Rastaban"}],
+    "HIP 85693": [{"english": "Maasym"}],
+    "HIP 85696": [{"english": "Lesath"}],
+    "HIP 85822": [{"english": "Yildun"}],
+    "HIP 85927": [{"english": "Shaula"}],
+    "HIP 86032": [{"english": "Rasalhague"}],
+    "HIP 86228": [{"english": "Girtab"}],
+    "HIP 86742": [{"english": "Cebalrai"}],
+    "HIP 87585": [{"english": "Grumium"}],
+    "HIP 87833": [{"english": "Etamin"}],
+    "HIP 87937": [{"english": "Barnard's Star"}],
+    "HIP 88635": [{"english": "Alnasl"}],
+    "HIP 89931": [{"english": "Kaus Media"}],
+    "HIP 90185": [{"english": "Kaus Australis"}],
+    "HIP 90496": [{"english": "Kaus Borealis"}],
+    "HIP 91262": [{"english": "Vega"}],
+    "HIP 92420": [{"english": "Sheliak"}],
+    "HIP 92855": [{"english": "Nunki"}],
+    "HIP 92946": [{"english": "Alya"}],
+    "HIP 93194": [{"english": "Sulafat"}],
+    "HIP 93506": [{"english": "Ascella"}],
+    "HIP 94376": [{"english": "Altais"}],
+    "HIP 95241": [{"english": "Arkab"}],
+    "HIP 95347": [{"english": "Rukbat"}],
+    "HIP 95947": [{"english": "Albireo"}],
+    "HIP 96295": [{"english": "Campbell's Star"}],
+    "HIP 96757": [{"english": "Sham"}],
+    "HIP 97278": [{"english": "Tarazed"}],
+    "HIP 97649": [{"english": "Altair"}],
+    "HIP 98036": [{"english": "Alshain"}],
+    "HIP 100027": [{"english": "Algedi"}],
+    "HIP 100345": [{"english": "Dabih"}],
+    "HIP 100453": [{"english": "Sadr"}],
+    "HIP 100751": [{"english": "Peacock"}],
+    "HIP 101769": [{"english": "Rotanev"}],
+    "HIP 101958": [{"english": "Sualocin"}],
+    "HIP 102098": [{"english": "Deneb"}],
+    "HIP 102488": [{"english": "Gienah"}],
+    "HIP 102618": [{"english": "Albali"}],
+    "HIP 104987": [{"english": "Kitalpha"}],
+    "HIP 105199": [{"english": "Alderamin"}],
+    "HIP 106032": [{"english": "Alfirk"}],
+    "HIP 106278": [{"english": "Sadalsuud"}],
+    "HIP 106985": [{"english": "Nashira"}],
+    "HIP 107136": [{"english": "Azelfafage"}],
+    "HIP 107259": [{"english": "The Garnet Star"}],
+    "HIP 107315": [{"english": "Enif"}],
+    "HIP 107556": [{"english": "Deneb Algedi"}],
+    "HIP 108917": [{"english": "Kurhah"}],
+    "HIP 109074": [{"english": "Sadalmelik"}],
+    "HIP 109268": [{"english": "Alnair"}],
+    "HIP 109427": [{"english": "Biham"}],
+    "HIP 110003": [{"english": "Ancha"}],
+    "HIP 110395": [{"english": "Sadachbia"}],
+    "HIP 110893": [{"english": "Kruger 60"}],
+    "HIP 111710": [{"english": "Situla"}],
+    "HIP 112029": [{"english": "Homan"}],
+    "HIP 112158": [{"english": "Matar"}],
+    "HIP 112247": [{"english": "Babcock's Star"}],
+    "HIP 112748": [{"english": "Sadalbari"}],
+    "HIP 113136": [{"english": "Skat"}],
+    "HIP 113368": [{"english": "Fomalhaut"}],
+    "HIP 113881": [{"english": "Sheat"}],
+    "HIP 113963": [{"english": "Markab"}],
+    "HIP 116727": [{"english": "Errai"}]
+  }
+}

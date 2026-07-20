@@ -1,11 +1,11 @@
 <resources>
 <string name="help_text" translation_description="Please do not change the &lt; and &gt; markup">
-&lt;big&gt;&lt;b&gt;Sky Map for Android&lt;/b&gt;&lt;/big&gt;&lt;br/&gt;
+&lt;big&gt;&lt;b&gt;Cosmos Mataró Sky Map&lt;/b&gt;&lt;/big&gt;&lt;br/&gt;
 &lt;i&gt;Version %s&lt;/i&gt;&lt;br/&gt;
 &lt;i&gt;https://github.com/sky-map-team/stardroid&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;
 
 &lt;b&gt;Introduction and Quick Start&lt;/b&gt;&lt;br/&gt;
-Sky Map is your catalog of the night sky! Point your Android-powered device up, and you will see a map of the brightest
+Cosmos Mataró Sky Map is your catalog of the night sky! Point your Android-powered device up, and you will see a map of the brightest
 stars, constellations, and planets in that part of the sky.&lt;br/&gt;
 
 &lt;b&gt;Visible Layers&lt;/b&gt;&lt;br/&gt;
@@ -134,6 +134,7 @@ John Taylor, Kevin Serafini, Lior Ron&lt;br/&gt;&lt;br/&gt;
 Christopher Wilcox, PhD&lt;br/&gt;&lt;br/&gt;
 
 &lt;b&gt;Acknowledgments&lt;/b&gt;&lt;br/&gt;
+Cosmos Mataró Sky Map is derived from Stardroid and Sky Map.&lt;br/&gt;
 Sky Map was originally developed as "Google Sky Map" by Google Inc. and open sourced
 in 2012.
 Sky Map uses maps derived from data from:&lt;br/&gt;

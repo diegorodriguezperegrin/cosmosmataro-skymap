@@ -21,6 +21,7 @@ import com.google.android.stardroid.math.RaDec
 import com.google.android.stardroid.math.getGeocentricCoords
 import com.google.android.stardroid.renderables.AbstractAstronomicalRenderable
 import com.google.android.stardroid.renderables.AstronomicalRenderable
+import com.google.android.stardroid.renderables.HairlinePrimitive
 import com.google.android.stardroid.renderables.LinePrimitive
 import com.google.android.stardroid.renderables.TextPrimitive
 import java.util.*
@@ -62,54 +63,50 @@ class GridLayer
     internal class GridRenderable(resources: Resources, numRaSources: Int, numDecSources: Int) :
         AbstractAstronomicalRenderable() {
         override val labels: MutableList<TextPrimitive> = ArrayList()
-        override val lines: MutableList<LinePrimitive> = ArrayList()
+        override val hairlines: MutableList<HairlinePrimitive> = ArrayList()
 
         /**
          * Constructs a single longitude line. These lines run from the north pole to
          * the south pole at fixed Right Ascensions.
          */
-        private fun createRaLine(index: Int, numRaSources: Int): LinePrimitive {
-            val line = LinePrimitive(LINE_COLOR)
+        private fun createRaLine(index: Int, numRaSources: Int): HairlinePrimitive {
+            val line = HairlinePrimitive(LINE_COLOR)
             val ra = index * 360.0f / numRaSources
             for (i in 0 until NUM_DEC_VERTICES - 1) {
                 val dec = 90.0f - i * 180.0f / (NUM_DEC_VERTICES - 1)
                 val raDec = RaDec(ra, dec)
-                line.raDecs.add(raDec)
                 line.vertices.add(getGeocentricCoords(raDec))
             }
             val raDec = RaDec(0.0f, -90.0f)
-            line.raDecs.add(raDec)
             line.vertices.add(getGeocentricCoords(raDec))
             return line
         }
 
-        private fun createDecLine(dec: Float): LinePrimitive {
-            val line = LinePrimitive(LINE_COLOR)
+        private fun createDecLine(dec: Float): HairlinePrimitive {
+            val line = HairlinePrimitive(LINE_COLOR)
             for (i in 0 until NUM_RA_VERTICES) {
                 val ra = i * 360.0f / NUM_RA_VERTICES
                 val raDec = RaDec(ra, dec)
-                line.raDecs.add(raDec)
                 line.vertices.add(getGeocentricCoords(raDec))
             }
             val raDec = RaDec(0.0f, dec)
-            line.raDecs.add(raDec)
             line.vertices.add(getGeocentricCoords(raDec))
             return line
         }
 
         companion object {
-            private val LINE_COLOR = Color.argb(20, 248, 239, 188)
+            private val LINE_COLOR = Color.argb(64, 248, 239, 188)
 
             /** These are great (semi)circles, so only need 3 points.  */
-            private const val NUM_DEC_VERTICES = 3
+            private const val NUM_DEC_VERTICES = 50
 
             /** every 10 degrees  */
-            private const val NUM_RA_VERTICES = 36
+            private const val NUM_RA_VERTICES = 100
         }
 
         init {
             for (r in 0 until numRaSources) {
-                lines.add(createRaLine(r, numRaSources))
+                hairlines.add(createRaLine(r, numRaSources))
             }
             /** North & South pole, hour markers every 2hrs.  */
             labels.add(
@@ -133,11 +130,11 @@ class GridLayer
                 val title = String.format("%dh", 2 * index)
                 labels.add(TextPrimitive(ra, 0.0f, title, LINE_COLOR))
             }
-            lines.add(createDecLine(0f)) // Equator
+            hairlines.add(createDecLine(0f)) // Equator
             // Note that we don't create lines at the poles.
             for (d in 1 until numDecSources) {
                 val dec = d * 90.0f / numDecSources
-                lines.add(createDecLine(dec))
+                hairlines.add(createDecLine(dec))
                 labels.add(
                     TextPrimitive(
                         0f,
@@ -146,7 +143,7 @@ class GridLayer
                         LINE_COLOR
                     )
                 )
-                lines.add(createDecLine(-dec))
+                hairlines.add(createDecLine(-dec))
                 labels.add(
                     TextPrimitive(
                         0f,

@@ -71,25 +71,32 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
     private var pointingInPhoneCoords = POINTING_DIR_IN_STANDARD_PHONE_COORDS
     private var screenUpInPhoneCoords = SCREEN_UP_STANDARD_IN_PHONE_COORDS
     private var magneticDeclinationCalculator: MagneticDeclinationCalculator? = null
-    private var autoUpdatePointing = true
-    private var fieldOfView = 45f // Degrees
-    private var location = LatLong(0f, 0f)
+    override var autoUpdatePointing = true
+        set(value) {
+            field = value
+        }
+    override var fieldOfView: Float
+        get() = _fieldOfView
+        set(value) { _fieldOfView = value }
+
+    private var _fieldOfView = 45f
+    override var location: LatLong
+        get() = _location
+        set(value) {
+            _location = value
+            calculateLocalNorthAndUpInCelestialCoords(true)
+        }
+    private var _location = LatLong(0f, 0f)
     private var clock: Clock = RealClock()
     private var celestialCoordsLastUpdated: Long = -1
 
-    /**
-     * The pointing comprises a vector into the phone's screen expressed in
-     * celestial coordinates combined with a perpendicular vector along the
-     * phone's longer side.
-     */
-    private val pointing = Pointing()
-
     /** The sensor acceleration in the phone's coordinate system.  */
-    private val acceleration = ApplicationConstants.INITIAL_DOWN.copy()
-    private var upPhone = acceleration * -1f
+    private val acceleration = ApplicationConstants.INITIAL_ACCELERATION.copy()
+    private var upPhone = acceleration.copy()
+
 
     /** The sensor magnetic field in the phone's coordinate system.  */
-    private val magneticField = ApplicationConstants.INITIAL_SOUTH.copy()
+    private val magneticField = ApplicationConstants.INITIAL_MAGNETIC_FIELD.copy()
     private var useRotationVector = false
     private val rotationVector = floatArrayOf(1f, 0f, 0f, 0f)
 
@@ -126,38 +133,20 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
         screenUpInPhoneCoords = s
     }
 
-    override fun setAutoUpdatePointing(autoUpdatePointing: Boolean) {
-        this.autoUpdatePointing = autoUpdatePointing
-    }
 
-    override fun getFieldOfView(): Float {
-        return fieldOfView
-    }
 
-    override fun setFieldOfView(degrees: Float) {
-        fieldOfView = degrees
-    }
 
-    override fun getMagneticCorrection(): Float {
-        return magneticDeclinationCalculator!!.declination
-    }
 
-    override fun getTime(): Date {
-        return Date(clock.timeInMillisSinceEpoch)
-    }
+    override val magneticCorrection: Float
+        get() = magneticDeclinationCalculator!!.declination
 
-    override fun getLocation(): LatLong {
-        return location
-    }
+    override val time: Date
+        get() = Date(clock.timeInMillisSinceEpoch)
 
-    override fun setLocation(location: LatLong) {
-        this.location = location
-        calculateLocalNorthAndUpInCelestialCoords(true)
-    }
 
-    override fun getPhoneUpDirection(): Vector3 {
-        return upPhone
-    }
+
+    override val phoneUpDirection: Vector3
+        get() = upPhone
 
     override fun setPhoneSensorValues(acceleration: Vector3, magneticField: Vector3) {
         if (magneticField.length2 < TOL || acceleration.length2 < TOL) {
@@ -185,40 +174,57 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
         useRotationVector = true
     }
 
-    override fun getNorth(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return trueNorthCelestial.copy()
-    }
+    override val north: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return trueNorthCelestial.copy()
+        }
 
-    override fun getSouth(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return -trueNorthCelestial
-    }
+    override val south: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return -trueNorthCelestial
+        }
 
-    override fun getZenith(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return upCelestial.copy()
-    }
+    override val zenith: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return upCelestial.copy()
+        }
 
-    override fun getNadir(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return -upCelestial
-    }
+    override val nadir: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return -upCelestial
+        }
 
-    override fun getEast(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return trueEastCelestial.copy()
-    }
+    override val east: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return trueEastCelestial.copy()
+        }
 
-    override fun getWest(): Vector3 {
-        calculateLocalNorthAndUpInCelestialCoords(false)
-        return -trueEastCelestial
-    }
+    override val west: Vector3
+        get() {
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            return -trueEastCelestial
+        }
 
     override fun setMagneticDeclinationCalculator(calculator: MagneticDeclinationCalculator) {
         magneticDeclinationCalculator = calculator
         calculateLocalNorthAndUpInCelestialCoords(true)
     }
+
+    /**
+     * Updates the astronomer's 'pointing', that is, the direction the phone is
+     * facing in celestial coordinates and also the 'up' vector along the
+     * screen (also in celestial coordinates).
+     *
+     *
+     * This method requires that [.axesMagneticCelestialMatrix] and
+     * [.axesPhoneInverseMatrix] are currently up to date.
+     */
+    private var pointingCorrectionMatrix = identity
 
     /**
      * Updates the astronomer's 'pointing', that is, the direction the phone is
@@ -236,10 +242,14 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
         calculateLocalNorthAndUpInCelestialCoords(false)
         calculateLocalNorthAndUpInPhoneCoordsFromSensors()
         val transform = axesMagneticCelestialMatrix * axesPhoneInverseMatrix
-        val viewInSpaceSpace =  transform * pointingInPhoneCoords
-        val screenUpInSpaceSpace = transform * screenUpInPhoneCoords
-        pointing.updateLineOfSight(viewInSpaceSpace)
-        pointing.updatePerpendicular(screenUpInSpaceSpace)
+        val viewInSpaceSpaceLowRes = transform * pointingInPhoneCoords
+        val screenUpInSpaceSpaceLowRes = transform * screenUpInPhoneCoords
+
+        val viewInSpaceSpace = pointingCorrectionMatrix * viewInSpaceSpaceLowRes
+        val screenUpInSpaceSpace = pointingCorrectionMatrix * screenUpInSpaceSpaceLowRes
+
+        _pointing.updateLineOfSight(viewInSpaceSpace)
+        _pointing.updatePerpendicular(screenUpInSpaceSpace)
     }
 
     /**
@@ -256,13 +266,23 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
         }
         celestialCoordsLastUpdated = currentTime
         updateMagneticCorrection()
-        val up = calculateRADecOfZenith(time, location)
+        val up = calculateRADecOfZenith(time, _location)
         upCelestial = getGeocentricCoords(up)
         val z = AXIS_OF_EARTHS_ROTATION
         val zDotu = upCelestial dot z
         trueNorthCelestial = z - upCelestial * zDotu
         trueNorthCelestial.normalize()
         trueEastCelestial = trueNorthCelestial * upCelestial
+
+        // Apply Precession Correction (IAU 2006)
+        // transform from Current Epoch -> J2000.0
+        val precessionMatrix = getPrecessionMatrix(currentTime)
+        // P transforms J2000 -> Date. We want Date -> J2000 = P^-1 = P^T (since orthogonal)
+        precessionMatrix.transpose()
+        
+        trueNorthCelestial = precessionMatrix * trueNorthCelestial
+        trueEastCelestial = precessionMatrix * trueEastCelestial
+        upCelestial = precessionMatrix * upCelestial
 
         // Apply magnetic correction.  Rather than correct the phone's axes for
         // the magnetic declination, it's more efficient to rotate the
@@ -318,21 +338,61 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
      * Updates the angle between True North and Magnetic North.
      */
     private fun updateMagneticCorrection() {
-        magneticDeclinationCalculator?.setLocationAndTime(location, timeMillis)
+        magneticDeclinationCalculator?.setLocationAndTime(_location, timeMillis)
     }
 
     /**
-     * Returns the user's pointing.  Note that clients should not usually modify this
      * object as it is not defensively copied.
      */
-    override fun getPointing(): Pointing {
-        calculatePointing()
-        return pointing
-    }
+    override val pointing: Pointing
+        get() {
+            calculatePointing()
+            return _pointing
+        }
+    private val _pointing = Pointing()
 
     override fun setPointing(lineOfSight: Vector3, perpendicular: Vector3) {
-        pointing.updateLineOfSight(lineOfSight)
-        pointing.updatePerpendicular(perpendicular)
+        if (autoUpdatePointing) {
+            // We need to calculate the rotation that maps the *current sensor pointing*
+            // to the *new manually adjusted pointing*.
+            // The current sensor pointing (without previous correction) is:
+            calculateLocalNorthAndUpInCelestialCoords(false)
+            calculateLocalNorthAndUpInPhoneCoordsFromSensors()
+            val transform = axesMagneticCelestialMatrix * axesPhoneInverseMatrix
+            val rawSensorView = transform * pointingInPhoneCoords
+            val rawSensorUp = transform * screenUpInPhoneCoords
+
+            // We want a matrix M such that:
+            // M * rawSensorView = lineOfSight
+            // M * rawSensorUp = perpendicular
+            //
+            // Construct basis matrices:
+            // B_sensor = [rawSensorView, rawSensorUp, rawSensorView * rawSensorUp]
+            // B_target = [lineOfSight, perpendicular, lineOfSight * perpendicular]
+            //
+            // M * B_sensor = B_target
+            // M = B_target * B_sensor^-1
+            // Since B_sensor is orthogonal, B_sensor^-1 = B_sensor^T (transpose)
+
+            val rawSensorRight = rawSensorView * rawSensorUp
+            val targetRight = lineOfSight * perpendicular
+
+            // Matrices constructed from columns
+            val bSensor = Matrix3x3(rawSensorView, rawSensorUp, rawSensorRight)
+            val bTarget = Matrix3x3(lineOfSight, perpendicular, targetRight)
+
+            // Calculate correction matrix
+            bSensor.transpose() // Modifies in place
+            pointingCorrectionMatrix = bTarget * bSensor
+
+            // Update the pointing immediately so the UI reflects it
+            _pointing.updateLineOfSight(lineOfSight)
+            _pointing.updatePerpendicular(perpendicular)
+
+        } else {
+            _pointing.updateLineOfSight(lineOfSight)
+            _pointing.updatePerpendicular(perpendicular)
+        }
     }
 
     override fun setClock(clock: Clock) {
@@ -340,9 +400,8 @@ class AstronomerModelImpl(magneticDeclinationCalculator: MagneticDeclinationCalc
         calculateLocalNorthAndUpInCelestialCoords(true)
     }
 
-    override fun getTimeMillis(): Long {
-        return clock.timeInMillisSinceEpoch
-    }
+    override val timeMillis: Long
+        get() = clock.timeInMillisSinceEpoch
 
     companion object {
         private val TAG = MiscUtil.getTag(AstronomerModelImpl::class.java)

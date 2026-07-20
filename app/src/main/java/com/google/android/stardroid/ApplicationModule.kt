@@ -98,15 +98,21 @@ class ApplicationModule(private val app: StardroidApplication) {
     val layerManager = LayerManager(preferences)
     layerManager.addLayer(StarsLayer(assetManager, resources, preferences))
     layerManager.addLayer(MessierLayer(assetManager, resources, preferences))
+    layerManager.addLayer(ConstellationArtLayer(assetManager, resources, preferences))
     layerManager.addLayer(ConstellationsLayer(assetManager, resources, preferences))
     layerManager.addLayer(SolarSystemLayer(model!!, resources, preferences))
     layerManager.addLayer(MeteorShowerLayer(model, resources, preferences))
     layerManager.addLayer(CustomObjectLayer(model, resources, preferences))
-    layerManager.addLayer(CometsLayer(model, resources, preferences))
+    layerManager.addLayer(CometsLayer(model, resources, preferences, app))
     layerManager.addLayer(GridLayer(resources, 24, 9, preferences))
-    layerManager.addLayer(HorizonLayer(model, resources, preferences))
+
+    layerManager.addLayer(LandscapeLayer(model, resources, preferences))
     layerManager.addLayer(EclipticLayer(resources, preferences))
+    layerManager.addLayer(GalacticPlaneLayer(resources, preferences))
     layerManager.addLayer(SkyGradientLayer(model, resources))
+    layerManager.addLayer(HorizonLayer(model, resources, preferences))
+    layerManager.addLayer(MilkyWayLayer(resources))
+    layerManager.addLayer(PointSourceComparisonLayer(model!!, resources, preferences))
     // layerManager.addLayer(new IssLayer(resources, model));
     layerManager.initialize()
     return layerManager

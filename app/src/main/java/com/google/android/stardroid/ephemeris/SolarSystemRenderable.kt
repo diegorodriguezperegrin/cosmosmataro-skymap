@@ -34,7 +34,7 @@ import java.util.*
  * @author Brent Bryan
  */
 class SolarSystemRenderable(
-    private val solarSystemBody: SolarSystemBody, resources: Resources,
+    val solarSystemBody: SolarSystemBody, resources: Resources,
     model: AstronomerModel, prefs: SharedPreferences
 ) : AbstractAstronomicalRenderable() {
     private val pointPrimitives = ArrayList<PointPrimitive>()
@@ -60,8 +60,8 @@ class SolarSystemRenderable(
         // TODO(johntaylor): figure out why we do this - presumably to make sure the images
         // are orientated correctly taking into account the Earth's orbital plane.
         // I'm not sure we're doing this right though.
-        earthCoords = heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time))
-        currentCoords.updateFromRaDec(universe.getRaDec(solarSystemBody, time))
+        earthCoords = heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(time.time))
+        currentCoords.updateFromRaDec(universe.getRaDec(solarSystemBody, time, model.location))
         for (imagePrimitives in imagePrimitives) {
             imagePrimitives.setUpVector(earthCoords)
         }
@@ -142,6 +142,6 @@ class SolarSystemRenderable(
         name = resources.getString(solarSystemObject.getNameResourceId())
         preferences = prefs
         earthCoords = heliocentricCoordinatesFromOrbitalElements(
-            SolarSystemBody.Earth.getOrbitalElements(model.time))
+            SolarSystemBody.Earth.getOrbitalElements(model.time.time))
     }
 }

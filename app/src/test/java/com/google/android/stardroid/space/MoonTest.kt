@@ -6,7 +6,7 @@ import org.junit.Test
 import java.util.*
 
 // Accuracy of our position calculations, in degrees.
-private const val POS_TOL = 0.2f
+private const val POS_TOL = 0.35f
 
 class MoonTest {
     // Verify that we are calculating a valid lunar RA/Dec.

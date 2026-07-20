@@ -16,7 +16,7 @@ import com.google.android.stardroid.space.Universe
  */
 fun calculateRADecOfZenith(utc: Date, location: LatLong): RaDec {
     // compute overhead RA in degrees
-    val myRa = meanSiderealTime(utc, location.longitude)
+    val myRa = meanSiderealTime(utc.time, location.longitude)
     val myDec = location.latitude
     return RaDec(myRa, myDec)
 }

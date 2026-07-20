@@ -39,7 +39,7 @@ class EclipticLayer(resources: Resources, preferences: SharedPreferences) : Abst
 
     override val layerDepthOrder = 50
     override val layerNameId = R.string.show_grid_pref
-    override val preferenceId = "source_provider.4"
+    override val preferenceId = "source_provider.ecliptic"
 
     /** Implementation of [AstronomicalRenderable] for the ecliptic source.  */
     private class EclipticRenderable(resources: Resources) : AbstractAstronomicalRenderable() {
@@ -48,7 +48,9 @@ class EclipticLayer(resources: Resources, preferences: SharedPreferences) : Abst
 
         companion object {
             private const val EARTHS_ANGULAR_TILT = 23.439281f
-            private val LINE_COLOR = Color.argb(20, 248, 239, 188)
+            // ABGR format: 0xff00ffff -> R=ff, G=ff, B=00 (Yellow)
+            private val LINE_COLOR = 0xff00ffff.toInt()
+            private const val EPSILON = EARTHS_ANGULAR_TILT * com.google.android.stardroid.math.DEGREES_TO_RADIANS
         }
 
         init {
@@ -56,14 +58,34 @@ class EclipticLayer(resources: Resources, preferences: SharedPreferences) : Abst
             labels.add(TextPrimitive(90.0f, EARTHS_ANGULAR_TILT, title, LINE_COLOR))
             labels.add(TextPrimitive(270f, -EARTHS_ANGULAR_TILT, title, LINE_COLOR))
 
-            // Create line source.
-            val ra = floatArrayOf(0f, 90f, 180f, 270f, 0f)
-            val dec = floatArrayOf(0f, EARTHS_ANGULAR_TILT, 0f, -EARTHS_ANGULAR_TILT, 0f)
+            // Create line source with high resolution
             val vertices = ArrayList<Vector3>()
-            for (i in ra.indices) {
-                vertices.add(getGeocentricCoords(ra[i], dec[i]))
+            val numSteps = 72 // Every 5 degrees
+            val sinEpsilon = kotlin.math.sin(EPSILON)
+            val cosEpsilon = kotlin.math.cos(EPSILON)
+
+            for (i in 0..numSteps) {
+                // Ecliptic Longitude (lambda)
+                val lambdaDeg = i * (360.0f / numSteps)
+                val lambdaRad = lambdaDeg * com.google.android.stardroid.math.DEGREES_TO_RADIANS
+
+                // Conversion from Ecliptic (beta=0) to Equatorial
+                // sin(delta) = sin(epsilon) * sin(lambda)
+                // tan(alpha) = cos(epsilon) * tan(lambda)
+                
+                val sinDelta = sinEpsilon * kotlin.math.sin(lambdaRad)
+                val deltaRad = kotlin.math.asin(sinDelta)
+                
+                val y = kotlin.math.sin(lambdaRad) * cosEpsilon
+                val x = kotlin.math.cos(lambdaRad)
+                val alphaRad = kotlin.math.atan2(y, x)
+                
+                val ra = com.google.android.stardroid.math.mod2pi(alphaRad) * com.google.android.stardroid.math.RADIANS_TO_DEGREES
+                val dec = deltaRad * com.google.android.stardroid.math.RADIANS_TO_DEGREES
+                
+                vertices.add(getGeocentricCoords(ra, dec))
             }
-            lines.add(LinePrimitive(LINE_COLOR, vertices, 1.5f))
+            lines.add(LinePrimitive(LINE_COLOR, vertices, 1.5f)) // Standard thickness
         }
     }
 }

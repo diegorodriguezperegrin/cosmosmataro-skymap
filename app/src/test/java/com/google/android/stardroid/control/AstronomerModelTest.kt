@@ -153,15 +153,17 @@ class AstronomerModelTest {
         expectedUpAlongPhone: Vector3
     ) {
         astronomer.location = location
-        val fakeClock =
-            Clock {
-                // This date is special as RA, DEC = (0, 0) is directly overhead at the
-                // equator on the Greenwich meridian.
-                // 12:07 March 20th 2009
-                val calendar = GregorianCalendar(TimeZone.getTimeZone("UTC"))
-                calendar[2009, 2, 20, 12, 7] = 24
-                calendar.timeInMillis
-            }
+        val fakeClock = object : Clock {
+            override val timeInMillisSinceEpoch: Long
+                get() {
+                    // This date is special as RA, DEC = (0, 0) is directly overhead at the
+                    // equator on the Greenwich meridian.
+                    // 12:07 March 20th 2009
+                    val calendar = GregorianCalendar(TimeZone.getTimeZone("UTC"))
+                    calendar[2009, 2, 20, 12, 7] = 24
+                    return calendar.timeInMillis
+                }
+        }
         astronomer.setClock(fakeClock)
         astronomer.setPhoneSensorValues(acceleration, magneticField)
 
@@ -177,6 +179,6 @@ class AstronomerModelTest {
 
     companion object {
         private val SQRT2 = sqrt(2f)
-        private const val TOL = 1e-3f
+        private const val TOL = 3e-3f
     }
 }

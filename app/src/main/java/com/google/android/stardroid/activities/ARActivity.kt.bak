@@ -1,0 +1,40 @@
+package com.google.android.stardroid.activities
+
+import android.Manifest
+import android.content.pm.PackageManager
+import android.graphics.PixelFormat
+import android.hardware.SensorManager
+import android.location.LocationManager
+import android.opengl.GLSurfaceView
+import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageAnalysis
+import androidx.camera.core.Preview
+import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.camera.view.PreviewView
+import com.google.android.stardroid.ar.PointSourceDetector
+import com.google.android.stardroid.ar.PointSourceOverlay
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.google.android.stardroid.StardroidApplication
+import com.google.android.stardroid.control.*
+import com.google.android.stardroid.layers.LayerManager
+import com.google.android.stardroid.math.Vector3
+import com.google.android.stardroid.renderer.RendererController
+import com.google.android.stardroid.renderer.SkyRenderer
+import com.google.android.stardroid.math.MathUtils
+import com.google.android.stardroid.util.smoothers.PlainSmootherModelAdaptor
+import org.cosmosmataro.skymap.R
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+import javax.inject.Provider
+
+class ARActivity : AppCompatActivity() {
+    /*
+    private lateinit var viewFinder: PreviewView
+    ... (rest of the file)
+    */
+}

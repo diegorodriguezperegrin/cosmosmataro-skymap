@@ -2,6 +2,7 @@ package com.google.android.stardroid.space
 
 import com.google.android.stardroid.ephemeris.SolarSystemBody
 import com.google.android.stardroid.math.RaDec
+import com.google.android.stardroid.math.LatLong
 import java.util.*
 
 /**
@@ -39,7 +40,7 @@ class Universe {
      * Gets the location of a planet at a particular date.
      * Possibly a temporary swap for RaDec.getInstance.
      */
-    fun getRaDec(solarSystemBody: SolarSystemBody, datetime: Date): RaDec {
-        return solarSystemObjectMap.get(solarSystemBody)!!.getRaDec(datetime)
+    fun getRaDec(solarSystemBody: SolarSystemBody, datetime: Date, location: LatLong? = null): RaDec {
+        return solarSystemObjectMap.get(solarSystemBody)!!.getRaDec(datetime, location)
     }
 }

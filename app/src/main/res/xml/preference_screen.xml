@@ -48,6 +48,8 @@
         android:defaultValue="true"
         android:title="@string/use_sound_effects"
         android:key="sound_effects"/>
+    
+
     <PreferenceScreen android:key="appearance_prefs" android:title="@string/appearance_prefs">
       <ListPreference
             android:key="auto_dimness"
@@ -63,13 +65,79 @@
           android:entries="@array/font_size_texts"
           android:defaultValue="MEDIUM" />
     </PreferenceScreen>
-    <!-- Keep in sync with value in utils.Analytics -->
-    <CheckBoxPreference
-        android:defaultValue="@string/analytics_enabled"
-        android:title="@string/enable_analytics"
-        android:summary="@string/enable_analytics_desc"
-        android:key="enable_analytics"/>
+
   </PreferenceCategory>
+
+  <PreferenceScreen android:key="source_provider_prefs" android:title="Layers">
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_all_layers_pref"
+          android:key="source_provider.all" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_stars_pref"
+          android:key="source_provider.0" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_constellations_pref"
+          android:key="source_provider.1" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_constellation_art_pref"
+          android:key="source_provider.constellation_art" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_messier_objects_pref"
+          android:key="source_provider.2" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_planets_pref"
+          android:key="source_provider.3" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_grid_pref"
+          android:key="source_provider.4" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_ground_pref"
+          android:key="source_provider.landscape" />
+      <CheckBoxPreference
+          android:defaultValue="false"
+          android:title="@string/show_horizon_lines_pref"
+          android:key="source_provider.horizon_line" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_sky_gradient"
+          android:key="source_provider.sky_gradient" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_milky_way"
+          android:key="source_provider.milky_way" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_meteors_pref"
+          android:key="source_provider.6" />
+      <CheckBoxPreference
+          android:defaultValue="true"
+          android:title="@string/show_comet_layer_pref"
+          android:key="source_provider.comets" />
+      <CheckBoxPreference
+          android:defaultValue="false"
+          android:title="@string/show_galactic_layer_pref"
+          android:key="source_provider.galactic_plane" />
+      <CheckBoxPreference
+          android:defaultValue="false"
+          android:title="@string/show_ecliptic_layer_pref"
+          android:key="source_provider.ecliptic" />
+      <CheckBoxPreference
+          android:defaultValue="false"
+          android:title="@string/show_custom_objects_pref"
+          android:key="source_provider.7" />
+      <CheckBoxPreference
+          android:defaultValue="false"
+          android:title="@string/show_point_source_comparison_pref"
+          android:key="point_source_comparison" />
+  </PreferenceScreen>
   <PreferenceScreen android:key="sensor_prefs" android:title="@string/sensor_prefs">
     <PreferenceCategory>
       <CheckBoxPreference
@@ -103,4 +171,25 @@
           android:defaultValue="STANDARD" />
     </PreferenceCategory>
   </PreferenceScreen>
+
+  <PreferenceCategory android:title="@string/data_prefs">
+      <Preference
+          android:key="import_comets"
+          android:title="@string/import_comets_pref"
+          android:summary="@string/import_comets_pref_summary" />
+      <Preference
+          android:key="comet_list"
+          android:title="Downloaded Comets"
+          android:summary="No comets downloaded"
+          android:selectable="false" />
+      <Preference
+          android:key="import_eop"
+          android:title="Import Earth Orientation"
+          android:summary="Download EOP data from IERS" />
+      <Preference
+          android:key="eop_data"
+          android:title="Earth Orientation Data"
+          android:summary="No data downloaded"
+          android:selectable="false" />
+  </PreferenceCategory>
 </PreferenceScreen>

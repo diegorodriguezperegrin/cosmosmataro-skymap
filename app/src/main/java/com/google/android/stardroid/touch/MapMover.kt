@@ -33,7 +33,19 @@ class MapMover(
   context: Context
 ) : DragRotateZoomGestureDetectorListener {
   private val sizeTimesRadiansToDegrees: Float
-  override fun onDrag(xPixels: Float, yPixels: Float): Boolean {
+  override fun onDrag(xPixels: Float, yPixels: Float, pointerCount: Int): Boolean {
+    // If in auto mode (AR), only allow dragging if using 2 fingers
+    if (controllerGroup.isAutoMode) {
+        if (pointerCount < 2) {
+            return false
+        }
+        // In AR mode, restrict dragging to Azimuth (Left/Right) only.
+        // Ignore vertical drag (yPixels).
+        val pixelsToRadians = model.fieldOfView / sizeTimesRadiansToDegrees
+        controllerGroup.changeAzimuth(-xPixels * pixelsToRadians)
+        return true
+    }
+    
     // Log.d(TAG, "Dragging by " + xPixels + ", " + yPixels);
     val pixelsToRadians = model.fieldOfView / sizeTimesRadiansToDegrees
     controllerGroup.changeUpDown(-yPixels * pixelsToRadians)
@@ -42,6 +54,9 @@ class MapMover(
   }
 
   override fun onRotate(degrees: Float): Boolean {
+    if (controllerGroup.isAutoMode) {
+        return false
+    }
     controllerGroup.rotate(-degrees)
     return true
   }

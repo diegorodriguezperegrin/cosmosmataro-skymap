@@ -48,7 +48,8 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
     val icon: String,
     val catalogName: String?,
     val baptismDate: String?,
-    val comments: String?
+    val comments: String?,
+    val visible: Boolean
   )
 
   private fun initializeCustomObjects() {
@@ -68,8 +69,11 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       val catalogName = jsonObject.optString("catalogName")
       val baptismDate = jsonObject.optString("baptismDate")
       val comments = jsonObject.optString("comments")
+      val visible = jsonObject.optBoolean("visible", true)
 
-      customObjects.add(CustomObject(name, ra, dec, color, size, icon, catalogName, baptismDate, comments))
+      if (visible) {
+        customObjects.add(CustomObject(name, ra, dec, color, size, icon, catalogName, baptismDate, comments, visible))
+      }
     }
   }
 
@@ -100,13 +104,25 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       get() = getGeocentricCoords(customObject.ra, customObject.dec)
 
     override fun initialize(): Renderable {
-      theImage.setImageId(resources.getIdentifier("star_on", "drawable", resources.getResourcePackageName(R.drawable.gift_on)))
+      theImage.setImageId(resources.getIdentifier("ic_star", "drawable", resources.getResourcePackageName(R.drawable.ic_gift)))
       label.text = name
       return this
     }
 
+    private var lastUpdateTime = 0L
+
     override fun update(): EnumSet<UpdateType> {
-      return EnumSet.noneOf(UpdateType::class.java)
+      // Heartbeat animation: 60 BPM = 1 Hz
+      val time = System.currentTimeMillis()
+      // Use sine wave for smooth pulsing. Period is 1000ms.
+      // Scale varies between 0.03 (base) and 0.045 (1.5x)
+      val phase = (time % 1000) / 1000.0
+      val scaleFactor = 1.0 + 0.5 * Math.sin(phase * 2 * Math.PI)
+      val newScale = (0.03 * scaleFactor).toFloat()
+      
+      theImage.imageScale = newScale
+      
+      return EnumSet.of(UpdateType.UpdateImages)
     }
 
     companion object {
@@ -118,7 +134,7 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       theImage = ImagePrimitive(
         getGeocentricCoords(customObject.ra, customObject.dec),
         resources,
-        resources.getIdentifier("star_on", "drawable", resources.getResourcePackageName(R.drawable.gift_on)),
+        resources.getIdentifier("ic_star", "drawable", resources.getResourcePackageName(R.drawable.ic_gift)),
         UP,
         0.03f
       )
@@ -132,7 +148,8 @@ class CustomObjectLayer(private val model: AstronomerModel, private val _resourc
       label = TextPrimitive(
         getGeocentricCoords(customObject.ra, customObject.dec),
         fullLabelText,
-        customObject.color.toInt()
+        customObject.color.toInt(),
+        offset = 0.04f
       )
       labels.add(label)
     }

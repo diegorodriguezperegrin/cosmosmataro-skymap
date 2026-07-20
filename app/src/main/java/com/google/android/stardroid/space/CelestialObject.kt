@@ -14,7 +14,7 @@ import kotlin.math.sin
  * Base class for any celestial objects.
  */
 abstract class CelestialObject {
-    abstract fun getRaDec(date : Date) : RaDec
+    abstract fun getRaDec(date : Date, location: LatLong? = null) : RaDec
 
     /**
      * Enum that identifies whether we are interested in rise or set time.
@@ -42,7 +42,7 @@ abstract class CelestialObject {
         indicator: RiseSetIndicator
     ): Calendar? {
         // Make a copy of the calendar to return.
-        val riseSetTime = Calendar.getInstance()
+        val riseSetTime = Calendar.getInstance(now.timeZone)
         val riseSetUt = calcRiseSetTime(now.time, loc, indicator)
         // Early out if no nearby rise set time.
         if (riseSetUt < 0) {
@@ -98,7 +98,7 @@ abstract class CelestialObject {
             val (ra, dec) = getRaDec(tmp)
 
             // GHA = GST - RA. (In degrees.)
-            val gst: Float = meanSiderealTime(tmp, 0f)
+            val gst: Float = meanSiderealTime(tmp.time, 0f)
             val gha = gst - ra
 
             // The value of -0.83 works for the diameter of the Sun and Moon. We

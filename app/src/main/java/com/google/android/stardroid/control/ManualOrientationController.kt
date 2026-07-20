@@ -41,17 +41,17 @@ class ManualOrientationController : AbstractController() {
     fun changeRightLeft(radians: Float) {
         // TODO(johntaylor): Some of the Math in here perhaps belongs in
         // AstronomerModel.
-        if (!enabled) {
+        if (!controllerEnabled) {
             return
         }
-        val pointing = model.pointing
+        val pointing = astronomerModel.pointing
         val pointingXyz = pointing.lineOfSight
         val topXyz = pointing.perpendicular
         val horizontalXyz = pointingXyz * topXyz
         val deltaXyz = horizontalXyz * radians
         val newPointingXyz = pointingXyz + deltaXyz
         newPointingXyz.normalize()
-        model.setPointing(newPointingXyz, topXyz)
+        astronomerModel.setPointing(newPointingXyz, topXyz)
     }
 
     /**
@@ -61,11 +61,11 @@ class ManualOrientationController : AbstractController() {
      * accurate in the limit as radians tends to 0.)
      */
     fun changeUpDown(radians: Float) {
-        if (!enabled) {
+        if (!controllerEnabled) {
             return
         }
         // Log.d(TAG, "Scrolling up down");
-        val pointing = model.pointing
+        val pointing = astronomerModel.pointing
         val pointingXyz = pointing.lineOfSight
         // Log.d(TAG, "Current view direction " + viewDir);
         val topXyz = pointing.perpendicular
@@ -75,24 +75,49 @@ class ManualOrientationController : AbstractController() {
         val deltaUpXyz = pointingXyz * radians
         val newUpXyz =  topXyz + deltaUpXyz
         newUpXyz.normalize()
-        model.setPointing(newPointingXyz, newUpXyz)
+        astronomerModel.setPointing(newPointingXyz, newUpXyz)
     }
 
     /**
      * Rotates the astronomer's view.
      */
     fun rotate(degrees: Float) {
-        if (!enabled) {
+        if (!controllerEnabled) {
             return
         }
         Log.d(TAG, "Rotating by $degrees")
-        val pointing = model.pointing
+        val pointing = astronomerModel.pointing
         val pointingXyz = pointing.lineOfSight
         val rotation = calculateRotationMatrix(degrees, pointingXyz)
         val topXyz = pointing.perpendicular
         val newUpXyz = rotation * topXyz
         newUpXyz.normalize()
-        model.setPointing(pointingXyz, newUpXyz)
+        astronomerModel.setPointing(pointingXyz, newUpXyz)
+    }
+
+    /**
+     * Changes the azimuth of the view by rotating around the Zenith.
+     * @param radians the angular change in radians.
+     */
+    fun changeAzimuth(radians: Float) {
+        if (!controllerEnabled) {
+            return
+        }
+        val zenith = astronomerModel.zenith
+        val degrees = radians * com.google.android.stardroid.math.RADIANS_TO_DEGREES
+        val rotation = calculateRotationMatrix(degrees, zenith)
+        
+        val pointing = astronomerModel.pointing
+        val pointingXyz = pointing.lineOfSight
+        val topXyz = pointing.perpendicular
+        
+        val newPointingXyz = rotation * pointingXyz
+        val newUpXyz = rotation * topXyz
+        
+        newPointingXyz.normalize()
+        newUpXyz.normalize()
+        
+        astronomerModel.setPointing(newPointingXyz, newUpXyz)
     }
 
     companion object {

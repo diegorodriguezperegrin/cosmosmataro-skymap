@@ -1,7 +1,9 @@
 package com.google.android.stardroid.space
 
 import com.google.android.stardroid.ephemeris.SolarSystemBody
+import com.google.android.stardroid.ephemeris.imageResourceId
 import com.google.android.stardroid.math.RaDec
+import com.google.android.stardroid.math.LatLong
 import com.google.android.stardroid.math.convertToEquatorialCoordinates
 import com.google.android.stardroid.math.heliocentricCoordinatesFromOrbitalElements
 import java.util.*
@@ -10,9 +12,8 @@ import java.util.*
  * An object that orbits the sun.
  */
 open class SunOrbitingObject(solarSystemBody : SolarSystemBody) : SolarSystemObject(solarSystemBody) {
-    override fun getRaDec(date: Date): RaDec {
-        val earthCoords =
-            heliocentricCoordinatesFromOrbitalElements(SolarSystemBody.Earth.getOrbitalElements(date))
+    override fun getRaDec(date: Date, location: LatLong?): RaDec {
+        val earthCoords = SolarSystemBody.Earth.getHeliocentricCoordinates(date.time)
         val myCoords = getMyHeliocentricCoordinates(date)
         myCoords -= earthCoords
         val equ = convertToEquatorialCoordinates(myCoords)
@@ -20,7 +21,7 @@ open class SunOrbitingObject(solarSystemBody : SolarSystemBody) : SolarSystemObj
     }
 
     protected open fun getMyHeliocentricCoordinates(date: Date) =
-        heliocentricCoordinatesFromOrbitalElements(solarSystemBody.getOrbitalElements(date))
+        solarSystemBody.getHeliocentricCoordinates(date.time)
 
     /////////////////////
 

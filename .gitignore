@@ -13,4 +13,12 @@ app/src/gms/google-services.json
 app/src/gms/google-services.json*
 app/gen/
 *.keystore
-datamodel/bin/
+datamodel/bin/build_log_*.txt
+
+# Temporary logs, apks, and build caches
+*.log
+*.txt
+*.apk
+.gradle_project_temp/
+.gradle_temp/
+.kotlin/
