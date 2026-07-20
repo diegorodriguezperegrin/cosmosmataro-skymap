@@ -17,6 +17,7 @@ import javax.microedition.khronos.opengles.GL10
  */
 class TextureManager(private val res: Resources) {
     private val resourceIdToTextureMap = HashMap<Int, TextureData>()
+    private val filePathToTextureMap = HashMap<String, TextureData>()
     private val allTextures = ArrayList<TextureReferenceImpl>()
 
     fun createTexture(gl: GL10): TextureReference {
@@ -43,8 +44,66 @@ class TextureManager(private val res: Resources) {
         return tex
     }
 
+    fun releaseTexture(gl: GL10, resourceID: Int) {
+        val texData = resourceIdToTextureMap[resourceID] ?: return
+        texData.refCount--
+        if (texData.refCount <= 0) {
+            val tex = texData.ref
+            if (tex != null) {
+                tex.delete(gl)
+                allTextures.remove(tex)
+            }
+            resourceIdToTextureMap.remove(resourceID)
+        }
+    }
+
+    fun getTextureFromFile(gl: GL10, filePath: String): TextureReference {
+        val texData = filePathToTextureMap[filePath]
+        if (texData != null) {
+            texData.refCount++
+            return texData.ref!!
+        }
+
+        val tex = createTextureInternal(gl)
+        val bmp = BitmapFactory.decodeFile(filePath)
+        if (bmp == null) {
+            Log.e("TextureManager", "Failed to decode file: $filePath")
+            return tex
+        }
+
+        tex.bind(gl)
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_LINEAR.toFloat())
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MAG_FILTER, GL10.GL_LINEAR.toFloat())
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_CLAMP_TO_EDGE.toFloat())
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_EDGE.toFloat())
+
+        GLUtils.texImage2D(GL10.GL_TEXTURE_2D, 0, bmp, 0)
+        bmp.recycle()
+
+        val data = TextureData()
+        data.ref = tex
+        data.refCount = 1
+        filePathToTextureMap[filePath] = data
+
+        return tex
+    }
+
+    fun releaseTextureFromFile(gl: GL10, filePath: String) {
+        val texData = filePathToTextureMap[filePath] ?: return
+        texData.refCount--
+        if (texData.refCount <= 0) {
+            val tex = texData.ref
+            if (tex != null) {
+                tex.delete(gl)
+                allTextures.remove(tex)
+            }
+            filePathToTextureMap.remove(filePath)
+        }
+    }
+
     fun reset() {
         resourceIdToTextureMap.clear()
+        filePathToTextureMap.clear()
         for (ref in allTextures) {
             ref.invalidate()
         }
@@ -89,7 +148,12 @@ class TextureManager(private val res: Resources) {
         val tex = createTextureInternal(gl)
         val opts = BitmapFactory.Options()
         opts.inScaled = false
-        var bmp = BitmapFactory.decodeResource(res, resourceID, opts)
+        var bmp: Bitmap? = null
+        try {
+            bmp = BitmapFactory.decodeResource(res, resourceID, opts)
+        } catch (e: Exception) {
+            Log.e("TextureManager", "Failed to decode resource: $resourceID", e)
+        }
 
         if (bmp == null) {
             // Fallback for VectorDrawables or other drawables that BitmapFactory can't decode
