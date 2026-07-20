@@ -87,6 +87,13 @@ android {
             if (file('no-checkin.properties').exists()) {
                 signingConfig signingConfigs.release
             }
+            resValue "string", "search_suggest_authority", "org.cosmosmataro.skymap.searchterms"
+            manifestPlaceholders = [appName: "@string/app_name"]
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            resValue "string", "search_suggest_authority", "org.cosmosmataro.skymap.debug.searchterms"
+            manifestPlaceholders = [appName: "Sky Map (Dev)"]
         }
     }
 

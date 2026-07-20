@@ -27,6 +27,6 @@
     android:includeInGlobalSearch="true"
     android:queryAfterZeroResults="false"
     android:searchSuggestThreshold="1"
-    android:searchSuggestAuthority="com.google.android.stardroid.searchterms"
+    android:searchSuggestAuthority="@string/search_suggest_authority"
     android:searchSuggestIntentAction="android.intent.action.SEARCH"
 />

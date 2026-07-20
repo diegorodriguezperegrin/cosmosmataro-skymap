@@ -22,6 +22,7 @@ import android.database.MatrixCursor
 import android.net.Uri
 import android.text.TextUtils
 import android.util.Log
+import org.cosmosmataro.skymap.BuildConfig
 import com.google.android.stardroid.StardroidApplication
 import com.google.android.stardroid.layers.LayerManager
 import com.google.android.stardroid.util.MiscUtil.getTag
@@ -148,7 +149,7 @@ class SearchTermsProvider : ContentProvider() {
 
   companion object {
     private val TAG = getTag(SearchTermsProvider::class.java)
-    var AUTHORITY = "com.google.android.stardroid.searchterms"
+    val AUTHORITY = "${BuildConfig.APPLICATION_ID}.searchterms"
     val CONTENT_URI = Uri.parse("content://" + AUTHORITY)
     private const val SEARCH_SUGGEST = 0
     private val uriMatcher = buildUriMatcher()
